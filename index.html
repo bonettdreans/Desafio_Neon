@@ -12,19 +12,19 @@
     <title>Asuma Corp</title>
 </head>
 <body>
-    <img src="./img/Finance app-pana.png" class="fundo">
-    <header class="menu-principal">
+    <img src="./img/Finance app-pana.png" class="background">
+    <header class="menu-main">
         <nav class="nav_bar">
             <ul class="list">
                 <li>
                     <div class="header-1">
-                        <div class="voltar">
-                            <button type="submit" class="btn-voltar"><i class="fas fa-chevron-circle-left"></i>     Voltar</button>
+                        <div class="back">
+                            <button type="submit" class="btn-back"><i class="fas fa-chevron-circle-left"></i>     Voltar</button>
                         </div> 
                     </div>
                 </li>
                 <li>
-                    <div class="lancamento">
+                    <div class="launch">
                         <h2>Novo Lançamento</h2>
                     </div> 
                 </li>
@@ -39,44 +39,44 @@
 
     <main>
         <div class="header2">
-            <div class="saldo">
+            <div class="balance">
                 <h4>Saldo disponível <i class="fas fa-eye"></i></h4>
                 <h2>R$ 1000,00</h2>
             </div>
         </div>
     </main>
     <main>    
-        <form class="formulario" action="" method="post">
-        <div class="divValor">
-            <label for="txtValor">Valor</label>
+        <form class="form" action="" method="post">
+        <div class="divValue">
+            <label for="txtValue">Valor</label>
             <div class="input-control text size4">
-                <input type="number" id="txtValor" step="0.01" min="0.01" placeholder="R$">
+                <input type="number" id="txtValue" step="0.01" min="0.01" placeholder="R$">
             </div>
         </div>
-        <div class="divData">
-            <label for="txtData">Data</label>
+        <div class="divDate">
+            <label for="txtDate">Data</label>
             <div class="input-control text size4">
-               <input type="date" id="txtData">
+               <input type="date" id="txtDate">
             </div>
         </div>
-        <div class="divDeposito">
-            <label for="txtDeposito">Título do depósito</label>
+        <div class="divDeposit">
+            <label for="txtDeposit">Título do depósito</label>
             <div class="input-control text size4">
-              <input type="text" id="txtDeposito">
+              <input type="text" id="txtDeposit">
             </div>
         </div>
         <div class="divRadio">
             <ul class="list">
                 <li id="li-radio">
-                    <input type="radio" name="submit" id="entrada">
-                    <label for="entrada">Depositar valor</label>
-                    <input type="radio" name="submit" id="saida">
-                    <label for="saida"> Retirar valor</label>
+                    <input type="radio" name="submit" id="entry">
+                    <label for="entry">Depositar valor</label>
+                    <input type="radio" name="submit" id="exit">
+                    <label for="exit"> Retirar valor</label>
                 </li>
             </ul>
         </div>
-        <div class="divBotao">
-            <button type="submit" class="btn-cad">Cadastrar</button>
+        <div class="divButton">
+            <button type="submit" class="btn-register">Cadastrar</button>
         </div>
         </form>
     </main>
