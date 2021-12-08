@@ -1,162 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleExtrato.css">
-    <title>Minhas Atividades</title>
-    
+    <title>Gestão Financeira Pessoal</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+	<div>
         <nav class="navi__bar">
+            <a href="./index.html">
             <img 
-                src="./img/Vector.png" 
-                class="img__navBar"
-                alt="Home">
-            <h2 class="title__atividade">Minhas Atividades</h2>
-            <img 
-                src="./img/Vector (2).png" 
-                alt="">      
+                src="./img/logo.png" 
+                alt=""></a>                
         </nav>
-    </div>
-    <div class="container__balance">
-        <div class="container__titleBalance">
-            <h3 id="balance" class="title-amount">Saldo disponível</h3>
-            <img 
-                src="./img/eye.png" 
-                class="img__balance"
-                width="20px" 
-                alt="">
-        </div>
-        <div>
-            <h3 id ="Historia" class="balance">R$ 1000,00</h3>
-        </div>
-        
-    </div>
-    <div class="container__tableExtract">
-        <table class="table__fill">
-                <thead>
-                    <tr>
-                        <th class="text__Description">Descrição</th>
-                        <th class="text__custo">Custo</th>
-                        <th class="text__left">Data</th>
-                        <th class="text__acoes">Ações</th>
-                    </tr>
-                </thead>
-                <tbody class="table-hover">
-                    <tr>
-                        <td class="text-left">Salario</td>
-                        <td class="text-left">R$ 5,000.00</td>
-                        <td class="text-left">05/12/2021</td>
-                        <td class="text-left">
-                            <a href="">
-                                <img 
-                                    src="./img/Edit_icon-icons.com_55921.png" 
-                                    alt=""></a><a href="">
-                                <img 
-                                    src="./img/trash_bin_icon-icons.com_67981.png" 
-                                    alt="">
-                            </a> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">Salario</td>
-                        <td class="text-left">R$ 5,000.00</td>
-                        <td class="text-left">05/12/2021</td>
-                        <td class="text-left">
-                            <a href="">
-                                <img 
-                                    src="./img/Edit_icon-icons.com_55921.png" 
-                                    alt=""></a><a href="">
-                                <img 
-                                    src="./img/trash_bin_icon-icons.com_67981.png" 
-                                    alt="">
-                            </a> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">Salario</td>
-                        <td class="text-left">R$ 5,000.00</td>
-                        <td class="text-left">05/12/2021</td>
-                        <td class="text-left">
-                            <a href="">
-                                <img 
-                                    src="./img/Edit_icon-icons.com_55921.png" 
-                                    alt=""></a><a href="">
-                                <img 
-                                    src="./img/trash_bin_icon-icons.com_67981.png" 
-                                    alt="">
-                            </a> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">Aluguel</td>
-                        <td class="text-left">R$ 2,000.00</td>
-                        <td class="text-left">06/12/2021</td>
-                        <td class="text-left">
-                             <a href="">
-                                <img 
-                                    src="./img/Edit_icon-icons.com_55921.png" 
-                                    alt=""></a><a href="">
-                                <img 
-                                    src="./img/trash_bin_icon-icons.com_67981.png" 
-                                    alt="">
-                            </a> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">Agua</td>
-                        <td class="text-left">R$ 85.00</td>
-                        <td class="text-left">06/12/2021</td>
-                        <td class="text-left">
-                            <a href="">
-                                <img 
-                                    src="./img/Edit_icon-icons.com_55921.png" 
-                                    alt=""></a><a href="">
-                                <img 
-                                    src="./img/trash_bin_icon-icons.com_67981.png" 
-                                    alt="">
-                            </a> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">Gas</td>
-                        <td class="text-left">R$ 56.00</td>
-                        <td class="text-left">06/12/2021</td>
-                        <td class="text-left">
-                            <a href="">
-                                <img 
-                                    src="./img/Edit_icon-icons.com_55921.png" 
-                                    alt=""></a><a href="">
-                                <img 
-                                    src="./img/trash_bin_icon-icons.com_67981.png" 
-                                    alt="">
-                            </a> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">Gasolina</td>
-                        <td class="text-left">R$ 800.00</td>
-                        <td class="text-left">21/12/2021</td>
-                        <td class="text-left">
-                            <a href="">
-                                <img 
-                                    src="./img/Edit_icon-icons.com_55921.png" 
-                                    alt=""></a><a href="">
-                                <img 
-                                    src="./img/trash_bin_icon-icons.com_67981.png" 
-                                    alt="">
-                            </a> 
-                        </td>
-                    </tr>
-                </tbody>
-        </table>
-    </div>
+	<div class="container__Principal">
+		
+		<div class="container right-panel-active">
+				<!-- Sign Up -->
+			<div class="container__form container--signup">
+				<form action="#" class="form" id="form1">
+					<h2 class="form__title">Inscrever-se</h2>
+					<input type="text" placeholder="Nome" class="input" required/>
+					<input type="text" placeholder="Usuario" class="input" required/>
+					<input type="password" placeholder="Senha" class="input" required/>
+					<input type="password" placeholder="Repetir Senha" class="input" />
+					<button class="btn">Inscrever-se</button>
+				</form>
+			</div>
+
+				<!-- Sign In -->
+			<div class="container__form container--signin">
+				<form action="#" class="form" id="form2">
+					<h2 class="form__title">Entrar</h2>
+					<input type="text" placeholder="Usuario" class="input" required/>
+					<input type="password" placeholder="Senha" class="input" required/>
+					<a href="#" class="link">Esqueceu sua senha?</a>
+					<button class="btn">Entrar</button>
+				</form>
+			</div>
+
+				<!-- Overlay -->
+			<div class="container__overlay">
+				<div class="overlay">
+					<div class="overlay__panel overlay--left">
+						<button class="btn" id="signIn">Entrar</button>
+					</div>
+						<div class="overlay__panel overlay--right">
+							<button class="btn" id="signUp">Inscrever-se</button>
+						</div>
+				</div>
+			</div>
+		</div>
+</div>
 <footer class="container__footer">
-     <p>Author: ASUMA<br>
-  <a href="mailto:hege@example.com">hege@example.com</a></p>   
+     <p>App De controle by Asuma Corp<br>
+  <a href="mailto:asumacorp@example.com">asumacorp@example.com</a></p>   
 </footer>
+					<script src="index.js"></script>
 </body>
 </html>

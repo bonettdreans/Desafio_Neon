@@ -13,17 +13,61 @@ body{
 }
 
 .navi__bar{
-    height: 9vh;
+    height: 15vh;
     background-color: #1D2F40;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: #fff;
+    color: #F26E22;
     margin: 0;
-    font-size: 18px;
+    font-size: 37px;
 }
+.img__logo{
+  height: 7vh;
+  width: 30vh;
+}
+.container__perfil{
+display: flex;
+flex-direction: column-reverse;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
+.img__perfil{
+width: 40px;
+padding-bottom: 5px;
+}
+.btn__terminarSessao{
+  background-color: #1D2F40;
+	border-radius: 20px;
+	border:none;
+  align-content: center;
+  align-items: center;
+	color: #fff;
+	cursor: pointer;
+	font-size: 0.8rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	padding: 0.4rem 1.5rem;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+.btn__terminarSessao:hover {
+	background-color: rgb(219, 215, 215);
+  color:#0A1931
+}
+.btn__terminarSessao:active {
+	transform: scale(0.95);
+}
+
+.btn__terminarSessao:focus {
+	outline: none;
+}
+
 .container__balance{
-    height: 30vh;
+    height: 35vh;
     background-color: #EFEFEF;
     display: flex;
     justify-content: space-around;
@@ -35,24 +79,34 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+.container-fluid{
+    background-image: url(../img/Design3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
 
 .img__balance{
     margin: 20px;
+    width: 40px;
+    cursor: pointer;
 }
 .balance{
     color: #0A1931;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 400;
 }
 
 .title-amount{
     color: #0A1931;
-    font-size: 20px;
+    font-size: 28px;
 }
-.container__tableExtract{
+/* .container__tableExtract{
     height: 140vh;
     margin-top: 50px;
-}
+} */
 
 .table-title h3 {
    color: #fafafa;
@@ -64,7 +118,40 @@ body{
    text-transform:uppercase;
 }
 
+.contairner__SearchDate{
+  height: 15ch;
+  background-color:#FFFFFF;
+  color: #666B85;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 
+.label__text{
+  font-size: 30px;
+}
+
+.input__date{
+  width: 200px;
+  height: 35px;
+}
+
+.btn__busca{
+  background-color: #F26E22;
+	border-radius: 20px;
+	border:none;
+  align-content: center;
+  align-items: center;
+	color: #0A1931;
+	cursor: pointer;
+	font-size: 0.9rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	padding: 0.9rem 2rem;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
 /*** Table Styles **/
 
 .table__fill {
@@ -73,7 +160,7 @@ body{
   border-collapse: collapse;
   height: 320px;
   margin: auto;
-  max-width: 600px;
+  max-width: 60%;
   padding:5px;
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -81,14 +168,14 @@ body{
 }
  
 th {
-  color:#D5DDE5;;
-  background:#0A1931;
+  color:#0A1931;
+  background:#F26E22;
   border-bottom:4px solid #9ea7af;
   border-right: 1px solid #343a45;
   font-size:23px;
   font-weight: 100;
   padding:24px;
-  text-align:left;
+  text-align:center;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   vertical-align:middle;
 }
@@ -194,14 +281,55 @@ td.text-right {
   text-align: right;
 }
 
+.acoes__left{
+  display: flex;
+  justify-content: center;
+}
+
+.container__btn{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.btn__novoLancamento{
+  color:#0A1931;
+  background:#F26E22;
+	border-radius: 20px;
+	border:none;
+  align-content: center;
+  align-items: center;
+	cursor: pointer;
+	font-size: 0.8rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	padding: 0.9rem 4rem;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+.btn__novoLancamento:active {
+	transform: scale(0.95);
+}
+
+.btn__novoLancamento:focus {
+	outline: none;
+}
+
 .container__footer{
-    height: 9vh;
+    height: 18vh;
     background-color: #1D2F40;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     color: #fff;
     margin: 0;
-    font-size: 18px;
+    font-size: 14px;
+}
 
+.img__edit{
+  margin-right: 20px;
 }
