@@ -9,13 +9,18 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate(models) {
-      // define association here
-    }
-  };
+    static associate(models)  {
+      launch.belongsTo(models.Client, {as:"Type", foreignKey:"Client_id"})
+  }
+};
   launch.init({
-    amount: DataTypes.STRING,
-    date: DataTypes.STRING,
+    Launch_id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true 
+    },
+    amount: DataTypes.FLOAT,
+    date: DataTypes.DATE,
     title_launch: DataTypes.STRING,
     type_launch: DataTypes.STRING
   }, {
