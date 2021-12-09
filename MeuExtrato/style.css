@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 
 *{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald';
 }
 
 :root {
@@ -238,6 +238,8 @@ body {
     font-size: 25px;
 	position: absolute;
 	width: 215.7vh;
+	font-family: 'Oswald';
+	font-size: 20px;
 }
 
 @keyframes show {
@@ -259,10 +261,28 @@ body {
     height: 10vh;
     width: 40vh;
   }
+.footer_links{
+	margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.esp{
+    padding: 0px 8px 0px 389px;
+}
+.email{
+	font-family: 'Oswald';
+	font-size: 11px;
+	color: #EFEFEF;
+	margin: 17px 168px 0px 0px;
+}
 .devicon-github-original{
 	font-size: 40px;
-	margin: 0px 0px 0px 0px;
 }
 .devicon-trello-plain{
 	font-size: 40px;
 }
+.img_logo{
+    background-image: url(../img/logo.png);
+    height: 5vh;
+    width: 20vh;
+	margin: 0px 0px 25px 0px ;
+  }
