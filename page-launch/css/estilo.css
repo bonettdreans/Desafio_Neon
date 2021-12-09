@@ -91,9 +91,6 @@ h4 {
     font-size: 1.50em;
 }
 
-.fa-eye {
-    
-}
 h2 {
     font-size: 1.60em;
 }
@@ -142,6 +139,7 @@ h2 {
     border-left: none;
     border-right: none;
     width: 23em;
+    background: none;
 }
 
 .list{
