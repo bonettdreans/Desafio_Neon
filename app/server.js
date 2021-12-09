@@ -11,7 +11,9 @@ const PORT = process.env.PORT || 6000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+app.use(require ('../routes/routerAuth'));
 app.use(require ('../routes/routerClient'));
+
 
 // Arrancamos el servidor
 app.listen(PORT, function () {
