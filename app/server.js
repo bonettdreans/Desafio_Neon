@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-require('dotenv').config()
+require('dotenv').config();
+const { connection } = require ('./database/db');
 
 // Setting
 const PORT = process.env.PORT || 6000;
@@ -10,7 +11,13 @@ const PORT = process.env.PORT || 6000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+app.use(require ('../routes/routerClient'));
+
 // Arrancamos el servidor
 app.listen(PORT, function () {
     console.log(`successfully initialized http://localhost:${PORT}`);
-})
+
+    connection.sync({force: false}).then (() => {
+        console.log("Connection Full");
+        });
+});
