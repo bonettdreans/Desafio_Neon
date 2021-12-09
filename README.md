@@ -1,5 +1,5 @@
 <div align='center'>
-  <img src='https://raw.githubusercontent.com/bonettdreans/Desafio_Neon/835bedd3b91e4e74b171c2bfff677d95b4e1791c/img/logo.svg?token=AV3DJDYS45DQCN3GLDJYFWTBWFHZI'></img>
+  <img src='https://github.com/bonettdreans/Desafio_Neon/blob/main/img/logo.svg'/>
 </div>
 
 
@@ -21,7 +21,9 @@ Our users can see their movement historic, can do payments, transfers, demands, 
   <a href='#roadMap'>💫 Road Map</a> • 
   <a href='#appDemo'>💻 Aplication Demo</a> • 
   <a href='#req'>🌚 Requirements</a> • 
-  <a href='techStack'></a>
+  <a href='#techStack'>⚡️ Tech Stack</a> • 
+  <a href='#creators'>🛠 Creators</a> • 
+  
 </p>
 
 <h2 title='#roadMap'>💫 Road Map</h2>
@@ -37,7 +39,7 @@ and <a href='https://www.figma.com/file/3wh0x05etlZMCUfcJMRjwR/Desafio---TT-team
 
 <h2 title='req'>🌚 Requirements</h2>
 
-<h2 title='techStack'>⚡️ Tech Stack</h2>
+<h2 title='#techStack'>⚡️ Tech Stack</h2>
 <ul>
   <li><a href='https://nodejs.org/'>Node.js</a></li>
   <li><a href='https://sequelize.org/master/'>Sequelize</a></li>
@@ -51,7 +53,29 @@ and <a href='https://www.figma.com/file/3wh0x05etlZMCUfcJMRjwR/Desafio---TT-team
   <li><a href=''></a></li>
 </ul>
 
-<h2 title='creators'>🛠 Creators</h2
+<h2 title='creators'>🛠 Creators</h2>
+
+<div style="display: inline_block" align="center"><br>
+  <img align="center" width="100px;" src='https://github.com/bonettdreans/Desafio_Neon/blob/main/img/isabel.png' alt='isaPic'> <img align="center" width="100px;" src='https://github.com/bonettdreans/Desafio_Neon/blob/main/img/darwin.png'> <img align="center" width="100px;" src='https://github.com/bonettdreans/Desafio_Neon/blob/main/img/hector.png'> <img align="center" width="100px;" src='https://github.com/bonettdreans/Desafio_Neon/blob/main/img/marcos.png'>
+  
+  <h5>Isabel | Darwin | Hector | Marcos | Juel | Fabiana</h5>
+  
+  ###
+  <a href = "mailto:isabellacerdacontact@gmail.com"><img align="center" src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href = "mailto:"><img align="center" src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a> 
+  <a href = "mailto:"><img align="center" src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href = "mailto:"><img align="center" src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href = "mailto:"><img align="center" src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href = "mailto:"><img align="center" src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  
+  <a href="https://www.linkedin.com/in/lacerdaisab/" target="_blank"><img align="center" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+  <a href="" target="_blank"><img align="center" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+  <a href="" target="_blank"><img align="center" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+  <a href="" target="_blank"><img align="center" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+  <a href="" target="_blank"><img align="center" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+  <a href="" target="_blank"><img align="center" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+  
+</div>
 
 
 
