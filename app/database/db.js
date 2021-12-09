@@ -8,6 +8,6 @@ db.connection = new Sequelize (
 
     db.Client = require ('../models/Client')(db.connection, DataTypes);
     db.Launch = require ('../models/Launch')(db.connection, DataTypes);
-    
+    //
 
 module.exports = db
