@@ -13,74 +13,77 @@
 </head>
 <body>
     <div class="container-fluid">
-        <img src="./img/Finance app-pana.png" class="background">
-        <header class="menu-main">
-            <nav class="nav_bar">
-                <ul class="list">
-                    <li>
-                        <div class="header-1">
-                            <div class="back">
-                                <button type="submit" class="btn-back"><i class="fas fa-chevron-circle-left"></i>     Voltar</button>
+        <img src="../img/Finance app-pana.png" class="background">
+            <header class="menu-main">
+                <div class="header-up">
+                <nav class="nav_bar">
+                    <ul class="list">
+                        <li>
+                            <div class="header-1">
+                                <div class="back">
+                                    <button type="submit" class="btn-back"><i class="fas fa-chevron-circle-left"></i>     Voltar</button>
+                                </div> 
+                            </div>
+                        </li>
+                        <li>
+                            <div class="launch">
+                                <h2>Novo Lançamento</h2>
                             </div> 
-                        </div>
-                    </li>
-                    <li>
-                        <div class="launch">
-                            <h2>Novo Lançamento</h2>
-                        </div> 
-                    </li>
-                    <li>
-                        <div class="logo">
-                            <img src="./img/logo.png">                  
-                        </div> 
-                    </li>
-                </ul>
-            </nav>
-        </header>
+                        </li>
+                        <li>
+                            <div class="logo">
+                                <img src="../img/logo.svg" class="logo-svg">                  
+                            </div> 
+                        </li>
+                    </ul>
+                </nav>
+                 </div>
+            </header>
 
-        <main>
-            <div class="header2">
-                <div class="balance">
-                    <h4>Saldo disponível <i class="fas fa-eye"></i></h4>
-                    <h2>R$ 1000,00</h2>
+            <main>
+                <div class="header2">
+                    <div class="balance">
+                        <h4>Saldo disponível <i class="fas fa-eye"></i></h4>
+                        <h2>R$ 1000,00</h2>
+                    </div>
                 </div>
-            </div>
-        </main>
-        <main>    
-            <form class="form" action="" method="post">
-            <div class="divValue">
-                <label for="txtValue">Valor</label>
-                <div class="input-control text size4">
-                    <input type="number" id="txtValue" step="0.01" min="0.01" placeholder="R$">
-                </div>
-            </div>
-            <div class="divDate">
-                <label for="txtDate">Data</label>
-                <div class="input-control text size4">
-                <input type="date" id="txtDate">
-                </div>
-            </div>
-            <div class="divDeposit">
-                <label for="txtDeposit">Título do depósito</label>
-                <div class="input-control text size4">
-                <input type="text" id="txtDeposit">
-                </div>
-            </div>
-            <div class="divRadio">
-                <ul class="list">
-                    <li id="li-radio">
-                        <input type="radio" name="submit" id="entry">
-                        <label for="entry">Depositar valor</label>
-                        <input type="radio" name="submit" id="exit">
-                        <label for="exit"> Retirar valor</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="divButton">
-                <button type="submit" class="btn-register">Cadastrar</button>
-            </div>
-            </form>
-        </main>
+            </main>
+            <main>    
+                <form class="form" action="" method="post">
+                    <div class="divValue">
+                        <label for="txtValue">Valor</label>
+                        <div class="input-control text size4">
+                            <input type="number" id="txtValue" step="0.01" min="0.01" placeholder="R$">
+                        </div>
+                    </div>
+                    <div class="divDate">
+                        <label for="txtDate">Data</label>
+                        <div class="input-control text size4">
+                            <input type="date" id="txtDate">
+                        </div>
+                    </div>
+                    <div class="divDeposit">
+                        <label for="txtDeposit">Título do depósito</label>
+                        <div class="input-control text size4">
+                            <input type="text" id="txtDeposit">
+                        </div>
+                    </div>
+                    <div class="divRadio">
+                        <ul class="list">
+                            <li id="li-radio">
+                                <input type="radio" name="submit" id="entry">
+                                <label for="entry">Depositar valor</label>
+                                <input type="radio" name="submit" id="exit">
+                                <label for="exit"> Retirar valor</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="divButton">
+                        <button type="submit" class="btn-register">Cadastrar</button>
+                    </div>
+                </form>
+            </main>
+            
     </div>
 
 </body>

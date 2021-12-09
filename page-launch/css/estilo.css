@@ -22,7 +22,9 @@ body {
 body {
     font-size: 1.6rem;
   }
-
+.header-up {
+    padding: 0 0 0 5.3em;
+}
 /* Configuração da imagem */
 .background {
     height: 35em;
@@ -44,7 +46,7 @@ body {
 .btn-back {
     background: transparent;
     border: none;
-    padding: 5px;
+    padding: 1em;
     color: white;
     float: left;
     width: 10%;
@@ -53,18 +55,29 @@ body {
 
 .launch {
     float: left;  
-    width: 70%;
+    width: 62%;
     text-align: center;
-    color: white;
     font-family: 'Oswald';
     color: #F26E22;
 }
-
+.launch {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
 .logo{
-    margin-top: 0px;
+    margin-top: 1em;
     float: left;
     text-align: right;
-    width: 10%;
+    width: 35%;
+}
+.logo {
+    padding: 0 0 0 0;
+    width: 15em;
+    height: 5em;
+}
+.logo-svg {
+    width: 11em;
+    height: 2em;
 }
 
 /* Configuração dos campos de Saldo e Valor */
@@ -75,17 +88,24 @@ body {
 
 h4 {
     margin-top: 150px;
+    font-size: 1.50em;
 }
 
+.fa-eye {
+    
+}
+h2 {
+    font-size: 1.60em;
+}
 .balance {
-    margin-left: 350px;
+    margin-left: 20em;
     font-family: 'Oswald';
 }
 
 /* Formulário de preenchimento */
 .form {
-    margin-top: 50px;
-    margin-left: 350px;
+    margin-top: 3em;
+    margin-left: 20em;
     width: 30%;
 }
 
@@ -171,11 +191,10 @@ label {
 }
 
 .container-fluid{
-    background-image: url(../img/Design3.png);
+    background-image: url(/img/Design3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 79vh;
 }
-
 
