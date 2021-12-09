@@ -3,9 +3,9 @@
 </div>
 
 
-<p>It is a application with the purpose to keep up with your financial life in a simple way. </p>
-SeControle can gather all the information given by our clients and show the real amount of money them have.
-Our users can see their movement historic, can do payments, transfers, demands, extract, investments and pix.
+
+<p align='center'>It is a application with the purpose to keep up with your financial life in a simple way. </p>
+
 
 
 ###
@@ -15,16 +15,17 @@ Our users can see their movement historic, can do payments, transfers, demands, 
 
 <h4 align='center'> 🚧 In construction phase... 🚧 </h4>
 
-<h2 class='content'>🗂 Table Content</h2>
 
 <p align='center'>
   <a href='#roadMap'>💫 Road Map</a> • 
   <a href='#appDemo'>💻 Aplication Demo</a> • 
   <a href='#req'>🌚 Requirements</a> • 
   <a href='#techStack'>⚡️ Tech Stack</a> • 
-  <a href='#creators'>🛠 Creators</a> • 
-  
+  <a href='#creators'>🛠 Creators</a> 
 </p>
+
+<p align='center'>SeControle can gather all the information given by our clients and show the real amount of money them have.
+Our users can see their movement historic, can do payments, transfers, demands, extract, investments and pix.</p>
 
 <h2 title='#roadMap'>💫 Road Map</h2>
 <p>Check our <a href='https://trello.com/invite/b/wQFMxIHm/9da9a90582b4cbd8fea63bc22165a3fa/kanban-template'>trello</a> 
