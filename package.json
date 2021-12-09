@@ -1,0 +1,28 @@
+{
+  "name": "desafio_neon",
+  "version": "1.0.0",
+  "description": "<div align='center'>\r   <img src='https://raw.githubusercontent.com/bonettdreans/Desafio_Neon/819314c8c52942ab14a8d6ecd388aff80f3faacf/img/logo.svg?token=AV3DJD4SGNZZJ7WH4DWXBGTBWESCO'></img>\r </div>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bonettdreans/Desafio_Neon.git"
+  },
+  "author": "bonett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bonettdreans/Desafio_Neon/issues"
+  },
+  "homepage": "https://github.com/bonettdreans/Desafio_Neon#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.12.0-beta.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
