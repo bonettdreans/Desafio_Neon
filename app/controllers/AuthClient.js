@@ -1,10 +1,11 @@
-const { client } = require ('../database/db');
+const { Client } = require ('../database/db');
 const bcrypt =require ('bcrypt');
 const jwt = require ('jsonwebtoken');
 const authConfig = require ('../../config/authConfig');
 require('dotenv').config()
 
 module.exports = {
+
     //login
     singIn(req, res) {
 
@@ -18,19 +19,19 @@ module.exports = {
         let: password = bcrypt.hashSync(req.body.password, Number.parseInt(authConfig.rounds));
 
         //Created User
-        client.create({
+        Client.create({
             name:req.body.name,
             email: req.body.email,
             password: password
-        }). then(client => {
+        }). then(user => {
 
             //Criamos o Token
-            let: token = jwt.sing({ client : client}, authConfig.secret, {
+            let: token = jwt.sing({ user : user}, authConfig.secret, {
                 expiresIn: authConfig.expires
             });
 
             res.json({
-                client:client,
+                user: user,
                 token : token
             });
 
