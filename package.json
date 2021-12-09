@@ -4,7 +4,7 @@
   "description": "<div align='center'>\r   <img src='https://raw.githubusercontent.com/bonettdreans/Desafio_Neon/819314c8c52942ab14a8d6ecd388aff80f3faacf/img/logo.svg?token=AV3DJD4SGNZZJ7WH4DWXBGTBWESCO'></img>\r </div>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app/server.js"
   },
   "repository": {
     "type": "git",
