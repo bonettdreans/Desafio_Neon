@@ -13,7 +13,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use(require ('../routes/routerAuth'));
-app.use(require ('../routes/routerClient'));
+app.use(require('../routes/routerClient'));
+app.use(require('../routes/routesLaunch'));
 
 
 // Arrancamos el servidor
