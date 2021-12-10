@@ -271,6 +271,9 @@ h3 {
     .divDeposit {
         margin: 7em 0px 0 0;
     }
+}
+
+@media (max-width: 445px) {
     .flex-container-balance {
         font-size: 1em;
     }
@@ -280,9 +283,15 @@ h3 {
     .flex-container-balance {
         font-size: 8px;
     }
+}
+
+@media (max-width: 445px) {
     .flex-container-form {
         margin: 6em 1em 1em 1em;
     }
+}
+
+@media (max-width: 445px) {    
     .balanceValue {
         margin: 4em 0px 5em 5em;
 }
