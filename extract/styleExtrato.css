@@ -2,6 +2,17 @@
 
 *{
     font-family: 'Oswald', sans-serif;
+    margin-bottom: auto;
+}
+
+:root {
+  --color-black: #0D0D0D;
+  --color-blue: #DCEAF2;
+  --color-white: #F2F2F2;
+  --color-blue-dark: #1D2F40;
+  --color-grey: #C4C4C4;
+  --color-orange-dark: #D9A679;
+  --color-orange: #F2CDAC;
 }
 
 body{
@@ -12,7 +23,16 @@ body{
     padding-bottom: 0%;
 }
 
-.navi__bar{
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+/* .navi__bar{
     height: 15vh;
     background-color: #1D2F40;
     display: flex;
@@ -65,20 +85,32 @@ padding-bottom: 5px;
 .btn__terminarSessao:focus {
 	outline: none;
 }
+ */
 
+/************balance************/
 .container__balance{
-    height: 35vh;
-    background-color: #EFEFEF;
+    height: 30vh;
+    background-color: var(--color-white);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border: 1px solid black;
 }
 
-.container__titleBalance{
+.container__titleBalance {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: auto;
 }
+
+.containerbalance {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: auto;
+}
+
 .container-fluid{
     background-image: url(../img/Design3.png);
     background-position: center;
@@ -90,18 +122,18 @@ padding-bottom: 5px;
 
 .img__balance{
     margin: 20px;
-    width: 40px;
+    width: 25px;
     cursor: pointer;
 }
 .balance{
-    color: #0A1931;
-    font-size: 60px;
+    color: var(--color-blue-dark);
+    font-size: 40px;
     font-weight: 400;
 }
 
 .title-amount{
-    color: #0A1931;
-    font-size: 28px;
+    color: var(--color-blue-dark);
+    font-size: 20px;
 }
 /* .container__tableExtract{
     height: 140vh;
@@ -109,7 +141,7 @@ padding-bottom: 5px;
 } */
 
 .table-title h3 {
-   color: #fafafa;
+   color: var(--color-white);
    font-size: 30px;
    font-weight: 400;
    font-style:normal;
@@ -120,16 +152,17 @@ padding-bottom: 5px;
 
 .contairner__SearchDate{
   height: 15ch;
-  background-color:#FFFFFF;
-  color: #666B85;
+  background-color: var(--color-white);
+  color: var(--color-blue-dark);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
 }
 
 .label__text{
-  font-size: 30px;
+  font-size: 18px;
+  margin: auto;
 }
 
 .input__date{
@@ -138,7 +171,7 @@ padding-bottom: 5px;
 }
 
 .btn__busca{
-  background-color: #F26E22;
+  background-color: var(--color-orange);
 	border-radius: 20px;
 	border:none;
   align-content: center;
@@ -148,19 +181,19 @@ padding-bottom: 5px;
 	font-size: 0.9rem;
 	font-weight: bold;
 	letter-spacing: 0.1rem;
-	padding: 0.9rem 2rem;
+	padding: 0.5rem 2rem;
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
 }
-/*** Table Styles **/
 
+/************table styles************/
 .table__fill {
-  background: white;
+  background: var(--color-white);
   border-radius:3px;
   border-collapse: collapse;
   height: 320px;
   margin: auto;
-  max-width: 60%;
+  max-width: 100%;
   padding:5px;
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -169,7 +202,7 @@ padding-bottom: 5px;
  
 th {
   color:#0A1931;
-  background:#F26E22;
+  background:var(--color-orange);
   border-bottom:4px solid #9ea7af;
   border-right: 1px solid #343a45;
   font-size:23px;
@@ -198,9 +231,9 @@ tr {
 }
  
 tr:hover td {
-  background:#4E5066;
-  color:#FFFFFF;
-  border-top: 1px solid #22262e;
+  background: var(--color-blue);
+  color: var(--color-black);
+  /* border-top: 1px solid #22262e; */
 }
  
 tr:first-child {
@@ -216,7 +249,7 @@ tr:nth-child(odd) td {
 }
  
 tr:nth-child(odd):hover td {
-  background:#4E5066;
+  background: var(--color-blue);
 }
 
 tr:last-child td:first-child {
@@ -286,6 +319,7 @@ td.text-right {
   justify-content: center;
 }
 
+/************new launch button************/
 .container__btn{
   display: flex;
   align-items: center;
@@ -319,14 +353,15 @@ td.text-right {
 	outline: none;
 }
 
+/************footer************/
 .container__footer{
-    height: 18vh;
+    height: 12vh;
     background-color: #1D2F40;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
-    margin: 0;
+
     font-size: 14px;
 }
 

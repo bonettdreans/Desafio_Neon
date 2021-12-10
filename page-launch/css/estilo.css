@@ -16,9 +16,6 @@ body {
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
-  /* background-image: url(../img/Design3.png); */
-}
-body {
     background-image: url(../img/Design3.png);
 }
 
@@ -48,7 +45,6 @@ header .flex-container > div {
 }
 
 .header2 {
-    margin-left: 24em;
     margin-top: auto;
     width: 70%;
 }
@@ -202,7 +198,6 @@ h3 {
         margin-top: auto;
         font-size: 0.9em;
     }
-}
 @media (max-width: 1024px) {
     .div-form {
         margin-left: auto;
