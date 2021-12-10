@@ -16,8 +16,10 @@ body {
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
-    background-image: url(../img/Design3.png);
+  background-image: url(../img/Design3.png);
 }
+
+
 
 /* Otimização do header */
 header .flex-container {
@@ -48,18 +50,24 @@ header .flex-container > div {
     margin-top: auto;
     width: 70%;
 }
+.flex-container-balance {
+    display: inline-flex;
+    justify-content: space-around;
+}
 
 h2 {
     font-size: 3em;
 }
 
 .balance {
-    margin: 4em 0 5em 0;
+    margin: 4em 0 5em 20em;
     
 }
-
+.balanceValue {
+    margin: 4em 0px 5em 50em;
+}
 main {
-    width: 50%;
+    width: 90%;
     margin: auto;
 }
 
@@ -120,11 +128,12 @@ h3 {
 }
 
 .navbar {
-    padding: 10px 20px 10px 28px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+
 }
 
 .navbar-nav {
-    font-size: 1.30em;
+    font-size: 1em;
 }
 
 .nav-item {
@@ -133,7 +142,7 @@ h3 {
 
 .navbar-dark .navbar-brand {
     color: #fff;
-    margin-right: 5em;
+    margin-right: 1em;
 }
 .avatar {
     background: none;
@@ -204,6 +213,16 @@ h3 {
         font-size: 0.8em;
     }
 }
+@media (max-width: 1024px) {
+    .balance {
+        margin: 4em 0 5em 4em;
+    }
+}
+@media (max-width: 1024px) {
+    .balanceValue {
+        margin: 4em 0px 5em 30em;
+    }
+}
 
 @media (max-width: 1024px) {
     .div-img-finance {
@@ -252,6 +271,20 @@ h3 {
     .divDeposit {
         margin: 7em 0px 0 0;
     }
+    .flex-container-balance {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 445px) {
+    .flex-container-balance {
+        font-size: 8px;
+    }
+    .flex-container-form {
+        margin: 6em 1em 1em 1em;
+    }
+    .balanceValue {
+        margin: 4em 0px 5em 5em;
 }
 
 @media (max-width: 425px) {
@@ -270,9 +303,14 @@ h3 {
     }
 }
 
+@media (max-width: 388px) {
+    .flex-container-balance {
+        font-size: 6px;
+    }
+}
 
-
-
-
-
-
+@media (max-width: 376px) {
+    .flex-container-form {
+        margin: 1em 1em 1em 1em;
+    }
+}
