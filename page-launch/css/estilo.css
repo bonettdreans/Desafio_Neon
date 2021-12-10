@@ -243,13 +243,19 @@ h3 {
         margin: auto;
     }
     .divDate {
-        margin-top: auto;
+        margin-top: 0 0;
     }
 }
 
 @media (max-width: 555px) {
     main {
         width: 90%;
+    }
+}
+
+@media (max-width: 445px) {
+    .divDeposit {
+        margin: 7em 0px 0 0;
     }
 }
 
@@ -268,6 +274,7 @@ h3 {
         margin: 10px 0px 0px 0px;
     }
 }
+
 
 
 
