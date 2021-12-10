@@ -16,6 +16,10 @@ body {
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
+  /* background-image: url(../img/Design3.png); */
+}
+body {
+    background-image: url(/img/Design3.png);
 }
 
 /* Otimização do header */
@@ -54,12 +58,13 @@ h2 {
 }
 
 .balance {
-    margin-top: 4em;
+    margin: 4em 0 5em 0;
     
 }
 
 main {
     width: 50%;
+    margin: auto;
 }
 
 .value {
@@ -75,7 +80,7 @@ h3 {
     font-size: 2em;
 }
 
-.txtValue {
+#txtValue {
     margin-right: 1em;
     border-top: none;
     border-left: none;
@@ -83,7 +88,7 @@ h3 {
     margin-left: 0.3em;
 }
 
-.txtDate {
+#txtDate {
     border-top: none;
     border-left: none;
     border-right: none;
@@ -91,7 +96,7 @@ h3 {
     margin-left: 0.3em;
 }
 
-.txtDeposit {
+#txtDeposit {
     border-top: none;
     border-left: none;
     border-right: none;
@@ -134,12 +139,10 @@ h3 {
     color: #fff;
     margin-right: 5em;
 }
-
 .avatar {
     background: none;
     border: none;
 }
-
 .flex-container-form {
     display: flex;
     padding: 7px 20px 0px 20px;
