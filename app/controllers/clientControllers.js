@@ -45,7 +45,6 @@ module.exports = {
               include: {
                 association: "valor",
                 attributes: ['amount']
-              
               }
             });
             if (client) {

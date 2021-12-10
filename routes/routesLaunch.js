@@ -1,21 +1,21 @@
 const express = require("express");
 
-const routesLaunch = express.Router();
-
 const launchControllers = require("../app/controllers/launchControllers")
 
-const app = express();
+const routesLaunch = express.Router();
 
-routesLaunch.get("/launch", launchControllers.findAll);
 
-//routesLaunch.get("/operacao", launchControllers.findOne);
+routesLaunch.get("/launchs", launchControllers.findAll);
 
-routesLaunch.get("/:id", launchControllers.findOne);
+routesLaunch.get("/launch/:id", launchControllers.findOne);
 
-routesLaunch.post("/launch", launchControllers.createLaunch);
+routesLaunch.post("/launch/create", launchControllers.createLaunch);
 
-routesLaunch.put("/:id", launchControllers.updateLaunch);
+routesLaunch.put("/launch/:id", launchControllers.updateLaunch);
 
-routesLaunch.delete("/:id", launchControllers.deletLaunch);
+routesLaunch.delete("/launch/:id", launchControllers.deletLaunch);
+
+routesLaunch.get("/launch/operacao", launchControllers.operacaoComSQL);
+
 
 module.exports = routesLaunch

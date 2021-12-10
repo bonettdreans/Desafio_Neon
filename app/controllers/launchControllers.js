@@ -1,10 +1,10 @@
-const { Launch } = require ('../database/db')
+const { Launch } = require('../database/db')
 
 module.exports = {
   async findAll(req, res) {
     try {
       const launch = await Launch.findAll();
-      //console.log(lancamento);
+      console.log(launch);
       if (launch) {
         res.json({
           status: 200,
@@ -149,7 +149,11 @@ module.exports = {
     }
   },
   async operacaoComSQL(req, res) {
-    /*  sequelize.query("SELECT * FROM lancamento;"); */
-    console.log("estoy aqui");
+    
+    //sequelize.query("SELECT client_id, SUM(amount) as 'balance' FROM dbNeon3.launches GROUP BY client_id;")
+    //await db.query("SELECT SUM(amount) FROM dbNeon3.launches;");
+    //console.log("estoy aqui");
+
+    
   },
 };
