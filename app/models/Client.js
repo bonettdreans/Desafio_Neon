@@ -5,12 +5,12 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class client extends Model {
     
-    static associate(models) {
+  static associate(models) {
       client.hasMany(models.Launch, {as:"valor", foreignKey:"client_id"});
     }
   };
   client.init({
-    Client_id: {
+    client_id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true 
