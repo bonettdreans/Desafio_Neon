@@ -94,7 +94,6 @@ padding-bottom: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
 }
 
 .container__titleBalance {
