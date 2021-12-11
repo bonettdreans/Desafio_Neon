@@ -56,29 +56,21 @@ and <a href='https://www.figma.com/file/3wh0x05etlZMCUfcJMRjwR/Desafio---TT-team
 
 <h2 title='creators'>🛠 Creators</h2>
 
-<div style="display: inline_block" align="center"><br>
-  <img align="center" width="100px;" src='https://github.com/bonettdreans/Desafio_Neon/blob/main/img/isabel.png' alt='isaPic'> <img align="center" width="100px;" src='https://github.com/bonettdreans/Desafio_Neon/blob/main/img/darwin.png'> <img align="center" width="100px;" src='https://github.com/bonettdreans/Desafio_Neon/blob/main/img/hector.png'> <img align="center" width="100px;" src='https://github.com/bonettdreans/Desafio_Neon/blob/main/img/marcos.png'>
-  
-  <h5>Isabel | Darwin | Hector | Marcos | Juel | Fabiana</h5>
-  
-  ###
-  <a href = "mailto:isabellacerdacontact@gmail.com"><img align="center" src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href = "mailto:hgilbonett19@gmail.com"><img align="center" src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a> 
-  <a href = "mailto:guzmandp@gmail.com"><img align="center" src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href = "mailto:marcos.cucoro@hotmail.coom"><img align="center" src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href = "mailto:"><img align="center" src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href = "mailto:"><img align="center" src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  
-  <a href="https://www.linkedin.com/in/lacerdaisab/" target="_blank"><img align="center" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/mwlite/in/h%C3%A9ctor-bonett-b61459223" target="_blank"><img align="center" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/darwin-guzm%C3%A1n-betancourt-985b4496/" target="_blank"><img align="center" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/marcos-cucoro-15b23a95/" target="_blank"><img align="center" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-  <a href="" target="_blank"><img align="center" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-  <a href="" target="_blank"><img align="center" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-  
+
+<div style="display: inline_block" align="center">
+  <table>
+    <tr>
+      <td align="center"><a href="https://github.com/lacerdaisab"><img style="border-radius: 50%;" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/img/isabel.png" width="100px;" alt="Isa"/><br /><sub><b>Isabel Lacerda</b></sub></a><br /><a href="https://www.linkedin.com/in/lacerdaisab/" title="Linkedin">🚀</a>
+      <td align="center"><a href="https://github.com/guzmandp"><img style="border-radius: 50%;" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/img/darwin.png" width="100px;" alt="Darwin"/><br /><sub><b>Darwin Guzman</b></sub></a><br /><a href="https://www.linkedin.com/in/darwin-guzm%C3%A1n-betancourt-985b4496/" title="Linkedin">🚀</a>
+      <td align="center"><a href="https://github.com/MarcosCucoro"><img style="border-radius: 50%;" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/img/marcos.png" width="100px;" alt="Marcos"/><br /><sub><b>Marcos Cucoro</b></sub></a><br /><a href="https://www.linkedin.com/in/marcos-cucoro-15b23a95/" title="Linkedin">🚀</a>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/bonettdreans"><img style="border-radius: 50%;" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/assets/img/hector.png" width="100px;" alt="Hector"/><br /><sub><b>Hector Bonett</b></sub></a><br /><a href="https://www.linkedin.com/in/h%C3%A9ctor-bonett-b61459223/" title="Linkedin">🚀</a>
+      <td align="center"><a href="https://github.com/juel1986"><img style="border-radius: 50%;" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/assets/img/juel.png" width="100px;" alt="Juel"/><br /><sub><b>Juel da Silva</b></sub></a><br /><a href="https://www.linkedin.com/in/juel-da-silva-60b7b1117/" title="Linkedin">🚀</a>
+      <td align="center"><a href="https://github.com/Tavarina"><img style="border-radius: 50%;" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/assets/img/fabiana.png" width="100px;" alt="Fabiana"/><br /><sub><b>Fabiana Oliveira</b></sub></a><br /><a href="https://www.linkedin.com/in/fabianaoli/" title="Linkedin">🚀</a>
+    </tr>
+  </table>
 </div>
-
-
 
 ###
 <p align='center'>💻 A finance control app by Asuma Corp</p>
