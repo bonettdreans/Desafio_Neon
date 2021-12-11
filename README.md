@@ -1,8 +1,7 @@
-[Read this page in English](http....README.md)<br>
-[Leia esta página em português](http....README-pt.md)
+[Leia esta página em português](http....README-pt.md)<br>
 
 <div align='center'>
-  <img src='https://github.com/bonettdreans/Desafio_Neon/blob/main/img/logo.svg'/>
+  <img src="https://github.com/bonettdreans/Desafio_Neon/blob/main/assets/img/logo.svg"/>
 </div>
 
 
