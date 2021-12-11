@@ -2,8 +2,7 @@ const express = require('express');
 const app = express();
 require('dotenv').config();
 const { connection } = require ('./database/db');
-const { client } = require('./database/db');
-const { launch } = require('./database/db');
+
 // Setting
 const PORT = process.env.PORT || 9000;
 
@@ -11,12 +10,6 @@ const PORT = process.env.PORT || 9000;
 // Para poder rellenar el req.body
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-
-// const launchRota = require("../routes/routesLaunch");
-// const clientRota = require("../routes/routerClient");
-
-// app.use("/launch", launchRota);
-// app.use("/client", clientRota);
 
 app.use(require ('../routes/routerAuth'));
 app.use(require('../routes/routerClient'));

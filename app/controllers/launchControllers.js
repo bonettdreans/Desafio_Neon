@@ -59,9 +59,13 @@ module.exports = {
   },
   async createLaunch(req, res) {
     try {
-      if (req.body.amount && req.body.description) {
+      if (req.body.amount && req.body.date && req.body.title_launch && req.body.type_launch && req.body.client_id) {
         const launch = await Launch.create({
-          amount: req.body.amount
+          amount: req.body.amount,
+          date:req.body.date,
+          title_launch: req.body.title_launch,
+          type_launch: req.body.type_launch,
+          client_id: req.body.client_id
         });
         res.status(201).json({
           message: "Lançamento feito Com Sucesso!",
@@ -93,7 +97,10 @@ module.exports = {
       const launch = await Launch.findByPk(req.params.id);
       if (
         launch &&
-        req.body.amount
+        req.body.amount,
+        req.body.date,
+        req.body.title_launch,
+        req.body.type_launch
       ) {
         await launch.update(req.body);
         return (
@@ -148,12 +155,20 @@ module.exports = {
         console.log("Erro de Deletado. Verifique os Dados!");
     }
   },
-  async operacaoComSQL(req, res) {
-    
-    //sequelize.query("SELECT client_id, SUM(amount) as 'balance' FROM dbNeon3.launches GROUP BY client_id;")
-    //await db.query("SELECT SUM(amount) FROM dbNeon3.launches;");
-    //console.log("estoy aqui");
-
-    
-  },
+  async saldo(req, res) {
+    console.log('estoy aqui')
+    const launch = await db.connection("SELECT SUM(amount) FROM dbNeon3.launches;"
+    //const launch = await db.Launch.query("SELECT SUM(amount) FROM dbNeon3.launches;"
+        [req.body],
+        function (err, res) {
+          if (err) {
+            console.error(err);
+            response.sendStatus(900);
+          } else {
+            res.json("funcioando!!!!");
+          }
+        }
+      );
+      return res.json(launch);
+    },
 };
