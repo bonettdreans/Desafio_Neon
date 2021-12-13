@@ -147,3 +147,6 @@ const expresion = /\w+@\w+\.+[a-z]/;
   //document.getElementById('formCadastro').addEventListener('submit',formCadastro)
   return false;
 })
+
+    
+

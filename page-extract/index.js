@@ -14,10 +14,15 @@ const mostrarData = (data) => {
   let body = ''
         for (let i = 0; i < dataComplete.length; i++){
       body += `<tr><td/>${dataComplete[i].title_launch}<td/>${dataComplete[i].amount}<td/>${dataComplete[i].date}<td/>Edit    Delete <tr>`;     
-         
         }
+  
   document.getElementById("data").innerHTML = body;
-let nomeUsuario = ''
+  let nomeUsuario = ''
   nomeUsuario += `${data.data.name}`
   document.getElementById("nomePerfil").innerHTML = nomeUsuario;
+
+  var balance = data.data.valor;
+  var totalamount = balance.reduce((sum, value) => (typeof value.amount == "number" ? sum + value.amount : sum), 0);
+  console.log(totalamount);
+  document.getElementById("saldo").innerHTML = "R$ " + totalamount ;
 };
