@@ -19,8 +19,6 @@ body {
   background-image: url(../img/Design3.png);
 }
 
-
-
 /* Otimização do header */
 header .flex-container {
     display: flex;
