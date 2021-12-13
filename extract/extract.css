@@ -244,10 +244,6 @@ td.text-right {
   align-items: center;
 }
 
-.delete {
-  /* padding-right: 10rem; */
-}
-
 /************new launch button************/
 .container__btn{
   display: flex;
