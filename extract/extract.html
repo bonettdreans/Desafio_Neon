@@ -1,338 +1,248 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleExtrato.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Minhas Atividades</title>    
-</head>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1D2F40">
-        <div>
-            <a class="navbar-brand" href="#">
-                <img src="../assets/img/logo.svg" alt="" width="150px" height="auto"> 
-            </a>
+    <link 
+        rel="stylesheet" 
+        href="extract.css">
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Extrato</title>    
+  </head>
+  <header>
+    <div class="container">
+      <img
+        src="../assets/img/logo.svg"
+        alt="SeControle"
+      />
+      <div class="menu-section">
+        <div class="menu-toggle">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar" aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="textoNavbar">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Novo Lançamento</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Histórico</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
-                </li>
-            </ul>
-            <span class="navbar-text">
-        </div>
-    </nav>
-</header>
-<body>
-        <!-- balance -->
-        <div class="containerBalance">
-            <div class="container__titleBalance">
-                <h3 id="balance" class="title-amount">Saldo disponível</h3>
-                <img 
-                    src="../assets/icons/eye.svg" 
-                    class="img__balance"
-                    alt="">
-            </div>
-            <div class="containerbalance">
-                <h3 id ="historia" class="balance">R$ 1000,00</h3>
-            </div>        
-        </div>
-    <!-- search date -->
-    <!-- <div class="contairner__SearchDate">
-        <div>
-            <label class="label__text" for=""> Busca pela data: 
-            </label>
-        </div>
-        <div>
-            <input type="date" class="input__date">
-        </div>
-        <div>
-        <button class="btn__busca">Aceitar</button>
-        </div>          
-    </div> -->
-    <div class="container__tableExtract">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Novo Lançamento</a>
+            </li>
+            <li>
+              <a href="#">Histórico</a>
+            </li>
+            <li>
+              <a href="#">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <body>
+    <!-- balance -->
+    <div class="containerBalance">
+      <div class="titleSaldo">
+        <h3>Saldo disponível</h3>
+        <img src="../assets/icons/eye.svg" alt="">
+      </div>
+      <div>
+        <h2>R$ 1000,00</h3>
+      </div>        
+    </div>
+    <!-- table -->
+    <div class="containerTable">
         <!-- balance table -->
-        <table class="table__fill">
-                <thead>
-                    <tr>
-                        <th class="text__Description">
-                            <img src="../assets/icons/calendar.svg"> domingo, 12 de dezembro
-                        </th>
-                        <th class="text__acoes"></th>
-                        <th class="arrow">
-                            <img src="../assets/icons/down-arrow.svg">
-                        </th>
-                    </tr>
-                </thead>
-                <tbody class="table-hover">
-                    <tr>
-                        <td class="text-left">Salario</td>
-                        <td class="text-left">R$ 5,000.00</td>
-                        <td class="acoes__left">
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/pencil.svg" 
-                                        class="imgEdit"
-                                        alt=""></a><a href="">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/trash.svg" 
-                                        class="imgDelete"
-                                        alt="">
-                                </a> 
-                            </div>
-                        </td>
-                    </tr>
-                     <tr>
-                        <td class="text-left">Salario</td>
-                        <td class="text-left">R$ 5,000.00</td>
-                        <td class="acoes__left">
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/pencil.svg" 
-                                        class="imgEdit"
-                                        alt=""></a><a href="">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/trash.svg" 
-                                        class="imgDelete"
-                                        alt="">
-                                </a> 
-                            </div> 
-                        </td>
-                    </tr>
-                     <tr>
-                        <td class="text-left">Salario</td>
-                        <td class="text-left">R$ 5,000.00</td>
-                        <td class="acoes__left">
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/pencil.svg" 
-                                        class="imgEdit"
-                                        alt=""></a><a href="">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/trash.svg" 
-                                        class="imgDelete"
-                                        alt="">
-                                </a> 
-                            </div>
-                        </td>
-                    </tr>
-                     <tr>
-                        <td class="text-left">Salario</td>
-                        <td class="text-left">R$ 5,000.00</td>
-                        <td class="acoes__left">
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/pencil.svg" 
-                                        class="imgEdit"
-                                        alt=""></a><a href="">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/trash.svg" 
-                                        class="imgDelete"
-                                        alt="">
-                                </a> 
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">Salario</td>
-                        <td class="text-left">R$ 5,000.00</td>
-                        <td class="acoes__left">
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/pencil.svg" 
-                                        class="imgEdit"
-                                        alt=""></a><a href="">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/trash.svg" 
-                                        class="imgDelete"
-                                        alt="">
-                                </a> 
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">Salario</td>
-                        <td class="text-left">R$ 5,000.00</td>
-                        <td class="acoes__left">
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/pencil.svg" 
-                                        class="imgEdit"
-                                        alt=""></a><a href="">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/trash.svg" 
-                                        class="imgDelete"
-                                        alt="">
-                                </a> 
-                            </div>
-                        </td>
-                    </tr>
-                    <thead>
-                        <tr>
-                            <th class="text__Description">
-                                <img src="../assets/icons/calendar.svg"> domingo, 12 de dezembro
-                            </th>
-                            <th></th>
-                            <th class="arrow">
-                                <img src="../assets/icons/down-arrow.svg">
-                            </th>
-                        </tr>
-                    </thead>
-                    <tr>
-                        <td class="text-left">Aluguel</td>
-                        <td class="text-left">R$ 2,000.00</td>
-                        <td class="acoes__left">
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/pencil.svg" 
-                                        class="imgEdit"
-                                        alt=""></a><a href="">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/trash.svg" 
-                                        class="imgDelete"
-                                        alt="">
-                                </a> 
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">Agua</td>
-                        <td class="text-left">R$ 85.00</td>
-                        <td class="acoes__left">
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/pencil.svg" 
-                                        class="imgEdit"
-                                        alt=""></a><a href="">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/trash.svg" 
-                                        class="imgDelete"
-                                        alt="">
-                                </a> 
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">Gas</td>
-                        <td class="text-left">R$ 56.00</td>
-                        <td class="acoes__left">
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/pencil.svg" 
-                                        class="imgEdit"
-                                        alt=""></a><a href="">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/trash.svg" 
-                                        class="imgDelete"
-                                        alt="">
-                                </a> 
-                            </div>
-                        </td>
-                    </tr>
-                    <thead>
-                        <tr>
-                            <th class="text__Description">
-                                <img src="../assets/icons/calendar.svg"> domingo, 12 de dezembro
-                            </th>
-                            <th></th>
-                            <th class="arrow">
-                                <img src="../assets/icons/down-arrow.svg">
-                            </th>
-                        </tr>
-                    </thead>
-                    <tr>
-                        <td class="text-left">Gasolina</td>
-                        <td class="text-left">R$ 800.00</td>
-                        <td class="acoes__left">
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/pencil.svg" 
-                                        class="imgEdit"
-                                        alt=""></a><a href="">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    <img 
-                                        src="../assets/icons/trash.svg" 
-                                        class="imgDelete"
-                                        alt="">
-                                </a> 
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
+        <table class="sections">
+          <!-- first section -->
+          <thead>
+            <tr>
+                <th class="dates">
+                    <img src="../assets/icons/calendar.svg"> 
+                    domingo, 12 de dezembro
+                </th>
+                <th class="description"></th>
+                <th class="value"></th>
+                <th></th>
+                <th class="arrow">
+                    <img src="../assets/icons/down-arrow.svg">
+                </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="datesColumn">Salário</td>
+              <td class="descriptionColumn">Tranferência</td>
+              <td class="valueColumn">R$ 5,000.00</td>
+              <td class="edit">
+                <a href="">
+                    <img 
+                        src="../assets/icons/pencil.svg" 
+                        class="imgEdit"
+                        alt=""></a><a href="">
+                </a>
+              </td>
+              <td class="delete">
+                <a href="">
+                    <img 
+                        src="../assets/icons/trash.svg" 
+                        class="imgDelete"
+                        alt="">
+                </a> 
+              </td>
+            </tr>
+            <tr>
+                <td class="datesColumn">Salário</td>
+                <td class="descriptionColumn">Tranferência</td>
+                <td class="valueColumn">R$ 5,000.00</td>
+                <td class="edit">
+                  <a href="">
+                      <img 
+                          src="../assets/icons/pencil.svg" 
+                          class="imgEdit"
+                          alt=""></a><a href="">
+                  </a>
+                </td>
+                <td class="delete">
+                  <a href="">
+                      <img 
+                          src="../assets/icons/trash.svg" 
+                          class="imgDelete"
+                          alt="">
+                  </a> 
+                </td>
+            </tr>
+          </tbody>
+          <!-- second section -->
+          <thead>
+            <tr>
+                <th class="dates">
+                    <img src="../assets/icons/calendar.svg"> 
+                    segunda-feira, 13 de dezembro
+                </th>
+                <th class="description"></th>
+                <th class="value"></th>
+                <th></th>
+                <th class="arrow">
+                    <img src="../assets/icons/down-arrow.svg">
+                </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="datesColumn">Aluguel</td>
+              <td class="descriptionColumn">Boleto</td>
+              <td class="valueColumn">R$ 2,000.00</td>
+              <td class="edit">
+                <a href="">
+                    <img 
+                        src="../assets/icons/pencil.svg" 
+                        class="imgEdit"
+                        alt=""></a><a href="">
+                </a>
+              </td>
+              <td class="delete">
+                <a href="">
+                    <img 
+                        src="../assets/icons/trash.svg" 
+                        class="imgDelete"
+                        alt="">
+                </a> 
+              </td>
+            </tr>
+            <tr>
+                <td class="datesColumn">Gás</td>
+                <td class="descriptionColumn">Pix</td>
+                <td class="valueColumn">R$ 100.00</td>
+                <td class="edit">
+                  <a href="">
+                      <img 
+                          src="../assets/icons/pencil.svg" 
+                          class="imgEdit"
+                          alt=""></a><a href="">
+                  </a>
+                </td>
+                <td class="delete">
+                  <a href="">
+                      <img 
+                          src="../assets/icons/trash.svg" 
+                          class="imgDelete"
+                          alt="">
+                  </a> 
+                </td>
+            </tr>
+            <tr>
+                <td class="datesColumn">Isabel Lacerda</td>
+                <td class="descriptionColumn">Pix</td>
+                <td class="valueColumn">R$ 300.00</td>
+                <td class="edit">
+                  <a href="">
+                      <img 
+                          src="../assets/icons/pencil.svg" 
+                          class="imgEdit"
+                          alt=""></a><a href="">
+                  </a>
+                </td>
+                <td class="delete">
+                  <a href="">
+                      <img 
+                          src="../assets/icons/trash.svg" 
+                          class="imgDelete"
+                          alt="">
+                  </a> 
+                </td>
+            </tr>
+          </tbody>
+          
+          <!-- third section -->
+          <thead>
+            <tr>
+                <th class="dates">
+                    <img src="../assets/icons/calendar.svg"> 
+                    segunda-feira, 13 de dezembro
+                </th>
+                <th class="description"></th>
+                <th class="value"></th>
+                <th></th>
+                <th class="arrow">
+                    <img src="../assets/icons/down-arrow.svg">
+                </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="datesColumn">Cinema</td>
+              <td class="descriptionColumn">Débito</td>
+              <td class="valueColumn">R$ 48.00</td>
+              <td class="edit">
+                <a href="">
+                    <img 
+                        src="../assets/icons/pencil.svg" 
+                        class="imgEdit"
+                        alt=""></a><a href="">
+                </a>
+              </td>
+              <td class="delete">
+                <a href="">
+                    <img 
+                        src="../assets/icons/trash.svg" 
+                        class="imgDelete"
+                        alt="">
+                </a> 
+              </td>
+            </tr>
+          </tbody>
         </table>       
     </div>
     <!-- new launch button -->
-     <div class="container__btn">
-            <button class="btn__novoLancamento">
-                Novo Lançamento
-            </button>
-        </div>
-<!-- footer -->
-<footer class="container__footer">
-    <p>A finance control app by Asuma Corp <br>
-        © 2021. Todos os direiros reservados.</p>
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-</footer>
-</body>
+    <div class="container__btn">
+      <button class="btn__novoLancamento">
+        Novo Lançamento
+      </button>
+    </div>
+    <!-- footer -->
+    <footer class="container__footer">
+        <p>A finance control app by Asuma Corp <br>
+            © 2021. Todos os direiros reservados.</p>
+    </footer>
+  </body>
 </html>
