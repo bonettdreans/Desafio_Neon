@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models)  {
-      launch.belongsTo(models.Client, {as:"Type", foreignKey:"client_id"})
+      launch.belongsTo(models.Client, {as:"balance", foreignKey:"client_id"})
   }
 };
   launch.init({

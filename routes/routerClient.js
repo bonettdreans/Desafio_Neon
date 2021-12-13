@@ -14,6 +14,4 @@ routerClient.put("/client/:id", clientControllers.updateUser);
 
 routerClient.delete("/client/:id", clientControllers.deletUser);
 
-routerClient.get("/client/:id", clientControllers.operation);
-
 module.exports = routerClient

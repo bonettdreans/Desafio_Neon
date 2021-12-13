@@ -30,6 +30,7 @@ module.exports = {
     }
   },
   async findOne(req, res) {
+    
     try {
       const launch = await Launch.findByPk(req.params.id);
       console.log(launch);
@@ -58,6 +59,7 @@ module.exports = {
     }
   },
   async createLaunch(req, res) {
+
     try {
       if (req.body.amount && req.body.date && req.body.title_launch && req.body.type_launch && req.body.client_id) {
         const launch = await Launch.create({
@@ -154,21 +156,5 @@ module.exports = {
       }),
         console.log("Erro de Deletado. Verifique os Dados!");
     }
-  },
-  async saldo(req, res) {
-    console.log('estoy aqui')
-    const launch = await db.connection("SELECT SUM(amount) FROM dbNeon3.launches;"
-    //const launch = await db.Launch.query("SELECT SUM(amount) FROM dbNeon3.launches;"
-        [req.body],
-        function (err, res) {
-          if (err) {
-            console.error(err);
-            response.sendStatus(900);
-          } else {
-            res.json("funcioando!!!!");
-          }
-        }
-      );
-      return res.json(launch);
-    },
+  }
 };

@@ -169,17 +169,8 @@ module.exports = {
             }),
               console.log("Erro de Deletado. Verifique os Dados!");
           }
-        },
-
-async operation(req, res) {
-  
-try {
-  
-} catch (error) {
-  
-}
-
-}
+  },
+       
 
       };
 
