@@ -44,8 +44,7 @@ module.exports = {
             const client = await Client.findByPk(req.params.id, {
               include: {
                 association: "valor",
-                attributes: ['amount']
-              
+                attributes: ['amount', 'date', 'title_launch']
               }
             });
             if (client) {
@@ -170,17 +169,8 @@ module.exports = {
             }),
               console.log("Erro de Deletado. Verifique os Dados!");
           }
-        },
-
-async operation(req, res) {
-  
-try {
-  
-} catch (error) {
-  
-}
-
-}
+  },
+       
 
       };
 
