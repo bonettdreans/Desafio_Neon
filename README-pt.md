@@ -1,4 +1,4 @@
-[Read this page in English](http....README.md)<br>
+[Read this page in English](https://github.com/bonettdreans/Desafio_Neon/blob/README.md)<br>
 
 <div align='center'>
   <img src="https://github.com/bonettdreans/Desafio_Neon/blob/main/assets/img/logo.svg"/>
