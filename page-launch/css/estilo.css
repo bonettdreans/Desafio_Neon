@@ -1,11 +1,11 @@
-/* Zerando as configurações do navegador */
+/* Resetting browser settings */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     outline: 0;
 }
-/* a cada 1rem será considera 10px */
+/* Every 1rem will be considered 10px */
 html {    
     font-size: 62.5%;
 }
@@ -16,10 +16,11 @@ body {
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
-  background-image: url(../img/Design3.png);
+  background-image: url(../img/design-10.png);
+  background-size: cover;
 }
 
-/* Otimização do header */
+/* Optimization of the header */
 header .flex-container {
     display: flex;
     background-color: #1D2F40;
@@ -28,13 +29,13 @@ header .flex-container {
 }
 
 header .flex-container > div {
-    color: white;
+    color: #1D2F40;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
 }
 
-/* Otimização da Seção */
+/* Section Optimization */
 .flex-container-form {
     display: flex;
     justify-content: center;
@@ -88,6 +89,7 @@ h3 {
     border-left: none;
     border-right: none;
     margin-left: 0.3em;
+    background: none;
 }
 
 #txtDate {
@@ -96,6 +98,7 @@ h3 {
     border-right: none;
     padding: 0px 10px 0px 5px;
     margin-left: 0.3em;
+    background: none;
 }
 
 #txtDeposit {
@@ -103,6 +106,7 @@ h3 {
     border-left: none;
     border-right: none;
     margin-left: 0.3em;
+    background: none;
 }
 
 .list {
@@ -178,13 +182,13 @@ h3 {
 }
 
 .btn-register {
-    padding: 10px 50px 10px 50px;
+    padding: 0.5em 5em 0.5em 5em;
     border-radius: 1em;
-    background: #1D2F40;
-    color: white;
+    background: rgba(243, 147, 64, 0.74);
+    color: black;
     cursor: pointer;
     text-decoration: none;
-    box-shadow: 0 5px 0 #000000;
+    box-shadow: 0 2.5px 0 #000000;
     font-family: 'Oswald';
 }
 
@@ -199,6 +203,7 @@ h3 {
     box-shadow: none;
 }
 
+/* Responsiveness using media query */
 @media (max-width: 1024px) {
     .header2 {
         margin-left: 11em;
@@ -235,9 +240,16 @@ h3 {
     }
 }
 
+@media (max-width: 945px) {
+    .divDeposit {
+        /* padding: 10rem 0 0 0; */
+        margin: 8em 0 0 0;
+    }
+}
+
 @media(max-width: 913px) {
     .divDate {
-        margin-top: 10px;
+        margin: 1em 0 0 0;
     }
 }
 
@@ -247,6 +259,12 @@ h3 {
     }
 }
 
+@media (max-width: 764px) {
+    .balanceValue {
+        margin: 4em 0px 5em 20em;
+    }
+} 
+
 @media (max-width: 708px) {
     .flex-container-form {
       flex-direction: column;
@@ -255,9 +273,18 @@ h3 {
         margin: auto;
     }
     .divDate {
-        margin-top: 0 0;
+        margin: 0 0 0 0;
+    }
+    .divDeposit{
+        margin: 0 0 0 0;
     }
 }
+
+@media (max-width: 653px) {
+    .balanceValue {
+        margin: 4em 0px 5em 10em;
+    }
+} 
 
 @media (max-width: 555px) {
     main {
@@ -267,7 +294,10 @@ h3 {
 
 @media (max-width: 445px) {
     .divDeposit {
-        margin: 7em 0px 0 0;
+        margin: 0 0 0 0;
+    }
+    .divDate {
+        margin: 0 0 0 0;
     }
 }
 
@@ -278,14 +308,8 @@ h3 {
 }
 
 @media (max-width: 445px) {
-    .flex-container-balance {
-        font-size: 8px;
-    }
-}
-
-@media (max-width: 445px) {
     .flex-container-form {
-        margin: 6em 1em 1em 1em;
+        margin: 0em 1em 1em 1em;
     }
 }
 
@@ -298,6 +322,12 @@ h3 {
     .div-img-finance img {
         width: 300px;
         height: auto;
+    }
+    .divDeposit {
+        margin: 7.8em 0 0 0;
+    }
+    .divDate {
+        margin: 0.8em 0 0 0;
     }
 }
 
