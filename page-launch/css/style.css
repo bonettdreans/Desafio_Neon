@@ -5,6 +5,7 @@
     padding: 0;
     outline: 0;
 }
+
 /* Every 1rem will be considered 10px */
 html {    
     font-size: 62.5%;
@@ -33,6 +34,46 @@ header .flex-container > div {
     margin: 10px;
     padding: 20px;
     font-size: 30px;
+}
+
+/* Navbar Optimization */
+.navbar-text {
+    display: inline-flex;
+    justify-content: end;
+}
+
+.navbar {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+
+}
+
+.navbar-nav {
+    font-size: 1em;
+}
+
+.nav-item {
+    font-size: 2em;
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+    margin-right: 1em;
+}
+
+
+.list {
+    list-style: none;
+    padding: 0px 0 10px 0;
+    margin-top: 1rem;
+}
+
+.list li {
+    padding: 0px 0px 10px 0px;
+    margin: 0px 30px 0 0;
+    vertical-align: middle;
+}
+.list li label, .list li input {
+    display: inline-block;
 }
 
 /* Section Optimization */
@@ -109,43 +150,6 @@ h3 {
     background: none;
 }
 
-.list {
-    list-style: none;
-    padding: 0px 0 10px 0;
-    margin-top: 1rem;
-}
-
-.list li {
-    padding: 0px 0px 10px 0px;
-    margin: 0px 30px 0 0;
-    vertical-align: middle;
-}
-.list li label, .list li input {
-    display: inline-block;
-}
-
-.navbar-text {
-    display: inline-flex;
-    justify-content: end;
-}
-
-.navbar {
-    padding: 0.5rem 1rem 0.5rem 1rem;
-
-}
-
-.navbar-nav {
-    font-size: 1em;
-}
-
-.nav-item {
-    font-size: 2em;
-}
-
-.navbar-dark .navbar-brand {
-    color: #fff;
-    margin-right: 1em;
-}
 .avatar {
     background: none;
     border: none;
@@ -156,6 +160,7 @@ h3 {
     margin: 10px 20px 0px 20px;   
 }
 
+/* Form configuration and respective divs */
 .div-form {
     margin-left: 20em;
 }
@@ -181,6 +186,7 @@ h3 {
     margin: 15px 0px 0px 0px;
 }
 
+/* Register button configuration */
 .btn-register {
     padding: 0.5em 5em 0.5em 5em;
     border-radius: 1em;
@@ -203,6 +209,16 @@ h3 {
     box-shadow: none;
 }
 
+.container-footer{
+    height: 12vh;
+    background-color: #1D2F40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+}
+
 /* Responsiveness using media query */
 @media (max-width: 1024px) {
     .header2 {
@@ -210,6 +226,8 @@ h3 {
         margin-top: auto;
         font-size: 0.9em;
     }
+}
+
 @media (max-width: 1024px) {
     .div-form {
         margin-left: auto;
@@ -242,7 +260,6 @@ h3 {
 
 @media (max-width: 945px) {
     .divDeposit {
-        /* padding: 10rem 0 0 0; */
         margin: 8em 0 0 0;
     }
 }
@@ -292,6 +309,12 @@ h3 {
     }
 }
 
+@media (max-width: 543px) {
+    .flex-container-balance {
+        font-size: 0.8em;
+    }
+}
+
 @media (max-width: 445px) {
     .divDeposit {
         margin: 0 0 0 0;
@@ -303,7 +326,7 @@ h3 {
 
 @media (max-width: 445px) {
     .flex-container-balance {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 }
 
@@ -316,6 +339,7 @@ h3 {
 @media (max-width: 445px) {    
     .balanceValue {
         margin: 4em 0px 5em 5em;
+    }
 }
 
 @media (max-width: 425px) {
