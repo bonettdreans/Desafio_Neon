@@ -30,21 +30,8 @@ body{
     padding-bottom: 0%;
 }
 
-<<<<<<< HEAD
 /**************header**************/
 .navi__bar{
-=======
-.navbar {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-}
-
-/* .navi__bar{
->>>>>>> 158f427aba5fa93afd0efbd7f95557ffb7030841
     height: 15vh;
     background-color: var(--color-blue);
     display: flex;
@@ -99,15 +86,9 @@ padding-bottom: 5px;
 }
  */
 
-<<<<<<< HEAD
 /**************balance**************/
 .container__balance{
     height: 35vh;
-=======
-/************balance************/
-.container__balance{
-    height: 30vh;
->>>>>>> 158f427aba5fa93afd0efbd7f95557ffb7030841
     background-color: var(--color-white);
     display: flex;
     justify-content: space-around;
@@ -143,24 +124,14 @@ padding-bottom: 5px;
     cursor: pointer;
 }
 .balance{
-<<<<<<< HEAD
     color: var(--color-blue);
     font-size: 60px;
-=======
-    color: var(--color-blue-dark);
-    font-size: 40px;
->>>>>>> 158f427aba5fa93afd0efbd7f95557ffb7030841
     font-weight: 400;
 }
 
 .title-amount{
-<<<<<<< HEAD
     color: var(--color-blue);
     font-size: 28px;
-=======
-    color: var(--color-blue-dark);
-    font-size: 20px;
->>>>>>> 158f427aba5fa93afd0efbd7f95557ffb7030841
 }
 /* .container__tableExtract{
     height: 140vh;
@@ -214,11 +185,7 @@ padding-bottom: 5px;
 	transition: transform 80ms ease-in;
 }
 
-<<<<<<< HEAD
 /**************table**************/
-=======
-/************table styles************/
->>>>>>> 158f427aba5fa93afd0efbd7f95557ffb7030841
 .table__fill {
   background: var(--color-white);
   border-radius:3px;
@@ -351,11 +318,7 @@ td.text-right {
   justify-content: center;
 }
 
-<<<<<<< HEAD
 /**************new launch button**************/
-=======
-/************new launch button************/
->>>>>>> 158f427aba5fa93afd0efbd7f95557ffb7030841
 .container__btn{
   display: flex;
   align-items: center;
@@ -389,15 +352,9 @@ td.text-right {
 	outline: none;
 }
 
-<<<<<<< HEAD
 /**************footer**************/
 .container__footer{
     height: 14vh;
-=======
-/************footer************/
-.container__footer{
-    height: 12vh;
->>>>>>> 158f427aba5fa93afd0efbd7f95557ffb7030841
     background-color: #1D2F40;
     display: flex;
     justify-content: space-between;
