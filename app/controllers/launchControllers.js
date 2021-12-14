@@ -24,10 +24,10 @@ module.exports = {
               },
               });
             } else {
-              res.status(400)
+              res.status(400).send(400)
             }
           } catch (error) {
-            res.status(400)
+            res.status(400).send(400)
           }
         },
   async createLaunch(req, res) {
@@ -59,10 +59,10 @@ module.exports = {
           statusText: "Created"
         });
       } else {
-        res.status(400)
+        res.status(400).send(400)
       }
     } catch (error) {
-      res.status(400)
+      res.status(400).send(400)
     }
   },
   async updateLaunch(req, res) {
@@ -97,10 +97,10 @@ module.exports = {
               })
         )
       } else {
-        res.status(400)
+        res.status(400).send(400)
       }
     } catch (error) {
-      res.status(400)
+      res.status(400).send(400)
     }
   },
   async deletLaunch(req, res) {
@@ -115,10 +115,10 @@ module.exports = {
               })
         )
       } else {
-        res.status(400)
+        res.status(400).send(400)
       }
     } catch (error) {
-      res.status(400)
+      res.status(400).send(400)
     }
   }
 };

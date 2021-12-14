@@ -10,10 +10,10 @@ module.exports = {
                 data: client
               });
             } else {
-              res.status(400)
+              res.status(400).send(400)
             }
           } catch (error) {
-            res.status(400)
+            res.status(400).send(400)
           }
         }, 
       };
