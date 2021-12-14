@@ -153,8 +153,14 @@ h3 {
 
 .text-input {
     border-bottom: 2px solid rgb(118, 118, 118);
-    width: 33.6em;
+    width: 420px;
+    font-size: initial;
 }
+
+input.middle:focus { 
+    outline-width: 0; 
+}
+
 .avatar {
     background: none;
     border: none;
