@@ -51,16 +51,15 @@ header .container {
   align-items: center;
   justify-content: space-between;
 
-  width: 90%;
-  max-width: 980px;
+  width: 100%;
   
   margin: auto;
 }
 
 header img {
   width: 150px;
-  margin-left: 20px;
-  padding: 15px 0;
+  margin-left: 1rem;
+  padding: 1rem 0;
 }
 
 header nav ul {
@@ -81,7 +80,10 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background: rgba(255,255,255, 0.15)
+/*   background: var(--color-grey); */
+  color: var(--color-grey);
+  height: 2.4rem;
+  
 }
 
 
