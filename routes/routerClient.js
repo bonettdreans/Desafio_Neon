@@ -1,17 +1,24 @@
 const express = require('express');
 
 const clientControllers = require('../app/controllers/clientControllers');
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+const auth = require ('../app/middlewares/auth')
 
 const routerClient = express.Router();
 
-routerClient.get("/clients", clientControllers.findAll);
+routerClient.get("/api/client/:id", auth, clientControllers.findOne);
+=======
+=======
+>>>>>>> main
 
-routerClient.get("/client/:id", clientControllers.findOne);
+const routerClient = express.Router();
 
-routerClient.post("/client/Create", clientControllers.createUser);
-
-routerClient.put("/client/:id", clientControllers.updateUser);
-
-routerClient.delete("/client/:id", clientControllers.deletUser);
+routerClient.get("/api/client/:id", clientControllers.findOne);
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 
 module.exports = routerClient
