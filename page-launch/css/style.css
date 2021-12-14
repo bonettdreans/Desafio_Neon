@@ -122,6 +122,7 @@ h3 {
 .form {
     padding: 10px 10px 10px 10px;
     font-size: 2em;
+    margin: 2em 0 0 0;
 }
 
 #txtValue {
@@ -327,6 +328,8 @@ h3 {
 }
 
 /* Responsiveness using media query */
+
+
 @media (max-width: 1024px) {
     .header2 {
         margin-left: 11em;
@@ -360,11 +363,6 @@ h3 {
 }
 
 @media (min-width: 1025px) {
-    .divSwitch {
-        display: flex;
-        justify-content: start;
-        margin: 0em 0em 2em 20em;
-    }
     .balanceValue {
         margin: 4em 0px 5em 30em;
     }
@@ -376,7 +374,7 @@ h3 {
     }
 }
 
-@media (min-width: 947px) {
+@media (min-width: 946px) {
     .divDate {
         float: left;
         margin: 0 0 0 0;
@@ -385,7 +383,10 @@ h3 {
 
 @media (max-width: 945px) {
     .divDeposit {
-        margin: 8em 0 0 0;
+        margin: 5em 0 0 0;
+    }
+    .divDate {
+        margin: auto;
     }
 }
 
@@ -398,6 +399,12 @@ h3 {
 @media (max-width: 860px) {
     .header2 {
         margin: auto;
+    }
+}
+
+@media (max-width: 845px) {
+    .divDeposit {
+        margin: 8em 0 0 0;
     }
 }
 
