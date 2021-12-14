@@ -1,46 +1,76 @@
+:root {
+    --color-blue-dark: #1D2F40;
+    --color-grey: #C4C4C4;
+}
+
+html {
+    font-size: 62.5%;
+
+    /* emphasizes legibility over rendering speed and geometric precision */
+    text-rendering: optimizelegibility;
+
+    /* smooth the font on the level of the pixel */
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+}
+
 header {
     background-color: var(--color-blue-dark);
-  }
+}
   
-  header .container {
+header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
+
     width: 100%;
-    
+
     margin: auto;
-  }
-  
-  header img {
+}
+
+header img {
     width: 15rem;
-    margin-left: -10rem;
     padding: 1rem 0;
-  }
+}
+
+header nav ul {
+display: flex;
+justify-content: center;
+}
+
+header nav ul li {
+list-style: none;
+padding-top: 0.5rem;
+margin-left: 3rem;
+display: flex;
+justify-content: center;
+}
+
+header nav ul li a {
+text-decoration: none;
+color: var(--color-white);
+text-transform: uppercase;
+font-size: 1.4rem; 
+padding: 2.4rem;
+transition: all 250ms linear 0s;
+}
+
+header nav ul li a:hover {
+    background: var(--color-grey);
+    color: var(--color-blue-dark);
+    height: 6.8rem;
+}
   
-  header nav ul {
-    display: flex;
-  }
-  
-  header nav ul li {
-    list-style: none;
-    padding-top: 0.5rem;
-    margin-left: 3rem;
-  }
-  
-  header nav ul li a {
-    text-decoration: none;
-    color: var(--color-white);
-    text-transform: uppercase;
-    font-size: 1.4rem; 
-    padding: 2.4rem;
-    transition: all 250ms linear 0s;
-  }
-  
-  header nav ul li a:hover {
-  /*   background: var(--color-grey); */
-    color: var(--color-grey);
-    height: 2.4rem;
-    
-  }
-  
+header nav ul li img {
+    height: 6rem;
+}
+
+header #icon {
+    margin-top: 0.8rem;
+}
+
+@media (max-width: 995px) {
+    html {
+        font-size: 50%;
+    }
+}
