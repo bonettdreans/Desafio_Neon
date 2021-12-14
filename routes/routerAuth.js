@@ -1,15 +1,9 @@
 const express = require('express');
-
 const routerAuth = express.Router();
+const AuthController = require("../app/controllers/AuthClient");
 
 
-//controllers
-const AuthController = require ('../app/controllers/AuthClient');
-
-// Login e register
-
-//api/singin & /api/singup
-routerAuth.post('/', AuthController.singIn);
-routerAuth.post('/api/singup', AuthController.singUp);
+routerAuth.post("/api/register", AuthController.singUp);
+routerAuth.post("/api/login", AuthController.singIn);
 
 module.exports = routerAuth

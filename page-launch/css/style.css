@@ -16,8 +16,13 @@ body {
   font-family: "Oswald";
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
+<<<<<<< HEAD
+  /* overflow: hidden; */
+  /* background-image: url(../img/design-10.png); */
+=======
   overflow: hidden;
   background-image: url(../img/design-10.png);
+>>>>>>> main
   background-size: cover;
 }
 
@@ -122,6 +127,7 @@ h3 {
 .form {
     padding: 10px 10px 10px 10px;
     font-size: 2em;
+    margin: 2em 0 0 0;
 }
 
 #txtValue {
@@ -314,6 +320,8 @@ h3 {
     border: none;
 }
 
+<<<<<<< HEAD
+=======
 /************footer************/
 .container__footer{
     line-height: 4rem;
@@ -326,7 +334,10 @@ h3 {
     font-size: 1.4rem;
 }
 
+>>>>>>> main
 /* Responsiveness using media query */
+
+
 @media (max-width: 1024px) {
     .header2 {
         margin-left: 11em;
@@ -360,11 +371,6 @@ h3 {
 }
 
 @media (min-width: 1025px) {
-    .divSwitch {
-        display: flex;
-        justify-content: start;
-        margin: 0em 0em 2em 20em;
-    }
     .balanceValue {
         margin: 4em 0px 5em 30em;
     }
@@ -376,7 +382,7 @@ h3 {
     }
 }
 
-@media (min-width: 947px) {
+@media (min-width: 946px) {
     .divDate {
         float: left;
         margin: 0 0 0 0;
@@ -385,7 +391,10 @@ h3 {
 
 @media (max-width: 945px) {
     .divDeposit {
-        margin: 8em 0 0 0;
+        margin: 5em 0 0 0;
+    }
+    .divDate {
+        margin: auto;
     }
 }
 
@@ -398,6 +407,12 @@ h3 {
 @media (max-width: 860px) {
     .header2 {
         margin: auto;
+    }
+}
+
+@media (max-width: 845px) {
+    .divDeposit {
+        margin: 8em 0 0 0;
     }
 }
 
