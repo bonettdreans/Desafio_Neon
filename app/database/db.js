@@ -7,6 +7,9 @@ db.connection = new Sequelize (
     config.database, config.username, config.password, config);
 
     
+    //Asociar os modelos
+db.Client.associate(db)
+db.Launch.associate(db)
 
     //Vinculamos modelos
 db.Client = require ('../models/Client')(db.connection, DataTypes)

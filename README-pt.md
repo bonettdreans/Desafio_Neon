@@ -1,4 +1,4 @@
-[Leia esta página em português](https://github.com/bonettdreans/Desafio_Neon/blob/main/README-pt.md)<br>
+[Read this page in English](https://github.com/bonettdreans/Desafio_Neon/blob/main/README.md)<br>
 
 <div align='center'>
   <img src="https://github.com/bonettdreans/Desafio_Neon/blob/main/assets/img/logo.svg"/>
@@ -6,7 +6,7 @@
 
 
 
-<p align='center'>It is a application with the purpose to keep up with your financial life in a simple way. </p>
+<p align='center'>É um aplicativo com o objetivo de acompanhar sua vida financeira de um jeito simples. </p>
 
 
 
@@ -15,34 +15,34 @@
   <a href='https://github.com/bonettdreans/Desafio_Neon/blob/main/license'><img src='https://img.shields.io/badge/license-MIT-green'></img></a>
 </div>
 
-<h4 align='center'> 🚧 In construction phase... 🚧 </h4>
+<h4 align='center'> 🚧 Em construção... 🚧 </h4>
 
 
 <p align='center'>
   <a href='#roadMap'>💫 Road Map</a> • 
-  <a href='#appDemo'>💻 Aplication Demo</a> • 
-  <a href='#req'>🌚 Requirements</a> • 
-  <a href='#techStack'>⚡️ Tech Stack</a> • 
-  <a href='#creators'>🛠 Creators</a> 
+  <a href='#appDemo'>💻 Demonstração do Aplicativo</a> • 
+  <a href='#req'>🌚 Pré-requisitos</a> • 
+  <a href='#techStack'>⚡️ Tecnologias Utilizadas</a> • 
+  <a href='#creators'>🛠 Criadores</a> 
 </p>
 
-<p align='center'>SeControle can gather all the information given by our clients and show the real amount of money them have.
-Our users can see their movement historic, can do payments, transfers, demands, extract, investments and pix.</p>
+<p align='center'>SeControle coleta todas as informações dadas pelos nossos clientes e mostra a quantidade real de dinheiro eles tem.
+Nossos usuários podem ver seu histórico de transações, podem fazer pagamentos, transferências, cobranças, investimentos, pix e ver seu extrato. </p>
 
 <h2 title='#roadMap'>💫 Road Map</h2>
-<p>Check our <a href='https://trello.com/invite/b/wQFMxIHm/9da9a90582b4cbd8fea63bc22165a3fa/kanban-template'>trello</a> 
-and <a href='https://www.figma.com/file/3wh0x05etlZMCUfcJMRjwR/Desafio---TT-team-library?node-id=487%3A300'>figma</a> for more details about what we're doing.</p>
+<p>Veja o nosso <a href='https://trello.com/invite/b/wQFMxIHm/9da9a90582b4cbd8fea63bc22165a3fa/kanban-template'>trello</a> 
+e <a href='https://www.figma.com/file/3wh0x05etlZMCUfcJMRjwR/Desafio---TT-team-library?node-id=487%3A300'>figma</a> para mais detalhes do que estamos fazendo.</p>
 
 
-<h2 title='#appDemo'>💻 Aplication Demo</h2>
+<h2 title='#appDemo'>💻 Demonstração do Aplicativo</h2>
 <h1>COLOCAR SCREENSHOTS DAS TELAS</h1>
 <h1 align="center">
   <img alt="" title="#" src="" />
 </h1>
 
-<h2 title='req'>🌚 Requirements</h2>
+<h2 title='req'>🌚 Pré-requisitos</h2>
 
-<h2 title='#techStack'>⚡️ Tech Stack</h2>
+<h2 title='#techStack'>⚡️ Tecnologias Utilizadas</h2>
 <ul>
   <li><a href='https://nodejs.org/'>Node.js</a></li>
   <li><a href='https://sequelize.org/master/'>Sequelize</a></li>
@@ -56,7 +56,7 @@ and <a href='https://www.figma.com/file/3wh0x05etlZMCUfcJMRjwR/Desafio---TT-team
   <li><a href=''></a></li>
 </ul>
 
-<h2 title='creators'>🛠 Creators</h2>
+<h2 title='creators'>🛠 Criadores</h2>
 
 
 <div style="display: inline_block" align="center">
@@ -75,4 +75,4 @@ and <a href='https://www.figma.com/file/3wh0x05etlZMCUfcJMRjwR/Desafio---TT-team
 </div>
 
 ###
-<p align='center'>💻 A finance control app by Asuma Corp</p>
+<p align='center'>💻 Um aplicativo de controle financeiro por Asuma Corp</p>
