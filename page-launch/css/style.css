@@ -16,7 +16,7 @@ body {
   font-family: "Oswald";
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-image: url(../img/design-10.png);
   background-size: cover;
 }
@@ -186,11 +186,11 @@ h3 {
 
 .divDate {
     float: left;
-    margin: 0.5em 0 0 0;
+    margin: 0 0 0 0;
 }
 
 .divDeposit {
-    margin: 5em 0 0 0;
+    margin: 70px 0 0 0;
 }
 
 .divDeposit label {
@@ -249,6 +249,16 @@ h3 {
     border: none;
 }
 
+.form-control {
+    font-size: 2rem;
+    background-color: transparent;
+}
+
+.flex-container-btn {
+    display: flex;
+    justify-content: center;
+}
+
 /************footer************/
 .container__footer{
     line-height: 4rem;
@@ -257,7 +267,7 @@ h3 {
     justify-content: center;
     align-items: center;
     color: #fff;
-
+    position: relative;
     font-size: 1.4rem;
 }
 
@@ -393,7 +403,7 @@ h3 {
         margin: 8em 0 0 0;
     }
     .divDate {
-        margin: 1em 0 0 0;
+        margin: 0 0 0 0;
     }
 }
 

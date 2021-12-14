@@ -1,7 +1,7 @@
 .checkbox-btn {
     position: absolute;
     top: 25%;
-    left: 20%;
+    left: 30%;
     transform: translate(-25%, -25%);
     width: 90px;
     height: 30px;
@@ -58,7 +58,7 @@
     font-weight: bold;
     color: #f3f3f3;
     font-family: 'Oswald';
-    font-size: 1em;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -75,6 +75,6 @@
     font-weight: bold;
     color: #f3f3f3;
     font-family: 'Oswald';
-    font-size: 1em;
+    font-size: 15px;
     text-align: center;
 }
