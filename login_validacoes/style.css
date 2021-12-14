@@ -130,9 +130,9 @@ span {
         }	
 .submit-btn:hover {
 		transition: all .3s ease;
-		background-color: rgba(0, 0, 0, 0.8).8);
-        
-			}
+		background-color: rgba(0, 0, 0, 0.8);
+} 
+			
 .login {
 		position: absolute;
 		top: 20%;
