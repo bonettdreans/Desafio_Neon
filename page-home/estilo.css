@@ -1,123 +1,119 @@
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
-        * {
-            font-family: 'Oswald';
-        }
-        
-        body {
-            width: 100%;
-            margin-top: 0%;
-            margin-left: 0%;
-            margin-right: 0%;
-            padding-bottom: 0%;
-        }
-        
-        .navi__bar {
-            height: 5rem;
-            background-color: #1D2F40;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            color: #F2CDAC;
-            margin: 0;
-            font-size: 37px;
-        }
-        
-        #d1 {
-            margin-left: 20%;
-        }
-        
-        .img__logo {
-            height: 5vh;
-            width: 20vh;
-        }
-        
-        .container__perfil {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            color: #F2F2F2;
-            align-content: center;
-            border: 3px, #0A1931;
-            background-color: #F2CDAC;
-        }
-        
-        .flex-container {
-            flex-direction: row;
-            display: flex;
-            justify-content: space-around;
-        }
-        
-        .container__wallet {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            color: #F2CDAC;
-            align-content: center;
-            border: 3px, #0A1931;
-            background-color: #d3b3a0
-        }
-        
-        .container__creditcardTitle {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-        
-        .img__perfil {
-            width: 40px;
-            padding-bottom: 5px;
-        }
-        
-        .img__arrow {
-            transform: scaleX(-1);
-        }
-        
-        .btn__terminarSessao {
-            background-color: #1D2F40;
-            border-radius: 20px;
-            border: none;
-            align-content: center;
-            align-items: center;
-            color: #fff;
-            cursor: pointer;
-            font-size: 0.8rem;
-            font-weight: bold;
-            letter-spacing: 0.1rem;
-            padding: 0.4rem 1.5rem;
-            text-transform: uppercase;
-            transition: transform 80ms ease-in;
-        }
-        
-        .btn__terminarSessao:hover {
-            background-color: rgb(219, 215, 215);
-            color: #0A1931
-        }
-        
-        .btn__terminarSessao:active {
-            transform: scale(0.95);
-        }
-        
-        .btn__terminarSessao:focus {
-            outline: none;
-        }
-        
-        .container__balance {
-            height: 35vh;
-            background-color: #EFEFEF;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-        
-        .container__footer {
-            height: 18vh;
-            background-color: #1D2F40;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            margin: 0;
-            font-size: 14px;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+* {
+    font-family: 'Oswald';
+}
+
+body {
+    width: 100%;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-bottom: 0%;
+}
+
+.navi__bar {
+    height: 5rem;
+    background-color: #1D2F40;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #F2CDAC;
+    margin: 0;
+    font-size: 37px;
+}
+
+#d1 {
+    margin-left: 20%;
+}
+
+.img__logo {
+    height: 5vh;
+    width: 20vh;
+}
+
+.container__perfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #F2F2F2;
+    align-content: center;
+    border: 3px, #0A1931;
+    background-color: #F2CDAC;
+}
+
+.flex-container {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container__wallet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #F2CDAC;
+    align-content: center;
+    border: 3px, #0A1931;
+    background-color: #d3b3a0
+}
+
+.container__creditcardTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img__perfil {
+    width: 40px;
+    padding-bottom: 5px;
+}
+
+.btn__terminarSessao {
+    background-color: #1D2F40;
+    border-radius: 20px;
+    border: none;
+    align-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 0.4rem 1.5rem;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+.btn__terminarSessao:hover {
+    background-color: rgb(219, 215, 215);
+    color: #0A1931
+}
+
+.btn__terminarSessao:active {
+    transform: scale(0.95);
+}
+
+.btn__terminarSessao:focus {
+    outline: none;
+}
+
+.container__balance {
+    height: 35vh;
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container__footer {
+    height: 18vh;
+    background-color: #1D2F40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 0;
+    font-size: 14px;
+}

@@ -1,66 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saldo disponível</title>
+    <title>Home</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
 
-    </ink>
-</head>
-
-<body>
-    <div>
-
-        <nav class="navi__bar">
-            <a href="./index.html">
-                <img src="./img/logo.png" class="img__logo" alt=""></a>
+  </head>
+  <header>
+    <div class="container">
+      <a href="../index.html">
+        <img
+        src="../assets/img/logo.svg"
+        alt="SeControle"
+        />
+      </a>
+      <div class="menu-section">
+        <div class="menu-toggle">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+        <nav>
+          <ul>
+            <li>
+            <a href="../index.html">Início</a>
+            </li>
+            <li>
+            <a href="../page-launch/index.html">Novo Lançamento</a>
+            </li>
+            <li>
+            <a href="https://github.com/bonettdreans/Desafio_Neon/blob/main/README.md" 
+            target="_blank">Contato</a>
+            </li>
+            <li>
+                <img src="../assets/icons/colorful-person.svg" alt="">
+            </li>
+          </ul>
         </nav>
-        <div class="container__perfil">
-            <img src="./img/perfil.png" class="img__perfil" alt="imagem do perfil">
-            <p>Olá, Isabel</p>
-            <button class="btn__terminarSessao">Até logo</button>
-        </div>
-        <div class="container__wallet">
-            <div class="container__creditcardTitle">
-                <div>
-                    <img src="./img/business_card_credit_credit_card_dollar_money_payment_icon_123246.png" class="img__perfil" alt="">
-                </div>
-                <div>
-                    <h3>Wallet</h3>
-                    <p>Gerencie seus cartões</p>
-                </div>
-            </div>
-            <img src="./img/Vector.png" class="img__arrow" alt="">
-        </div>
+      </div>
     </div>
-
-
+  </header>
+  <body>
+    <div>
+      <div class="container__perfil">
+        <img src="../assets/icons/colorful-person.svg" class="img__perfil" alt="imagem do perfil">
+        <p>Olá, Isabel</p>
+        <button class="btn__terminarSessao">Até logo</button>
+      </div>
+      <div class="container__wallet">
+        <div class="container__creditcardTitle">
+          <div>
+            <img src="../assets/icons/credit-card.svg" class="img__perfil" alt="">
+          </div>
+          <div>
+            <h3>Wallet</h3>
+            <p>Gerencie seus cartões</p>
+          </div>
+        </div>
+        <img src="../assets/icons/arrow-right-black.svg" class="img__arrow" alt="">
+      </div>
+    </div>
     <div id="d1">
-        <h3>Saldo Disponível</h3><br> R$ 1000 <br> Você não posssui lançamentos
-        <br>Que tal lançar um?
-        <br><button class="btn__terminarSessao">Lançar ></button>
+      <h3>Saldo Disponível</h3><br> R$ 1000 <br> Você não posssui lançamentos
+      <br>Que tal lançar um?
+      <br><button class="btn__terminarSessao">Lançar</button>
     </div>
     <div class="flex-container row">
-        <div>
-            <img src="./img/Vector_7.svg" alt=""> Pagar
-        </div>
-        <div img src="./img/Vector_7.svg" alt="">Transferir</div>
-        <div>Cobrar</div>
-        <div>Extrato</div>
-        <div>Investimento</div>
-        <div>Pix</div>
-
+      <div>
+        <img src="../assets/icons/pay-icon.svg" alt=""> Pagar
+      </div>
+      <div>
+        <img src="../assets/icons/transfer-icon.svg" alt="">Transferir
+      </div>
+      <div><img src="../assets/icons/demand-icon.svg" alt="">Cobrar
+      </div>
+      <div><img src="../assets/icons/extract-icon.svg" alt=""> Extrato
+      </div>
+      <div><img src="../assets/icons/investiment-icon.svg" alt=""> Investimento
+      </div>
+      <div><img src="../assets/icons/pix-icon.svg" alt=""> Pix
+      </div>
     </div>
-    <footer class="container__footer ">
-        <p>App De controle by Asuma Corp<br>
-            <a href="mailto:hege@example.com ">hege@example.com</a></p>
-        <img src=" " alt=" ">
-        <img src=" " alt=" ">
-        <img src=" " alt=" ">
+    <!-- footer -->
+    <footer class="container__footer">
+        <p>A finance control app by Asuma Corp <br>
+            © 2021. Todos os direiros reservados.</p>
     </footer>
-</body>
-
+    <script src="../assets/js/header.js"></script>
+  </body>
 </html>
