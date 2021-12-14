@@ -38,6 +38,7 @@ header img {
 
 header nav ul {
     display: flex;
+    align-items: center;
 }
 
 header nav ul li {
@@ -64,6 +65,7 @@ header nav ul li img {
 
 header #icon {
     margin-top: 0.8rem;
+    height: 7rem;
 }
 
 /************responsiveness*************/
@@ -76,6 +78,14 @@ header #icon {
 @media (max-width: 540px) {
     nav {
         display: none;
+    }
+
+    header #icon {
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 4rem;
     }
 
     .one,
