@@ -7,14 +7,19 @@ module.exports = {
             if (client) {
               res.json({
                 status: 200,
-                client: {"name": client.name}
+                data: {
+                  "client_id": clientLaunch.client_id,
+                  "name": clientLaunch.name,
+                  "email": clientLaunch.email,
+                }
               });
             } else {
-              res.status(400)
+              res.status(400).send(400)
             }
           } catch (error) {
-            res.status(400)
+            res.status(400).send(400)
           }
         }, 
       };
+
 

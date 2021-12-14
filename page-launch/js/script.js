@@ -1,3 +1,7 @@
+document.getElementById("txtValue").addEventListener("change", function(){
+    this.value = parseFloat(this.value).toFixed(2);
+});
+
 
 const fields = document.querySelectorAll("[required]")
 

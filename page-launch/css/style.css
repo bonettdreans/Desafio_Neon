@@ -16,13 +16,8 @@ body {
   font-family: "Oswald";
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
-<<<<<<< HEAD
-  /* overflow: hidden; */
-  /* background-image: url(../img/design-10.png); */
-=======
   overflow: hidden;
   background-image: url(../img/design-10.png);
->>>>>>> main
   background-size: cover;
 }
 
@@ -42,6 +37,10 @@ header .flex-container > div {
 }
 
 /* Navbar Optimization */
+.navbar-collapse {
+    justify-content: end;
+}
+
 .navbar-text {
     display: inline-flex;
     justify-content: end;
@@ -53,11 +52,12 @@ header .flex-container > div {
 }
 
 .navbar-nav {
-    font-size: 1em;
+    font-size: 0.85em;
 }
 
 .nav-item {
     font-size: 2em;
+    padding: 5px 0 5px 5px;
 }
 
 .navbar-dark .navbar-brand {
@@ -127,6 +127,7 @@ h3 {
 .form {
     padding: 10px 10px 10px 10px;
     font-size: 2em;
+    margin: 2em 0 0 0;
 }
 
 #txtValue {
@@ -134,7 +135,7 @@ h3 {
     border-top: none;
     border-left: none;
     border-right: none;
-    margin-left: 0.3em;
+    margin-left: 0em;
     background: none;
 }
 
@@ -143,7 +144,7 @@ h3 {
     border-left: none;
     border-right: none;
     padding: 0px 10px 0px 5px;
-    margin-left: 0.3em;
+    margin-left: 0em;
     background: none;
 }
 
@@ -151,10 +152,14 @@ h3 {
     border-top: none;
     border-left: none;
     border-right: none;
-    margin-left: 0.3em;
+    margin-left: 0;
     background: none;
 }
 
+.text-input {
+    border-bottom: 2px solid rgb(118, 118, 118);
+    width: 33.6em;
+}
 .avatar {
     background: none;
     border: none;
@@ -192,6 +197,11 @@ h3 {
     margin: 15px 0px 0px 0px;
 }
 
+.divDeposit .input-control {
+    width: 335px;
+}
+
+
 /* Register button configuration */
 .divButton {
     margin: 4em 0 0 0;
@@ -206,7 +216,7 @@ h3 {
     -webkit-appearance: none;
     appearance: none;
     
-    width: 100%;
+    width: 80%;
     padding: 0.5em 5em 0.5em 5em;
     border-radius: 1em;
     background: rgba(243, 147, 64, 0.74);
@@ -228,86 +238,6 @@ h3 {
     box-shadow: none;
 }
 
-.divSwitch {
-    display: flex;
-    justify-content: start;
-    margin: 0em 0em 2em 3em;
-}
-
-/* The switch - the box around the slider */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 6em;
-    height: 3.4em;
-}
-  
-  /* Hide default HTML checkbox */
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-  
-  /* The slider */
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(230, 20, 20, 0.637);
-    -webkit-transition: .2s;
-    transition: .2s;
-}
-  
-  .slider:before {
-    position: absolute;
-    content: "ON";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: rgba(0, 0, 0, 0.425);
-    -webkit-transition: .2s;
-    transition: .2s;
-  }
-  .slider::after {
-    position: absolute;
-    content: "OFF";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: rgba(0, 0, 0, 0.425);
-    -webkit-transition: .2s;
-    transition: .2s;
-  }
-
-  input:checked + .slider {
-    background-color: #06ce169a;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #06ce169a;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
-
 .drop-list {
     position: relative;
     font-family: "Oswald";
@@ -319,8 +249,6 @@ h3 {
     border: none;
 }
 
-<<<<<<< HEAD
-=======
 /************footer************/
 .container__footer{
     line-height: 4rem;
@@ -333,7 +261,6 @@ h3 {
     font-size: 1.4rem;
 }
 
->>>>>>> main
 /* Responsiveness using media query */
 @media (max-width: 1024px) {
     .header2 {
@@ -368,11 +295,6 @@ h3 {
 }
 
 @media (min-width: 1025px) {
-    .divSwitch {
-        display: flex;
-        justify-content: start;
-        margin: 0em 0em 2em 20em;
-    }
     .balanceValue {
         margin: 4em 0px 5em 30em;
     }
@@ -384,7 +306,7 @@ h3 {
     }
 }
 
-@media (min-width: 947px) {
+@media (min-width: 946px) {
     .divDate {
         float: left;
         margin: 0 0 0 0;
@@ -393,7 +315,10 @@ h3 {
 
 @media (max-width: 945px) {
     .divDeposit {
-        margin: 8em 0 0 0;
+        margin: 5em 0 0 0;
+    }
+    .divDate {
+        margin: auto;
     }
 }
 
@@ -406,6 +331,12 @@ h3 {
 @media (max-width: 860px) {
     .header2 {
         margin: auto;
+    }
+}
+
+@media (max-width: 845px) {
+    .divDeposit {
+        margin: 8em 0 0 0;
     }
 }
 
@@ -433,6 +364,9 @@ h3 {
 @media (max-width: 653px) {
     .balanceValue {
         margin: 4em 0px 5em 10em;
+    }
+    .checkbox-btn {
+        margin: -20px 0 0px 0px;
     }
 } 
 
@@ -506,6 +440,9 @@ h3 {
 @media (max-width: 388px) {
     .flex-container-balance {
         font-size: 6px;
+    }
+    .checkbox-btn {
+        margin: -50px 0 0px 0px;
     }
 }
 

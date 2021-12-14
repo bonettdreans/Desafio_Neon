@@ -5,6 +5,7 @@ const options = {
 };
 const id = getUrl.get('id')
 const url = `http://localhost:8000/client/${id}`
+
 console.log(`${url}/${id}`)
   fetch(`${url}/${id}`, options)
     .then(response => response.json())
