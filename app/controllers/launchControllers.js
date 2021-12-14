@@ -14,6 +14,7 @@ module.exports = {
       if (clientLaunch) {
             res.json({
                 status: 200,
+<<<<<<< HEAD
               data: {
                 "client_id": clientLaunch.client_id,
                 "name": clientLaunch.name,
@@ -22,6 +23,9 @@ module.exports = {
                   clientLaunch.valor  
                 ]
               },
+=======
+                data: clientLaunch,
+>>>>>>> main
               });
             } else {
               res.status(400).send(400)
@@ -110,8 +114,13 @@ module.exports = {
         await deleteLaunch.destroy();
         return (
           res.json({
+<<<<<<< HEAD
              status: 200,
              statusText: "Ok"
+=======
+             status: 201,
+             statusText: "Created"
+>>>>>>> main
               })
         )
       } else {
