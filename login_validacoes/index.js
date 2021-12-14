@@ -141,8 +141,6 @@ const expresion = /\w+@\w+\.+[a-z]/;
     emailCadastro.classList.remove("warningsInput")
   }
   //warningsPasswordCadastro.innerHTML = msgErro.join(" -          ");
-  
-  
   //document.getElementById("formCadastro").reset()
   //document.getElementById('formCadastro').addEventListener('submit',formCadastro)
   return false;
