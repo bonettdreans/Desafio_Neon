@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-    <link rel="shortcut icon" href="./img/favicon_32x32_created_by_logaster.png"/>
+    <link rel="shortcut icon" href="./img/favicon_32x32.png"/>
 
     <title>Asuma Corp</title>
 </head>
@@ -67,6 +67,12 @@
                 <h3>R$ 1000,00</h3>
             </div>
         </div>
+        <div class="divSwitch custom-switch">
+            <label class="switch">
+                <input type="checkbox" ariaselected="true">
+                <span class="slider round"></span>
+            </label>
+        </div>
     </main>
 
     <!-- Creating a section to place the form and image -->
@@ -77,32 +83,33 @@
                     <div class="divValue">
                         <label for="txtValue">Valor</label>
                         <div class="input-control text size4">
-                            <input type="number" id="txtValue" step="0.01" min="0.01" placeholder="R$">
+                            <input required type="number" id="txtValue" required placeholder="R$">
                         </div>
+                        <span class="error"></span>
                     </div>
                     <div class="divDate">
                         <label for="txtDate">Data</label>
                         <div class="input-control text size4">
-                            <input type="date" id="txtDate">
+                            <input required type="date" id="txtDate">                            
                         </div>
+                        <span class="error active"></span>
                     </div>
                     <div class="divDeposit">
-                        <label for="txtDeposit">Título do depósito</label>
+                        <label for="txtDeposit">Descrição</label>
                         <div class="input-control text size4">
-                            <input type="text" id="txtDeposit">
+                            <input required type="text" id="txtDeposit">
                         </div>
+                        <span class="error active"></span>
                     </div>
-                    <div class="divRadio">
-                        <ul class="list">
-                            <li id="li-radio">
-                                <input type="radio" name="submit" id="entry">
-                                <label for="entry">Depositar valor</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="submit" id="exit">
-                                <label for="exit"> Retirar valor</label>
-                            </li>
-                        </ul>
+                    
+                    <div class="drop-list">
+                        <select autofocus> 
+                            <option value="pix">PIX</option> 
+                            <option value="ticket">Boleto</option> 
+                            <option value="transfer">Transferência</option> 
+                            <option value="card">Cartão</option>
+                            <option value="money">Dinheiro</option>
+                        </select>
                     </div>
                     <div class="divButton">
                         <button type="submit" class="btn-register">Cadastrar</button>
@@ -111,19 +118,10 @@
             </div>
             
             <div class="div-img-finance">
-                <img src="./img/Finance app-pana.png" alt="" width="500px" height="auto">
+                <img src="./img/Finance app-pana.png" alt="" width="400px" height="auto">
             </div>
-        </div>  
-        <div class="container-footer-div">
-            <footer class="container-footer">
-                <p>A finance control app by Asuma Corp <br>
-                    © 2021. Todos os direiros reservados.</p>
-            </footer> 
-        </div> 
+        </div>     
     </section>  
-
-    <!-- Footer -->
-
 
 <script src="./js/script.js"></script>    
 </body>

@@ -12,12 +12,12 @@ html {
 }
 html,
 body {
-  height: 100vh;
+  height: 100%;
   font-family: "Oswald";
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
-  overflow: hidden;
-  background-image: url(../img/design-10.png);
+  /* overflow: hidden; */
+  /* background-image: url(../img/design-10.png); */
   background-size: cover;
 }
 
@@ -80,7 +80,7 @@ header .flex-container > div {
 .flex-container-form {
     display: flex;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: auto 0;
     height: 100vh;
     
@@ -166,7 +166,7 @@ h3 {
 }
 
 .div-img-finance {
-    margin-right: 10em;
+    margin-right: 20em;
 }
 
 .divValue {
@@ -176,10 +176,11 @@ h3 {
 
 .divDate {
     float: left;
+    margin: 0.5em 0 0 0;
 }
 
 .divDeposit {
-    margin: auto;
+    margin: 5em 0 0 0;
 }
 
 .divDeposit label {
@@ -187,7 +188,20 @@ h3 {
 }
 
 /* Register button configuration */
+.divButton {
+    margin: 4em 0 0 0;
+}
+
+.drop-list {
+    margin: 3em 0 0 0;
+}
+
 .btn-register {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    
+    width: 100%;
     padding: 0.5em 5em 0.5em 5em;
     border-radius: 1em;
     background: rgba(243, 147, 64, 0.74);
@@ -209,14 +223,95 @@ h3 {
     box-shadow: none;
 }
 
-.container-footer{
-    height: 12vh;
-    background-color: #1D2F40;
+.divSwitch {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 14px;
+    justify-content: start;
+    margin: 0em 0em 2em 3em;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 6em;
+    height: 3.4em;
+}
+  
+  /* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+  /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(230, 20, 20, 0.637);
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+  
+  .slider:before {
+    position: absolute;
+    content: "ON";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgba(0, 0, 0, 0.425);
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .slider::after {
+    position: absolute;
+    content: "OFF";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgba(0, 0, 0, 0.425);
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+
+  input:checked + .slider {
+    background-color: #06ce169a;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #06ce169a;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.drop-list {
+    position: relative;
+    font-family: "Oswald";
+}
+
+.drop-list select {
+    background: rgba(112, 183, 253, 0.781);
+    font-size: 1em;
+    border: none;
 }
 
 /* Responsiveness using media query */
@@ -252,9 +347,27 @@ h3 {
     }
 }
 
+@media (min-width: 1025px) {
+    .divSwitch {
+        display: flex;
+        justify-content: start;
+        margin: 0em 0em 2em 20em;
+    }
+    .balanceValue {
+        margin: 4em 0px 5em 30em;
+    }
+}
+
 @media (max-width: 1024px) {
     .navbar-nav {
         font-size: 1em;
+    }
+}
+
+@media (min-width: 947px) {
+    .divDate {
+        float: left;
+        margin: 0 0 0 0;
     }
 }
 
@@ -276,7 +389,7 @@ h3 {
     }
 }
 
-@media (max-width: 764px) {
+@media (max-width: 820px) {
     .balanceValue {
         margin: 4em 0px 5em 20em;
     }
@@ -315,12 +428,18 @@ h3 {
     }
 }
 
+@media (max-width: 490px) {
+    .div-img-finance > img {
+        width: 390px;
+    }
+}
+
 @media (max-width: 445px) {
     .divDeposit {
-        margin: 0 0 0 0;
+        margin: 8em 0 0 0;
     }
     .divDate {
-        margin: 0 0 0 0;
+        margin: 1em 0 0 0;
     }
 }
 
@@ -373,5 +492,12 @@ h3 {
 @media (max-width: 376px) {
     .flex-container-form {
         margin: 1em 1em 1em 1em;
+    }
+}
+
+@media (max-width: 330px) {
+    .div-img-finance img {
+    width: 280px;
+    height: auto;
     }
 }
