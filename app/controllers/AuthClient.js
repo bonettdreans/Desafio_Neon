@@ -57,8 +57,7 @@ module.exports = {
                   });
 
                   res.json({
-                      user: user,
-                      token: token
+                      status:200
                   });
 
               });

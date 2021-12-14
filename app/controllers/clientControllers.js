@@ -7,7 +7,7 @@ module.exports = {
             if (client) {
               res.json({
                 status: 200,
-                data: client
+                client: {"name": client.name}
               });
             } else {
               res.status(400)
