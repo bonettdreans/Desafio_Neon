@@ -37,6 +37,9 @@ header .flex-container > div {
 }
 
 /* Navbar Optimization */
+.navbar-collapse {
+    justify-content: end;
+}
 .navbar-text {
     display: inline-flex;
     justify-content: end;
@@ -48,11 +51,12 @@ header .flex-container > div {
 }
 
 .navbar-nav {
-    font-size: 1em;
+    font-size: 0.85em;
 }
 
 .nav-item {
     font-size: 2em;
+    padding: 1.4rem;
 }
 
 .navbar-dark .navbar-brand {
