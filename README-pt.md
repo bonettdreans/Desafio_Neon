@@ -1,6 +1,5 @@
 [Read this page in English](https://github.com/bonettdreans/Desafio_Neon/blob/main/README.md)<br>
 
-
 <div align='center'>
   <img src="https://github.com/bonettdreans/Desafio_Neon/blob/main/assets/img/logo.svg"/>
 </div>
