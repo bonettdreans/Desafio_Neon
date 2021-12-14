@@ -154,18 +154,6 @@ h2 {
 	outline: none;
 }
 
-/************footer************/
-.container__footer{
-    line-height: 4rem;
-    background-color: #1D2F40;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-
-    font-size: 1.4rem;
-}
-
 /************responsiveness************/
 @media (max-width: 550px) {
   .html {
