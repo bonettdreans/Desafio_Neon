@@ -111,6 +111,17 @@ td.datesColumn {
     width: 20rem;
     font-size: 2rem;
     align-items: center;
+    text-decoration: none;
+}
+
+/* translate */
+.columns.on .arrow.on {
+    position: absolute;
+    transform: rotate(90deg) translate(7px, 7px);
+}
+
+.columns.on {
+    display: block;
 }
 
 /************responsiveness************/
