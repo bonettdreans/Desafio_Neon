@@ -5,12 +5,8 @@ document.getElementById("txtValue").addEventListener("change", function(){
 });
 
 
-async function getContent() {
-    try {
-        const response = await fetch("/api/launch/:id")
-    } catch (error) {
-        console.log(error)
-    }
-}
 
-getContent()
+
+
+
+

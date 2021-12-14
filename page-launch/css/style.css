@@ -16,7 +16,7 @@ body {
   font-family: "Oswald";
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-image: url(../img/design-10.png);
   background-size: cover;
 }
@@ -40,6 +40,10 @@ header .flex-container > div {
 .navbar-collapse {
     justify-content: end;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 87a901847f041d13c01cfa7cff847a439e47614b
 .navbar-text {
     display: inline-flex;
     justify-content: end;
@@ -56,7 +60,11 @@ header .flex-container > div {
 
 .nav-item {
     font-size: 2em;
+<<<<<<< HEAD
     padding: 1.4rem;
+=======
+    padding: 5px 0 5px 5px;
+>>>>>>> 87a901847f041d13c01cfa7cff847a439e47614b
 }
 
 .navbar-dark .navbar-brand {
@@ -191,11 +199,11 @@ input.middle:focus {
 
 .divDate {
     float: left;
-    margin: 0.5em 0 0 0;
+    margin: 0 0 0 0;
 }
 
 .divDeposit {
-    margin: 5em 0 0 0;
+    margin: 70px 0 0 0;
 }
 
 .divDeposit label {
@@ -254,6 +262,16 @@ input.middle:focus {
     border: none;
 }
 
+.form-control {
+    font-size: 2rem;
+    background-color: transparent;
+}
+
+.flex-container-btn {
+    display: flex;
+    justify-content: center;
+}
+
 /************footer************/
 .container__footer{
     line-height: 4rem;
@@ -262,7 +280,7 @@ input.middle:focus {
     justify-content: center;
     align-items: center;
     color: #fff;
-
+    position: relative;
     font-size: 1.4rem;
 }
 
@@ -398,7 +416,7 @@ input.middle:focus {
         margin: 8em 0 0 0;
     }
     .divDate {
-        margin: 1em 0 0 0;
+        margin: 0 0 0 0;
     }
 }
 
