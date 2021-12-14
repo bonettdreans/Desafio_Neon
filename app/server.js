@@ -4,7 +4,11 @@ require('dotenv').config();
 const { connection } = require ('./database/db');
 
 // Setting
+<<<<<<< HEAD
 const PORT = process.env.PORT || 9000
+=======
+const PORT = process.env.PORT || 9000;
+>>>>>>> main
 
 // Middleware   
 // Para poder rellenar el req.body
@@ -14,7 +18,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(require ('../routes/routerAuth'));
 app.use(require('../routes/routerClient'));
 app.use(require('../routes/routesLaunch'));
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 
 
 // Arrancamos el servidor
