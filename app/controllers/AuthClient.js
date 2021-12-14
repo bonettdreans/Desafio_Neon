@@ -62,11 +62,7 @@ module.exports = {
                   });
 
               });
-              /* res.status(201).json({
-                status:201,
-                statusTex: "Created",
-                message: "New admin created", 
-                Client: result }); */
+              
             } catch (err) {
               next(new Error(err));
             }

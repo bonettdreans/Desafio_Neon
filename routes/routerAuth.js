@@ -3,7 +3,7 @@ const routerAuth = express.Router();
 const AuthController = require("../app/controllers/AuthClient");
 
 
-routerAuth.post("/register", AuthController.singUp);
-routerAuth.get("/login", AuthController.singIn);
+routerAuth.post("/api/register", AuthController.singUp);
+routerAuth.post("/api/login", AuthController.singIn);
 
 module.exports = routerAuth
