@@ -6,7 +6,7 @@ const routesLaunch = express.Router();
 
 routesLaunch.get("/api/launch/:id", launchControllers.clientLaunch);
 
-routesLaunch.post("/api/lauch/", launchControllers.createLaunch);
+routesLaunch.post("/api/launch/", launchControllers.createLaunch);
 
 routesLaunch.put("/api/launch/:id", launchControllers.updateLaunch);
 
