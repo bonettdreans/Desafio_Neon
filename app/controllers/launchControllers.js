@@ -10,16 +10,11 @@ module.exports = {
           attributes: ['amount', 'date', 'title_launch']
               }
       });
-<<<<<<< HEAD
       if (clientLaunch) {
             res.json({
                 status: 200,
                 data: clientLaunch,
               });
-=======
-        if (clientLaunch) {
-              res.status(200)
->>>>>>> main
             } else {
               res.status(400)
             }
@@ -37,14 +32,10 @@ module.exports = {
           type_launch: req.body.type_launch,
           client_id: req.body.client_id
         });
-<<<<<<< HEAD
         res.status(201).json({
           status: 201,
           statusText: "Created"
         });
-=======
-        res.status(201)
->>>>>>> main
       } else {
         res.status(400)
       }
@@ -64,14 +55,10 @@ module.exports = {
       ) {
         await updateLaunch.update(req.body);
         return (
-<<<<<<< HEAD
            res.json({
              status: 201,
              statusText: "Created"
               })
-=======
-          res.status(201)
->>>>>>> main
         )
       } else {
         res.status(400)
@@ -86,14 +73,10 @@ module.exports = {
       if (deleteLaunch) {
         await deleteLaunch.destroy();
         return (
-<<<<<<< HEAD
           res.json({
              status: 201,
              statusText: "Created"
               })
-=======
-          res.status(201)
->>>>>>> main
         )
       } else {
         res.status(400)
