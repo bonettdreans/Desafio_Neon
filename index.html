@@ -4,60 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../assets/icons/favicon_32x32.png">
     <title>Gestão Financeira Pessoal</title>
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
-	<div>
-        <nav class="navi__bar">
-            <a href="./index.html">
-            <img 
-                src="./img/logo.png" 
-                alt=""></a>                
-        </nav>
-	<div class="container__Principal">
-		
-		<div class="container right-panel-active">
-				<!-- Sign Up -->
-			<div class="container__form container--signup">
-				<form action="#" class="form" id="form1">
-					<h2 class="form__title">Inscrever-se</h2>
-					<input type="text" placeholder="Nome" class="input" required/>
-					<input type="text" placeholder="Usuario" class="input" required/>
-					<input type="password" placeholder="Senha" class="input" required/>
-					<input type="password" placeholder="Repetir Senha" class="input" />
-					<button class="btn">Inscrever-se</button>
-				</form>
-			</div>
-
-				<!-- Sign In -->
-			<div class="container__form container--signin">
-				<form action="#" class="form" id="form2">
-					<h2 class="form__title">Entrar</h2>
-					<input type="text" placeholder="Usuario" class="input" required/>
-					<input type="password" placeholder="Senha" class="input" required/>
-					<a href="#" class="link">Esqueceu sua senha?</a>
-					<button class="btn">Entrar</button>
-				</form>
-			</div>
-
-				<!-- Overlay -->
-			<div class="container__overlay">
-				<div class="overlay">
-					<div class="overlay__panel overlay--left">
-						<button class="btn" id="signIn">Entrar</button>
-					</div>
-						<div class="overlay__panel overlay--right">
-							<button class="btn" id="signUp">Inscrever-se</button>
-						</div>
-				</div>
-			</div>
+<body class="Page Page--login .Util-not-loaded">
+	<div class="container-fluid">
+<div class="form-structor">
+	<form action="/" method="GET" id="form_login">
+	<div class="signup">
+		<h2 class="form-title2" id="signup">Login</h2>
+		<div class="form-holder">
+			
+			<input type="email" class="input" id="email" placeholder="Email"/>
+					<P class="warnings" id="warningsEmailLogin"></P>
+					<input type="password" class="input" id="password" placeholder="Senha"/>
+					<P class="warnings" id="warningsPasswordLogin"></P>
 		</div>
+		<button class="submit-btn" type="submit">Entrar</button>
+		
+		</form>
+	</div>
+	<form action="/" method="GET" id="formCadastro">
+		<div class="login slide-up">
+			<div class="center">				
+				<h2 class="form-title" id="login">Cadastro</h2>
+				<div class="form-holder">	
+					
+					
+					<input type="text" class="input" id="nameCadastro" placeholder="Nome" />
+			<P class="warnings" id="warningsNameCadastro"></P>
+			<input type="email" class="input" id="emailCadastro" placeholder="Email" />
+			<P class="warnings" id="warningsEmailCadastro"></P>
+			<input type="password" class="input" id="passwordCadastro" placeholder="Senha" />
+			<P class="warnings" id="warningsPasswordCadastro"></P>
+			<input type="password" class="input" id="repPasswordCadastro" placeholder="Repetir Senha" />
+				</div>
+				<button class="submit-btn" >Cadastro</button>	
+	</form>
+		</div>
+	</div>
 </div>
-<footer class="container__footer">
-     <p>App De controle by Asuma Corp<br>
-  <a href="mailto:asumacorp@example.com">asumacorp@example.com</a></p>   
-</footer>
-					<script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
