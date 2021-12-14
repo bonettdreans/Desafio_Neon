@@ -25,7 +25,7 @@ header .container {
     justify-content: space-between;
 
     width: 90%;
-    max-width: 980px;
+    max-width: 2560px;
 
     margin: auto;
 }
@@ -61,11 +61,6 @@ header nav ul li a:hover {
   
 header nav ul li img {
     height: 6rem;
-}
-
-header #icon {
-    margin-top: 0.8rem;
-    height: 7rem;
 }
 
 /************responsiveness*************/
