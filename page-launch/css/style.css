@@ -130,7 +130,7 @@ h3 {
     border-top: none;
     border-left: none;
     border-right: none;
-    margin-left: 0.3em;
+    margin-left: 0em;
     background: none;
 }
 
@@ -139,7 +139,7 @@ h3 {
     border-left: none;
     border-right: none;
     padding: 0px 10px 0px 5px;
-    margin-left: 0.3em;
+    margin-left: 0em;
     background: none;
 }
 
@@ -147,10 +147,14 @@ h3 {
     border-top: none;
     border-left: none;
     border-right: none;
-    margin-left: 0.3em;
+    margin-left: 0;
     background: none;
 }
 
+.text-input {
+    border-bottom: 2px solid rgb(118, 118, 118);
+    width: 33.6em;
+}
 .avatar {
     background: none;
     border: none;
@@ -188,6 +192,11 @@ h3 {
     margin: 15px 0px 0px 0px;
 }
 
+.divDeposit .input-control {
+    width: 335px;
+}
+
+
 /* Register button configuration */
 .divButton {
     margin: 4em 0 0 0;
@@ -202,7 +211,7 @@ h3 {
     -webkit-appearance: none;
     appearance: none;
     
-    width: 100%;
+    width: 80%;
     padding: 0.5em 5em 0.5em 5em;
     border-radius: 1em;
     background: rgba(243, 147, 64, 0.74);
@@ -351,6 +360,9 @@ h3 {
     .balanceValue {
         margin: 4em 0px 5em 10em;
     }
+    .checkbox-btn {
+        margin: -20px 0 0px 0px;
+    }
 } 
 
 @media (max-width: 555px) {
@@ -423,6 +435,9 @@ h3 {
 @media (max-width: 388px) {
     .flex-container-balance {
         font-size: 6px;
+    }
+    .checkbox-btn {
+        margin: -50px 0 0px 0px;
     }
 }
 

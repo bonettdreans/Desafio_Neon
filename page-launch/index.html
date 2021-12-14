@@ -95,7 +95,7 @@
                     <div class="divValue">
                         <label for="txtValue">Valor</label>
                         <div class="input-control text size4">
-                            <input required type="number" id="txtValue" required placeholder="R$">
+                            <input required type="number" step="0.010" id="txtValue" required placeholder="R$">
                         </div>
                         <span class="error"></span>
                     </div>
@@ -111,7 +111,7 @@
                     <div class="divDeposit">
                         <label for="txtDeposit">Descrição</label>
                         <div class="input-control text size4">
-                            <input required type="text" id="txtDeposit">
+                            <input required type="text" maxlength="50" id="txtDeposit" class="form-control text-input">
                         </div>
                         <span class="error active"></span>
                     </div>
