@@ -1,5 +1,5 @@
 const { Launch } = require('../database/db')
-const { Client } = require ('../database/db')
+const { Client } = require('../database/db')
 
 module.exports = {
   async clientLaunch(req, res) {
@@ -10,8 +10,11 @@ module.exports = {
           attributes: ['amount', 'date', 'title_launch']
               }
       });
-        if (clientLaunch) {
-              res.status(200)
+      if (clientLaunch) {
+            res.json({
+                status: 200,
+                data: clientLaunch,
+              });
             } else {
               res.status(400)
             }
@@ -29,7 +32,10 @@ module.exports = {
           type_launch: req.body.type_launch,
           client_id: req.body.client_id
         });
-        res.status(201)
+        res.status(201).json({
+          status: 201,
+          statusText: "Created"
+        });
       } else {
         res.status(400)
       }
@@ -49,7 +55,10 @@ module.exports = {
       ) {
         await updateLaunch.update(req.body);
         return (
-          res.status(201)
+           res.json({
+             status: 201,
+             statusText: "Created"
+              })
         )
       } else {
         res.status(400)
@@ -64,7 +73,10 @@ module.exports = {
       if (deleteLaunch) {
         await deleteLaunch.destroy();
         return (
-          res.status(201)
+          res.json({
+             status: 201,
+             statusText: "Created"
+              })
         )
       } else {
         res.status(400)

@@ -6,4 +6,5 @@ const routerClient = express.Router();
 
 routerClient.get("/api/client/:id", clientControllers.findOne);
 
+
 module.exports = routerClient
