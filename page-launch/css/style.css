@@ -16,8 +16,8 @@ body {
   font-family: "Oswald";
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
-  /* overflow: hidden; */
-  /* background-image: url(../img/design-10.png); */
+  overflow: hidden;
+  background-image: url(../img/design-10.png);
   background-size: cover;
 }
 
@@ -312,6 +312,18 @@ h3 {
     background: rgba(112, 183, 253, 0.781);
     font-size: 1em;
     border: none;
+}
+
+/************footer************/
+.container__footer{
+    line-height: 4rem;
+    background-color: #1D2F40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    font-size: 1.4rem;
 }
 
 /* Responsiveness using media query */
