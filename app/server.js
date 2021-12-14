@@ -5,7 +5,11 @@ const { connection } = require ('./database/db');
 
 // Setting
 <<<<<<< HEAD
+<<<<<<< HEAD
 const PORT = process.env.PORT || 9000
+=======
+const PORT = process.env.PORT || 9000;
+>>>>>>> main
 =======
 const PORT = process.env.PORT || 9000;
 >>>>>>> main
@@ -19,7 +23,10 @@ app.use(require ('../routes/routerAuth'));
 app.use(require('../routes/routerClient'));
 app.use(require('../routes/routesLaunch'));
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 =======
 >>>>>>> main
 

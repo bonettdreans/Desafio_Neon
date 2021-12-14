@@ -18,6 +18,9 @@ db.Launch = require ('../models/Launch')(db.connection, DataTypes)
     db.Client = require ('../models/Client')(db.connection, DataTypes);
     db.Launch = require ('../models/Launch')(db.connection, DataTypes);
     
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
     //Asociar os modelos
 db.Client.associate(db)

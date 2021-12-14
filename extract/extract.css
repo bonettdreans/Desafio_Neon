@@ -7,7 +7,11 @@
   --color-blue-dark: #1D2F40;
   --color-grey: #C4C4C4;
   --color-orange-dark: #F2CDAC;
+<<<<<<< HEAD
   --color-orange: rgba(242, 205, 172, 0.5);;
+=======
+  --color-orange: rgba(242, 205, 172, 0.5);
+>>>>>>> main
 }
 
 * {
@@ -33,7 +37,11 @@ body {
   height: 100vh;
 }
 
+<<<<<<< HEAD
 body{
+=======
+body {
+>>>>>>> main
   font-size: 1.6rem;
   width: 100%;
   margin-top: 0%;
@@ -42,6 +50,7 @@ body{
   padding-bottom: 0%;
 }
 
+<<<<<<< HEAD
 header {
   background-color: var(--color-blue-dark);
 }
@@ -87,6 +96,8 @@ header nav ul li a:hover {
 }
 
 
+=======
+>>>>>>> main
 /************balance************/
 .containerBalance{
     height: 20rem;
