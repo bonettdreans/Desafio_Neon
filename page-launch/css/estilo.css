@@ -1,0 +1,323 @@
+/* Zerando as configurações do navegador */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+/* a cada 1rem será considera 10px */
+html {    
+    font-size: 62.5%;
+}
+html,
+body {
+  height: 100vh;
+  font-family: "Oswald";
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  background-image: url(../img/Design3.png);
+}
+
+/* Otimização do header */
+header .flex-container {
+    display: flex;
+    background-color: #1D2F40;
+    justify-content: center;
+    align-items: center;
+}
+
+header .flex-container > div {
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/* Otimização da Seção */
+.flex-container-form {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: auto 0;
+    height: 100vh;
+    
+}
+
+.header2 {
+    margin-top: auto;
+    width: 70%;
+}
+.flex-container-balance {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.balance {
+    margin: 4em 0 5em 20em;
+    
+}
+.balanceValue {
+    margin: 4em 0px 5em 50em;
+}
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.value {
+    margin: 2em;  
+}
+
+h3 {
+    font-size: 3em;
+}
+
+.form {
+    padding: 10px 10px 10px 10px;
+    font-size: 2em;
+}
+
+#txtValue {
+    margin-right: 1em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 0.3em;
+}
+
+#txtDate {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 0px 10px 0px 5px;
+    margin-left: 0.3em;
+}
+
+#txtDeposit {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 0.3em;
+}
+
+.list {
+    list-style: none;
+    padding: 0px 0 10px 0;
+    margin-top: 1rem;
+}
+
+.list li {
+    padding: 0px 0px 10px 0px;
+    margin: 0px 30px 0 0;
+    vertical-align: middle;
+}
+.list li label, .list li input {
+    display: inline-block;
+}
+
+.navbar-text {
+    display: inline-flex;
+    justify-content: end;
+}
+
+.navbar {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+
+}
+
+.navbar-nav {
+    font-size: 1em;
+}
+
+.nav-item {
+    font-size: 2em;
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+    margin-right: 1em;
+}
+.avatar {
+    background: none;
+    border: none;
+}
+.flex-container-form {
+    display: flex;
+    padding: 7px 20px 0px 20px;
+    margin: 10px 20px 0px 20px;   
+}
+
+.div-form {
+    margin-left: 20em;
+}
+
+.div-img-finance {
+    margin-right: 10em;
+}
+
+.divValue {
+    float: left;
+    margin-right: 1em;
+}
+
+.divDate {
+    float: left;
+}
+
+.divDeposit {
+    margin: auto;
+}
+
+.divDeposit label {
+    margin: 15px 0px 0px 0px;
+}
+
+.btn-register {
+    padding: 10px 50px 10px 50px;
+    border-radius: 1em;
+    background: #1D2F40;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 5px 0 #000000;
+    font-family: 'Oswald';
+}
+
+.btn-register :hover{
+    background: #0d151d;
+    box-shadow: 0 5px 0 #000000;
+}
+
+.btn-register :active{
+    position: relative;
+    top: 10px;
+    box-shadow: none;
+}
+
+@media (max-width: 1024px) {
+    .header2 {
+        margin-left: 11em;
+        margin-top: auto;
+        font-size: 0.9em;
+    }
+@media (max-width: 1024px) {
+    .div-form {
+        margin-left: auto;
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 1024px) {
+    .balance {
+        margin: 4em 0 5em 4em;
+    }
+}
+@media (max-width: 1024px) {
+    .balanceValue {
+        margin: 4em 0px 5em 30em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .div-img-finance {
+        margin-right: auto;
+        height: 50em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar-nav {
+        font-size: 1em;
+    }
+}
+
+@media(max-width: 913px) {
+    .divDate {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 860px) {
+    .header2 {
+        margin: auto;
+    }
+}
+
+@media (max-width: 708px) {
+    .flex-container-form {
+      flex-direction: column;
+    }
+    .div-form {
+        margin: auto;
+    }
+    .divDate {
+        margin-top: 0 0;
+    }
+}
+
+@media (max-width: 555px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media (max-width: 445px) {
+    .divDeposit {
+        margin: 7em 0px 0 0;
+    }
+}
+
+@media (max-width: 445px) {
+    .flex-container-balance {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 445px) {
+    .flex-container-balance {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 445px) {
+    .flex-container-form {
+        margin: 6em 1em 1em 1em;
+    }
+}
+
+@media (max-width: 445px) {    
+    .balanceValue {
+        margin: 4em 0px 5em 5em;
+}
+
+@media (max-width: 425px) {
+    .div-img-finance img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width: 413px) {
+    .divDeposit {
+        margin: 114px 0 5px 0;
+    }
+    .divDate {
+        margin: 10px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 388px) {
+    .flex-container-balance {
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 376px) {
+    .flex-container-form {
+        margin: 1em 1em 1em 1em;
+    }
+}

@@ -15,15 +15,39 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       autoIncrement: true 
     },
-    name: DataTypes.STRING,
+    name: { 
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        isAlpha: {
+          msg: "O nome só pode conter letras"
+        },
+        len: {
+          args: [2, 255],
+          msg: "O nome minimo tem que conter dois caracteres"
+        }
+      }
+    },
     email:{ 
       type: DataTypes.STRING,
-      isEmail: true,
+      allowNull:false,
+      validate: {
+        isEmail: {
+          msg: "O email tem que ser valido"
+        }
+      }
     },
-    password: DataTypes.STRING,
+    password: {
+      type: DataTypes.STRING,
+      allowNull:false,
+      validade: {
+        len: [6, 255],
+        msg: "A senha tem que ter como minimo 6 caracteres"
+      }
+    },
   }, {
     sequelize,
-    modelName: 'client',
+    tableName: 'client',
   });
   return client;
 };
