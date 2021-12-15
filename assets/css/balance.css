@@ -31,7 +31,7 @@ body {
     text-rendering: optimizelegibility;
     /* smooth the font on the level of the pixel */
     -webkit-font-smoothing: antialiased;
-    height: 100vh;
+    height: 100%;
 }
 
 body{
@@ -44,7 +44,7 @@ body{
 }
 
 .containerBalance{
-    height: 20rem;
+    height: 28%;
     background-color: var(--color-white);
     display: flex;
     justify-content: space-between;
@@ -61,11 +61,13 @@ body{
     position: relative;
     height: 25px;
     cursor: pointer;
+    left: -20%;
 }
 
 h3 {
   color: var(--color-blue-dark);
   font-size: 2rem;
+  font-weight: 200;
 }
 
 h2 {
