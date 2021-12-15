@@ -40,10 +40,6 @@ header .flex-container > div {
 .navbar-collapse {
     justify-content: end;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 87a901847f041d13c01cfa7cff847a439e47614b
 .navbar-text {
     display: inline-flex;
     justify-content: end;
@@ -60,11 +56,7 @@ header .flex-container > div {
 
 .nav-item {
     font-size: 2em;
-<<<<<<< HEAD
-    padding: 1.4rem;
-=======
     padding: 5px 0 5px 5px;
->>>>>>> 87a901847f041d13c01cfa7cff847a439e47614b
 }
 
 .navbar-dark .navbar-brand {
