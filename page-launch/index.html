@@ -23,7 +23,7 @@
     <title>Lançamento</title>
 </head>
 
-<body>
+<body >
 
     <!-- Using Navbar for Header -->
     <header>
@@ -84,10 +84,10 @@
     <span class="switch">
         
         <a>Receita</a>
-        <input type="checkbox" class="checkgroup" id="btn1"  />
+        <input type="radio" class="checkgroup" id="btn1"  />
         <label for="btn1" class="btn1"></label>
         <a>Despesa</a>
-        <input type="checkbox" class="checkgroup" id="btn2"  />
+        <input type="radio" class="checkgroup" id="btn2"  />
         <label for="btn2" class="btn2"></label>
     </span>
 
@@ -131,7 +131,7 @@
                         </select>
                     </div>
                     <div class="divButton">
-                        <button type="submit" class="btn-register">Cadastrar</button>
+                        <button type="submit" class="btn-register" return onclick="postForm()">Cadastrar</button>
                     </div>
                 </form>
             </div>
