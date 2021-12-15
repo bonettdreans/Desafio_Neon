@@ -39,21 +39,21 @@ const expresion = /\w+@\w+\.+[a-z]/;
 const msgErro = [];
   if (password.value === null || password.value === "") {
     password.classList.add("warningsInput")
-    warningsPasswordLogin.innerHTML = `<p/>⚠️ Senha não pode ser vacia`;
+    warningsPasswordLogin.innerHTML = `<p/>⚠️ Senha não pode ser vazia`;
   } else {
     warningsPasswordLogin.innerHTML = ""
     password.classList.remove("warningsInput")
   }
   if (password.value.length < 6 || password.value.length > 20) {
     password.classList.add("warningsInput")
-    warningsPasswordLogin.innerHTML = `<p/>⚠️ Senha debe ter minimo 6 e maximo 10 carateres`;
+    warningsPasswordLogin.innerHTML = `<p/>⚠️ Senha precisa ter no mínimo 6 e no máximo 10 carácteres`;
   } else {
     warningsPasswordLogin.innerHTML = ""
     password.classList.remove("warningsInput")
   }
   if (email.value === null || email.value == "") {
     email.classList.add("warningsInput")
-    warningsEmailLogin.innerHTML = `<p/>⚠️ Email não pode ser vacio`;
+    warningsEmailLogin.innerHTML = `<p/>⚠️ Email não pode ser vazio`;
     return false;
   } else {
     warningsEmailLogin.innerHTML = ""
@@ -61,7 +61,7 @@ const msgErro = [];
   }
   if (!expresion.test(email.value)) {
     email.classList.add("warningsInput")
-    warningsEmailLogin.innerHTML = `<p/>⚠️ Digite um email valido`;
+    warningsEmailLogin.innerHTML = `<p/>⚠️ Digite um email válido`;
     return false;
   } else {
     warningsEmailLogin.innerHTML = ""
@@ -84,28 +84,28 @@ const expresion = /\w+@\w+\.+[a-z]/;
   const msgErro = [];
   if (nameCadastro.value === null || nameCadastro.value === "") {
     nameCadastro.classList.add("warningsInput")
-    warningsNameCadastro.innerHTML = `⚠️ Nome não pode ser vacio`;
+    warningsNameCadastro.innerHTML = `⚠️ Nome não pode ser vazio`;
   } else {
     warningsNameCadastro.innerHTML = ""
     nameCadastro.classList.remove("warningsInput")
   }
   if (passwordCadastro.value === null || passwordCadastro.value === "") {
     passwordCadastro.classList.add("warningsInput")
-    warningsPasswordCadastro.innerHTML = `⚠️ Senha não pode ser vacia`;
+    warningsPasswordCadastro.innerHTML = `⚠️ Senha não pode ser vazia`;
   } else {
     warningsPasswordCadastro.innerHTML = ""
     passwordCadastro.classList.remove("warningsInput")
   }
   if (passwordCadastro.value.length < 6 || passwordCadastro.value.length > 18) {
     passwordCadastro.classList.add("warningsInput")
-    warningsPasswordCadastro.innerHTML = `⚠️ Senha debe ter minimo 6 e maximo 10 carateres`;
+    warningsPasswordCadastro.innerHTML = `⚠️ Senha precisa ter no mínimo 6 e no máximo 10 carácteres`;
   } else {
     warningsPasswordCadastro.innerHTML = ""
     passwordCadastro.classList.remove("warningsInput")
   }
   if (repPasswordCadastro.value === null || repPasswordCadastro.value === "") {
     repPasswordCadastro.classList.add("warningsInput")
-    warningsPasswordCadastro.innerHTML = `⚠️Senha não pode ser vacia`;
+    warningsPasswordCadastro.innerHTML = `⚠️Senha não pode ser vazia`;
 
   } else {
     warningsPasswordCadastro.innerHTML = ""
@@ -113,7 +113,7 @@ const expresion = /\w+@\w+\.+[a-z]/;
   }
   if (repPasswordCadastro.value.length < 6 || repPasswordCadastro.value.length > 20) {
     repPasswordCadastro.classList.add("warningsInput")
-    warningsPasswordCadastro.innerHTML = `⚠️ Senha debe ter minimo 6 e maximo 10 carateres`;
+    warningsPasswordCadastro.innerHTML = `⚠️ Senha precisa ter no mínimo 6 e no máximo 10 carácteres`;
   } else {
     warningsPasswordCadastro.innerHTML = ""
     repPasswordCadastro.classList.remove("warningsInput")
@@ -128,14 +128,14 @@ const expresion = /\w+@\w+\.+[a-z]/;
   }
   if (emailCadastro.value === null || emailCadastro.value == "") {
     emailCadastro.classList.add("warningsInput")
-    warningsEmailCadastro.innerHTML = `⚠️ Email não pode ser vacio`;
+    warningsEmailCadastro.innerHTML = `⚠️ Email não pode ser vazio`;
   } else {
     warningsEmailCadastro.innerHTML = ""
     emailCadastro.classList.remove("warningsInput")
   }
   if (!expresion.test(emailCadastro.value)) {
     emailCadastro.classList.add("warningsInput")
-    warningsEmailCadastro.innerHTML = `⚠️ Digite um email valido`;
+    warningsEmailCadastro.innerHTML = `⚠️ Digite um email válido`;
   } else {
     warningsEmailCadastro.innerHTML = ""
     emailCadastro.classList.remove("warningsInput")
