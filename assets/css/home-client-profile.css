@@ -13,7 +13,15 @@
     --color-orange: rgba(242, 205, 172, 0.5);;
 }
 
-.containerPerfil {
+html, body {
+    height: 100%;
+}
+
+.containerProfile {
+    height: 15%;
+} 
+
+.profile {
     position: relative;
     width: 81%;
     height: 8rem;
@@ -21,12 +29,12 @@
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     border-radius: 10px;
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 10rem;
     display: flex;
     align-items: center;
 }
 
-.containerPerfil img {
+.profile img {
     position: relative;
     width: 100%;
 }
@@ -36,7 +44,7 @@
     left: -7%;
 }
 
-.containerPerfil h4 {
+.containerProfile h4 {
     position: relative;
     width: 100%;
     font-family: 'Oswald';

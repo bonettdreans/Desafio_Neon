@@ -8,12 +8,17 @@
     --color-orange: rgba(242, 205, 172, 0.5);;
 }
 
+html, body {
+    height: 100%;
+}
+
 /*=============== 
 MAIN
 ==================*/
 main {
     margin-bottom: 80px;
-  }
+    height: 21%;
+}
   /*=============== 
   CARDS
   ==================*/
@@ -24,6 +29,9 @@ main {
 
     display: flex;
     justify-content: space-between;
+}
+
+.link {
     text-decoration: none;
 }
   
@@ -36,7 +44,6 @@ main {
 }
 
 .card {
-    text-decoration: none;
     height: 180px;
     width: 150px;
     border-radius: 5px;
@@ -54,7 +61,7 @@ main {
 }
   
 .card:hover {
-transform: translateY(-7px);
+    transform: translateY(-7px);
 }
   
 .image {
@@ -64,33 +71,14 @@ transform: translateY(-7px);
     position: relative;
 }
   
-  .image img {
+.image img {
     width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
-.content {
-    text-decoration: none;
 }
   
 .title {
-margin-bottom: 20px;
+    margin-bottom: 20px;
 }
-  
-/* .info {
-display: flex;
-align-self: end;
-align-items: center;
-}
-   */
-/* .price {
-margin-left: auto;
-padding: 5px 20px;
-border-radius: 20px;
-background-color: #7159c1;
-filter: brightness(90%);
-}
-*/

@@ -21,8 +21,8 @@
     </div>
   </header>
   <body>
-    <div>
-      <div class="containerPerfil">
+    <div class="containerProfile">
+      <div class="profile">
         <img id="profileIcon" src="../assets/icons/colorful-person.svg" alt="imagem do perfil">
         <h4>Olá, Isabel</h4>
         <img id="notificationIcon" src="../assets/icons/notification.svg">
@@ -33,16 +33,16 @@
       <div class="titleSaldo">
         <h3>Saldo disponível</h3>
       </div>
-      <div>
+      <div class="eye">
         <img src="../assets/icons/eye.svg" alt="">
       </div>
-      <div>
-        <h2>R$ 1000,00</h3>
+      <div class="balance">
+        <h2>R$ 1000,00</h2>
       </div>        
     </div>
     <main>
       <section class="cards">
-        <a href="../page-launch/index.html">
+        <a class="link" href="../page-launch/index.html">
           <div class="card">
             <div class="image">
               <img src="../assets/icons/pay-icon.svg" alt=""> 
@@ -56,7 +56,7 @@
             </div>
           </div>
         </a>  
-        <a href="../extract/extract.html">
+        <a class="link" href="../extract/extract.html">
           <div class="card">
             <div class="image">
               <img src="../assets/icons/extract-icon.svg" alt=""> 
@@ -88,7 +88,21 @@
         <p>A finance control app by Asuma Corp <br>
             © 2021. Todos os direiros reservados.</p>
     </footer>
-    <script src="../assets/js/header.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+      $(function(){
+          $('div.containerBalance div.eye').click(function(){
+              $(this).siblings('div.balance').fadeOut();
+              if($(this).text == "Ocultar") {
+                  $(this).text("Ocultar");
+              } else {
+                  $(this).text("Mostrar");
+              }
+          });
+      });
+    </script>
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/balance.js"></script>
   </body>
 </html>

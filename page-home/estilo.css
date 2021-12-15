@@ -3,6 +3,10 @@
     font-family: 'Oswald';
 }
 
+html, body{
+    height: 100%;
+}
+
 body {
     width: 100%;
     margin-top: 0%;
@@ -26,7 +30,7 @@ body {
 
 
 .container__balance {
-    height: 35vh;
+    height: 30%;
     background-color: #EFEFEF;
     display: flex;
     justify-content: space-around;
