@@ -15,7 +15,8 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="shortcut icon" href="./img/favicon_32x32.png" />
-    <link rel="stylesheet" href="../assets/css/button-checkbox.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="./css/button-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -27,47 +28,42 @@
 
     <!-- Using Navbar for Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1D2F40">
-            <div>
-                <a class="navbar-brand" href="#">
-                    <img src="./img/logo.png" alt="" width="150px" height="auto">
-                </a>
+        <div class="container">
+          <a href="../index.html">
+            <img
+            src="../assets/img/logo.svg"
+            alt="SeControle"
+            />
+          </a>
+          <div class="menu-section">
+            <div class="menu-toggle">
+              <div class="one"></div>
+              <div class="two"></div>
+              <div class="three"></div>
             </div>
-
-            <!-- Navbar Buttons-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar"
-                aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse px-md-3" id="textoNavbar">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item px-md-3">
-                        <a class="nav-link" href="../page-home/index.html" style="color: whitesmoke"> Home <span class="sr-only"></a>
-                    </li>
-                    <li class="nav-item px-md-3">
-                        <a class="nav-link" href="#" style="color: whitesmoke"> Lançamento <span class="sr-only"></a>
-                    </li>
-                    <li class="nav-item px-md-3">
-                        <a class="nav-link" href="../extract/extract.html" style="color: whitesmoke"> Histórico </a>
-                    </li>
-                    <li class="nav-item px-md-3">
-                        <a class="nav-link" href="#" style="color: whitesmoke"> Contato </a>
-                    </li>
-                    <!-- Profile avatar -->
-                    <span class="navbar-text col px-md-3">
-                        <div>
-                            <button class="avatar">
-                                <div class="fa">
-                                    <img src="../assets/icons/colorful-person.svg" alt="" width="40px" height="auto">
-                                </div>
-                            </button>
-                        </div>
-                    </span>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
+            <nav>
+              <ul>
+                <li>
+                  <a href="../page-home/index.html">Início</a>
+                </li>
+                <li>
+                  <a href="../page-launch/index.html">Lançamento</a>
+                </li>
+                <li>
+                  <a href="../extract/extract.html">Extrato</a>
+                </li>
+                <li>
+                  <a href="https://github.com/bonettdreans/Desafio_Neon/blob/main/README.md" 
+                  target="_blank">Contato</a>
+                </li>
+                <li>
+                    <img src="../assets/icons/colorful-person.svg" alt="">
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
     <!-- Site body divided into container for better optimization and responsiveness -->
     <main>
         <div class="flex-container-balance">
@@ -149,6 +145,7 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="../assets/js/header.js"></script>
 
 
 </body>
