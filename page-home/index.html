@@ -7,90 +7,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
-
+    <link rel="stylesheet" href="../assets/css/cards.css">
+    <link rel="stylesheet" href="../assets/css/home-header.css">
+    <link rel="stylesheet" href="../assets/css/home-client-profile.css">
+    <link rel="stylesheet" href="../assets/css/balance.css">
   </head>
   <header>
-    <div class="container">
-      <a href="../index.html">
-        <img
-        src="../assets/img/logo.svg"
-        alt="SeControle"
-        />
-      </a>
-      <div class="menu-section">
-        <div class="menu-toggle">
-          <div class="one"></div>
-          <div class="two"></div>
-          <div class="three"></div>
-        </div>
-        <nav>
-          <ul>
-            <li>
-            <a href="../index.html">Início</a>
-            </li>
-            <li>
-            <a href="../page-launch/index.html">Novo Lançamento</a>
-            </li>
-            <li>
-            <a href="https://github.com/bonettdreans/Desafio_Neon/blob/main/README.md" 
-            target="_blank">Contato</a>
-            </li>
-            <li>
-                <img src="../assets/icons/colorful-person.svg" alt="">
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <div class="headerBackground">
+    </div>
+    <div class="logo">
+      <img src="../assets/img/white-logo.svg">
     </div>
   </header>
   <body>
     <div>
-      <div class="container__perfil">
-        <img src="../assets/icons/colorful-person.svg" class="img__perfil" alt="imagem do perfil">
-        <p>Olá, Isabel</p>
-        <button class="btn__terminarSessao">Até logo</button>
+      <div class="containerPerfil">
+        <img id="profileIcon" src="../assets/icons/colorful-person.svg" alt="imagem do perfil">
+        <h4>Olá, Isabel</h4>
+        <img id="notificationIcon" src="../assets/icons/notification.svg">
+        <img id="settingsIcon" src="../assets/icons/settings.svg">
       </div>
-      <div class="container__wallet">
-        <div class="container__creditcardTitle">
-          <div>
-            <img src="../assets/icons/credit-card.svg" class="img__perfil" alt="">
+    </div>
+    <div class="containerBalance">
+      <div class="titleSaldo">
+        <h3>Saldo disponível</h3>
+      </div>
+      <div>
+        <img src="../assets/icons/eye.svg" alt="">
+      </div>
+      <div>
+        <h2>R$ 1000,00</h3>
+      </div>        
+    </div>
+    <main>
+      <section class="cards">
+        <a href="../page-launch/index.html">
+          <div class="card">
+            <div class="image">
+              <img src="../assets/icons/pay-icon.svg" alt=""> 
+            </div>
+            <div class="content">
+              <p class="title text--medium">Pagar</p>
+              <!-- <div class="info">
+                <p class="text--medium">57 Min</p>
+                <p class="price text--medium">Free</p>
+              </div> -->
+            </div>
           </div>
-          <div>
-            <h3>Wallet</h3>
-            <p>Gerencie seus cartões</p>
+        </a>  
+        <a href="../extract/extract.html">
+          <div class="card">
+            <div class="image">
+              <img src="../assets/icons/extract-icon.svg" alt=""> 
+            </div>
+            <div class="content">
+              <p class="title text--medium">Extrato</p>
+            </div>
+          </div>
+        </a>
+        <div class="card">
+          <div class="image">
+            <img src="../assets/icons/pix-icon.svg" alt=""> 
+          </div>
+          <div class="content">
+            <p class="title text--medium">Pix</p>
           </div>
         </div>
-        <img src="../assets/icons/arrow-right-black.svg" class="img__arrow" alt="">
-      </div>
-    </div>
-    <div id="d1">
-      <h3>Saldo Disponível</h3><br> R$ 1000 <br> Você não posssui lançamentos
-      <br>Que tal lançar um?
-      <br><button class="btn__terminarSessao">Lançar</button>
-    </div>
-    <div class="flex-container row">
-      <div>
-        <img src="../assets/icons/pay-icon.svg" alt=""> Pagar
-      </div>
-      <div>
-        <img src="../assets/icons/transfer-icon.svg" alt="">Transferir
-      </div>
-      <div><img src="../assets/icons/demand-icon.svg" alt="">Cobrar
-      </div>
-      <div><img src="../assets/icons/extract-icon.svg" alt=""> Extrato
-      </div>
-      <div><img src="../assets/icons/investiment-icon.svg" alt=""> Investimento
-      </div>
-      <div><img src="../assets/icons/pix-icon.svg" alt=""> Pix
-      </div>
-    </div>
+        <div class="card">
+          <div class="image">
+            <img src="../assets/icons/investiment-icon.svg" alt="">
+          </div>
+          <div class="content">
+            <p class="title text--medium">Investimento</p>
+        </div>
+      </section>
+    </main>
     <!-- footer -->
     <footer class="container__footer">
         <p>A finance control app by Asuma Corp <br>
             © 2021. Todos os direiros reservados.</p>
     </footer>
     <script src="../assets/js/header.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   </body>
 </html>

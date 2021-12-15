@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+* {
+    font-family: 'Oswald';
+}
+
+:root {
+    --color-black: #0D0D0D;
+    --color-blue: #DCEAF2;
+    --color-white: #F2F2F2;
+    --color-blue-dark: #1D2F40;
+    --color-grey: #C4C4C4;
+    --color-orange-dark: #F2CDAC;
+    --color-orange: rgba(242, 205, 172, 0.5);;
+}
+
+.containerPerfil {
+    position: relative;
+    width: 81%;
+    height: 8rem;
+    background: var(--color-orange-dark);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.containerPerfil img {
+    position: relative;
+    width: 100%;
+}
+
+#profileIcon {
+    height: 6rem;
+    left: -7%;
+}
+
+.containerPerfil h4 {
+    position: relative;
+    width: 100%;
+    font-family: 'Oswald';
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: var(--color-black);
+    margin: auto;
+    left: -15%;
+}
+
+#notificationIcon {
+    height: 1.7rem;
+    left: 30%;
+}
+
+#settingsIcon {
+    height: 1.7rem;
+    left: 8%;
+}
