@@ -1,7 +1,3 @@
 node_modules/
-<<<<<<< HEAD
 .env
 .sequelizerc
-=======
-
->>>>>>> 148242650d7e6e23cf375049227125163eaa2bd8
