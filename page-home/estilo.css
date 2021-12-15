@@ -24,43 +24,6 @@ body {
  */
 
 
-#d1 {
-    margin-left: 20%;
-}
-
-.img__logo {
-    height: 5vh;
-    width: 20vh;
-}
-
-.btn__terminarSessao {
-    background-color: #1D2F40;
-    border-radius: 20px;
-    border: none;
-    align-content: center;
-    align-items: center;
-    color: #fff;
-    cursor: pointer;
-    font-size: 0.8rem;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    padding: 0.4rem 1.5rem;
-    text-transform: uppercase;
-    transition: transform 80ms ease-in;
-}
-
-.btn__terminarSessao:hover {
-    background-color: rgb(219, 215, 215);
-    color: #0A1931
-}
-
-.btn__terminarSessao:active {
-    transform: scale(0.95);
-}
-
-.btn__terminarSessao:focus {
-    outline: none;
-}
 
 .container__balance {
     height: 35vh;

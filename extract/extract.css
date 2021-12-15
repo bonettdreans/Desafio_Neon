@@ -86,40 +86,6 @@ header nav ul li a:hover {
   
 }
 
-
-/************balance************/
-.containerBalance{
-    height: 20rem;
-    background-color: var(--color-white);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 8rem;
-
-}
-
-.titleSaldo {
-    display: flex;
-    align-items: center;
-}
-
-h3 {
-  color: var(--color-blue-dark);
-  font-size: 2rem;
-}
-
-.containerBalance img{
-  margin: 20px;
-  width: 25px;
-  cursor: pointer;
-}
-
-h2 {
-  color: var(--color-blue-dark);
-  font-size: 4rem;
-  font-weight: 400;
-}
-
 /************new launch button************/
 .container__btn{
   display: flex;
