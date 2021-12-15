@@ -6,9 +6,6 @@ const db = {}
 db.connection = new Sequelize (
     config.database, config.username, config.password, config);
 
-
-
-
     //Vinculamos modelos
 db.Client = require ('../models/Client')(db.connection, DataTypes)
 db.Launch = require ('../models/Launch')(db.connection, DataTypes)
