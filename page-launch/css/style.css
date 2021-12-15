@@ -30,79 +30,15 @@ body {
     margin-top: -250px;
 }
 
-/* Optimization of the header */
-header .flex-container {
-    display: flex;
-    background-color: #1D2F40;
-    justify-content: center;
-    align-items: center;
-}
-
-header .flex-container > div {
-    color: #1D2F40;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-}
-
-/* Navbar Optimization */
-.navbar-collapse {
-    justify-content: end;
-}
-.navbar-text {
-    display: inline-flex;
-    justify-content: end;
-}
-
-.navbar {
-    padding: 0.5rem 1rem 0.5rem 1rem;
-
-}
-
-.navbar-nav {
-    font-size: 0.85em;
-}
-
-.nav-item {
-    font-size: 2em;
-    padding: 5px 0 5px 5px;
-}
-
-.navbar-dark .navbar-brand {
-    color: #fff;
-    margin-right: 1em;
-}
-
-
-.list {
-    list-style: none;
-    padding: 0px 0 10px 0;
-    margin-top: 1rem;
-}
-
-.list li {
-    padding: 0px 0px 10px 0px;
-    margin: 0px 30px 0 0;
-    vertical-align: middle;
-}
-.list li label, .list li input {
-    display: inline-block;
-}
-
 /* Section Optimization */
 .flex-container-form {
     display: flex;
     justify-content: center;
     justify-content: space-between;
     width: auto 0;
-    height: 100vh;
-    
+    height: 100vh; 
 }
 
-.header2 {
-    margin-top: auto;
-    width: 70%;
-}
 .flex-container-balance {
     display: inline-flex;
     justify-content: space-around;
@@ -277,19 +213,12 @@ input.middle:focus {
 
 /* Responsiveness using media query */
 @media (max-width: 1024px) {
-    .header2 {
-        margin-left: 11em;
-        margin-top: auto;
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 1024px) {
     .div-form {
         margin-left: auto;
         font-size: 0.8em;
     }
 }
+
 @media (max-width: 1024px) {
     .balance {
         margin: 4em 0 5em 4em;
@@ -314,12 +243,6 @@ input.middle:focus {
     }
 }
 
-@media (max-width: 1024px) {
-    .navbar-nav {
-        font-size: 1em;
-    }
-}
-
 @media (min-width: 946px) {
     .divDate {
         float: left;
@@ -339,12 +262,6 @@ input.middle:focus {
 @media(max-width: 913px) {
     .divDate {
         margin: 1em 0 0 0;
-    }
-}
-
-@media (max-width: 860px) {
-    .header2 {
-        margin: auto;
     }
 }
 
@@ -454,9 +371,6 @@ input.middle:focus {
 @media (max-width: 388px) {
     .flex-container-balance {
         font-size: 6px;
-    }
-    .checkbox-btn {
-        margin: -50px 0 0px 0px;
     }
 }
 
