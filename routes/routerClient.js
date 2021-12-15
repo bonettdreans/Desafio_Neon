@@ -6,11 +6,7 @@ const auth = require ('../app/middlewares/auth')
 
 const routerClient = express.Router();
 
-
 routerClient.get("/api/client/:id", auth, clientControllers.findOne);
-
-
-routerClient.get("/api/client/:id", clientControllers.findOne);
 
 
 

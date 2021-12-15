@@ -14,5 +14,4 @@ routesLaunch.put("/api/launch/:id", auth, launchControllers.updateLaunch);
 
 routesLaunch.delete("/api/launch/:id", auth, launchControllers.deletLaunch);
 
-
 module.exports = routesLaunch
