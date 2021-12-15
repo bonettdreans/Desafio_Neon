@@ -1,0 +1,20 @@
+
+
+.containerPerfil {
+    position: relative;
+    width: 85%;
+    height: 8rem;
+    background: #F2CDAC;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.containerPerfil img {
+    position: relative;
+    width: 100%;
+    height: 6rem;
+    margin-left: -22rem;
+    margin-top: 1rem;
+}
