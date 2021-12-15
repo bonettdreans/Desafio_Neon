@@ -12,3 +12,6 @@ inputs.on('click', function() {
         el.checked = el == this && this.checked;
     }, this);
 });
+
+
+/* Consumindo a api beckend para enviar os dados de lançamento */
