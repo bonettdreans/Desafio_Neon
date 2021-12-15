@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../assets/css/cards.css">
     <link rel="stylesheet" href="../assets/css/home-header.css">
     <link rel="stylesheet" href="../assets/css/home-client-profile.css">
+    <link rel="stylesheet" href="../assets/css/balance.css">
   </head>
   <header>
     <div class="headerBackground">
@@ -28,10 +29,16 @@
         <img id="settingsIcon" src="../assets/icons/settings.svg">
       </div>
     </div>
-    <div id="d1">
-      <h3>Saldo Disponível</h3><br> R$ 1000 <br> Você não posssui lançamentos
-      <br>Que tal lançar um?
-      <br><button class="btn__terminarSessao">Lançar</button>
+    <div class="containerBalance">
+      <div class="titleSaldo">
+        <h3>Saldo disponível</h3>
+      </div>
+      <div>
+        <img src="../assets/icons/eye.svg" alt="">
+      </div>
+      <div>
+        <h2>R$ 1000,00</h3>
+      </div>        
     </div>
     <main>
       <section class="cards">
@@ -82,5 +89,6 @@
             © 2021. Todos os direiros reservados.</p>
     </footer>
     <script src="../assets/js/header.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   </body>
 </html>

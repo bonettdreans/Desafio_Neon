@@ -15,13 +15,13 @@
 
 .containerPerfil {
     position: relative;
-    width: 85%;
+    width: 81%;
     height: 8rem;
     background: var(--color-orange-dark);
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     border-radius: 10px;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 5rem;
     display: flex;
     align-items: center;
 }
@@ -33,6 +33,7 @@
 
 #profileIcon {
     height: 6rem;
+    left: -7%;
 }
 
 .containerPerfil h4 {
@@ -42,15 +43,16 @@
     font-weight: normal;
     font-size: 1.4rem;
     color: var(--color-black);
-    margin-left: 1rem;
-    padding-right: 10rem;
+    margin: auto;
+    left: -15%;
 }
 
 #notificationIcon {
     height: 1.7rem;
-    left: 13%;
+    left: 30%;
 }
 
 #settingsIcon {
     height: 1.7rem;
+    left: 8%;
 }
