@@ -7,62 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
-
+    <link rel="stylesheet" href="../assets/css/cards.css">
+    <link rel="stylesheet" href="../assets/css/home-header.css">
   </head>
   <header>
-    <div class="container">
-      <a href="../index.html">
-        <img
-        src="../assets/img/logo.svg"
-        alt="SeControle"
-        />
-      </a>
-      <div class="menu-section">
-        <div class="menu-toggle">
-          <div class="one"></div>
-          <div class="two"></div>
-          <div class="three"></div>
-        </div>
-        <nav>
-          <ul>
-            <li>
-            <a href="../index.html">Início</a>
-            </li>
-            <li>
-            <a href="../page-launch/index.html">Novo Lançamento</a>
-            </li>
-            <li>
-            <a href="https://github.com/bonettdreans/Desafio_Neon/blob/main/README.md" 
-            target="_blank">Contato</a>
-            </li>
-            <li>
-                <img src="../assets/icons/colorful-person.svg" alt="">
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <div class="headerBackground">
+    </div>
+    <div class="logo">
+      <img src="../assets/img/white-logo.svg">
     </div>
   </header>
   <body>
     <div>
-      <div class="container__perfil">
-        <img src="../assets/icons/colorful-person.svg" class="img__perfil" alt="imagem do perfil">
+      <div class="containerPerfil">
+        <img src="../assets/icons/colorful-person.svg" alt="imagem do perfil">
         <p>Olá, Isabel</p>
         <button class="btn__terminarSessao">Até logo</button>
-      </div>
-      <div class="container__wallet">
-        <div class="container__creditcardTitle">
-          <div>
-            <img src="../assets/icons/credit-card.svg" class="img__perfil" alt="">
-          </div>
-          <div>
-            <h3>Wallet</h3>
-            <p>Gerencie seus cartões</p>
-          </div>
-        </div>
-        <img src="../assets/icons/arrow-right-black.svg" class="img__arrow" alt="">
       </div>
     </div>
     <div id="d1">
@@ -70,22 +31,49 @@
       <br>Que tal lançar um?
       <br><button class="btn__terminarSessao">Lançar</button>
     </div>
-    <div class="flex-container row">
-      <div>
-        <img src="../assets/icons/pay-icon.svg" alt=""> Pagar
-      </div>
-      <div>
-        <img src="../assets/icons/transfer-icon.svg" alt="">Transferir
-      </div>
-      <div><img src="../assets/icons/demand-icon.svg" alt="">Cobrar
-      </div>
-      <div><img src="../assets/icons/extract-icon.svg" alt=""> Extrato
-      </div>
-      <div><img src="../assets/icons/investiment-icon.svg" alt=""> Investimento
-      </div>
-      <div><img src="../assets/icons/pix-icon.svg" alt=""> Pix
-      </div>
-    </div>
+    <main>
+      <section class="cards">
+        <a href="../page-launch/index.html">
+          <div class="card">
+            <div class="image">
+              <img src="../assets/icons/pay-icon.svg" alt=""> 
+            </div>
+            <div class="content">
+              <p class="title text--medium">Pagar</p>
+              <!-- <div class="info">
+                <p class="text--medium">57 Min</p>
+                <p class="price text--medium">Free</p>
+              </div> -->
+            </div>
+          </div>
+        </a>  
+        <a href="../extract/extract.html">
+          <div class="card">
+            <div class="image">
+              <img src="../assets/icons/extract-icon.svg" alt=""> 
+            </div>
+            <div class="content">
+              <p class="title text--medium">Extrato</p>
+            </div>
+          </div>
+        </a>
+        <div class="card">
+          <div class="image">
+            <img src="../assets/icons/pix-icon.svg" alt=""> 
+          </div>
+          <div class="content">
+            <p class="title text--medium">Pix</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="../assets/icons/investiment-icon.svg" alt="">
+          </div>
+          <div class="content">
+            <p class="title text--medium">Investimento</p>
+        </div>
+      </section>
+    </main>
     <!-- footer -->
     <footer class="container__footer">
         <p>A finance control app by Asuma Corp <br>
