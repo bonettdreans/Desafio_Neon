@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="shortcut icon" href="./img/favicon_32x32.png" />
     <link rel="stylesheet" href="../assets/css/button-checkbox.css">
+    <link rel="stylesheet" href="./css/button-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 
     <title>Lançamento</title>
@@ -78,16 +80,16 @@
         </div>
     </main>
 
-    <a>Despesa</a>
-    <div class="flex-container-btn">
+
+    <span class="switch">
+        
         <a>Receita</a>
-        <div class="checkbox-btn">
-            <input type="checkbox" id="btn-check">
-            <div>
-                <span class="slide"></span>
-            </div>
-        </div>
-    </div>
+        <input type="checkbox" class="checkgroup" id="btn1" onclick="marca(this);" />
+        <label for="btn1" class="btn1"></label>
+        <a>Despesa</a>
+        <input type="checkbox" class="checkgroup" id="btn2" onclick="marca(this);" />
+        <label for="btn2" class="btn2"></label>
+    </span>
 
     <!-- Creating a section to place the form and image -->
     <section>
