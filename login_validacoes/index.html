@@ -11,7 +11,7 @@
 <body class="Page Page--login .Util-not-loaded">
 	<div class="container-fluid">
 <div class="form-structor">
-	<form action="/" method="GET" id="form_login">
+	<form action="" method="post" id="form_login">
 	<div class="signup">
 		<h2 class="form-title2" id="signup">Login</h2>
 		<div class="form-holder">
@@ -21,18 +21,19 @@
 					<input type="password" class="input" id="password" placeholder="Senha"/>
 					<P class="warnings" id="warningsPasswordLogin"></P>
 		</div>
-		<button class="submit-btn" type="submit" routerLink='/'>Entrar</button>
+		<script src="consumndoLoginAPI.js"></script>
+		<button class="submit-btn" type="submit" onclick="envioLogin(), validation()">Entrar</button>
 		
 		</form>
 	</div>
-	<form action="/" method="GET" id="formCadastro">
+	<form action="" method="POST" id="formCadastro">
 		<div class="login slide-up">
 			<div class="center">				
 				<h2 class="form-title" id="login">Cadastro</h2>
 				<div class="form-holder">	
 					
 					
-					<input type="text" class="input" id="nameCadastro" placeholder="Nome" />
+			<input type="text" class="input" id="nameCadastro" placeholder="Nome" />
 			<P class="warnings" id="warningsNameCadastro"></P>
 			<input type="email" class="input" id="emailCadastro" placeholder="Email" />
 			<P class="warnings" id="warningsEmailCadastro"></P>
@@ -40,7 +41,7 @@
 			<P class="warnings" id="warningsPasswordCadastro"></P>
 			<input type="password" class="input" id="repPasswordCadastro" placeholder="Repetir Senha" />
 				</div>
-				<button class="submit-btn" >Cadastro</button>	
+				<button class="submit-btn" onclick="return validarCadastro(), cadastroUser()">Cadastro</button>	
 	</form>
 		</div>
 	</div>

@@ -17,7 +17,7 @@ const mostrarData = (data) => {
   let body = ''
         for (let i = 0; i < dataComplete.length; i++){
       body += `<tr><td/>${dataComplete[i].title_launch}<td/>${dataComplete[i].amount}<td/>${dataComplete[i].date}<td/>Edit    Delete <tr>`;     
-        }  
+        }
   document.getElementById("data").innerHTML = body;
   let nomeUsuario = ''
   nomeUsuario += `${data.data.name}`

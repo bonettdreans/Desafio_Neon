@@ -1,3 +1,7 @@
+// const { hash } = require("bcrypt");
+// const { json } = require("body-parser");
+// const { response } = require("express");
+
 console.clear();
 
 const loginBtn = document.getElementById('login');
@@ -27,13 +31,16 @@ signupBtn.addEventListener('click', (e) => {
 	});
 });
 
+
+
 const password = document.getElementById("password");
 const email = document.getElementById("email");
 const form = document.getElementById("form_login")
 const warningsEmailLogin = document.getElementById("warningsEmailLogin");
 const warningsPasswordLogin = document.getElementById("warningsPasswordLogin");
 
-form.addEventListener("submit", e => { e.preventDefault()
+function validation(){
+//form.addEventListener("submit", e => { e.preventDefault()
 
 const expresion = /\w+@\w+\.+[a-z]/;
 const msgErro = [];
@@ -67,8 +74,9 @@ const msgErro = [];
     warningsEmailLogin.innerHTML = ""
     email.classList.remove("warningsInput")
   }
-  //document.getElementById("form_login").reset()
-})  
+  document.getElementById("form_login").reset()
+//})
+}  
 const nameCadastro = document.getElementById("nameCadastro")
 const passwordCadastro = document.getElementById("passwordCadastro");
 const repPasswordCadastro = document.getElementById("repPasswordCadastro")
@@ -78,8 +86,12 @@ const warningsNameCadastro = document.getElementById("warningsNameCadastro");
 const warningsEmailCadastro = document.getElementById("warningsEmailCadastro");
 const warningsPasswordCadastro = document.getElementById("warningsPasswordCadastro");
 
-formCadastro.addEventListener("submit", e => {
-  e.preventDefault()
+
+
+
+function validarCadastro(){
+//formCadastro.addEventListener("submit", e => {e.preventDefault()
+  
 const expresion = /\w+@\w+\.+[a-z]/;
   const msgErro = [];
   if (nameCadastro.value === null || nameCadastro.value === "") {
@@ -144,7 +156,5 @@ const expresion = /\w+@\w+\.+[a-z]/;
   //document.getElementById("formCadastro").reset()
   //document.getElementById('formCadastro').addEventListener('submit',formCadastro)
   return false;
-})
-
-    
-
+//})
+}
