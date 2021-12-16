@@ -39,7 +39,7 @@ html,body {
 	
 .signup {
 		position: absolute;
-		top: 46%;
+		top: 42%;
 		left: 50%;
 		-webkit-transform: translate(-50%, -50%);
 		width: 65%;
@@ -88,7 +88,7 @@ span {
 		border-radius: 15px;
 		background-color: rgb(255, 255, 255);
 		overflow: hidden;
-		margin-top: 50px;
+		margin-top: 10px;
 		opacity: 1;
 		visibility: visible;
 		-webkit-transition: all .3s ease;
@@ -98,7 +98,7 @@ span {
 		outline: none;
 		box-shadow: none;
 		display: block;
-		height: 36px;
+		height: 24px;
 		line-height: 36px;
 		padding: 8px 15px;
 		border-bottom: 1px solid #eee;
@@ -118,8 +118,8 @@ span {
 		border:0;
 		border-radius: 15px;
 		display: block;
-		margin: 20px auto; 
-		padding: 15px 45px;
+		margin: 8px auto; 
+		padding: 12px 45px;
 		width: 100%;
 		font-size: 17px;
 		font-weight: bold;
@@ -148,7 +148,7 @@ span {
 		content: '';
 		position: absolute;
 		left: 50%;
-		top: -20px;
+		top: -60px;
 		-webkit-transform: translate(-50%, 0);
 		background-color: #DCEAF2;
 		width: 200%;
@@ -162,7 +162,7 @@ span {
 			position: absolute;
 			top: calc(50% - 17%);
 			left: 50%;
-			-webkit-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -48%);
 			width: 69%;
 			z-index: 5;
 			-webkit-transition: all .3s ease;
@@ -195,7 +195,7 @@ span {
 		outline: none;
 		box-shadow: none;
 		display: block;
-		height: 36px;
+		height: 24px;
 		line-height: 36px;
 		padding: 8px 15px;
 		border-bottom: 0.2px solid rgb(196, 194, 194);
@@ -215,9 +215,9 @@ span {
 		border:0;
 		border-radius: 15px;
 		display: block;
-		margin: 20px auto; 
-		padding: 15px 45px;
-		width: 100%;
+		margin: 8px auto; 
+		padding: 11px 45px;
+		width: 98%;
 		font-size: 17px;
 		font-weight: bold;
 		cursor: pointer;
@@ -245,15 +245,15 @@ span {
 		}
 		
 .slide-up .form-title {
-		font-size: 1.6em;
-		padding: 0 0 0 56px;
+		font-size: 1.5em;
+		padding: 0 0 0 74px;
 		color: #1D2F40;
 		cursor: pointer;
 		-webkit-transition: all .3s ease;
 		}
 		.form-title2 {
 			font-size: 1.6em;
-			margin: -11px 0px 0px 90px;
+			margin: -13px 0px 0px 84px;
 			padding: 0;
 			color: #1D2F40;
 			cursor: pointer;
@@ -266,7 +266,7 @@ span {
 		-webkit-transition: all .3s ease;
 		}
 #login{
-	margin:0px 0px 0px 96px;
+	margin:-19px 0px 0px 63px;
 	color: #1D2F40;
 }
 
