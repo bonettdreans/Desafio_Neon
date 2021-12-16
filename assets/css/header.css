@@ -70,7 +70,7 @@ header nav ul li img {
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 768px) {
     nav {
         display: none;
     }
