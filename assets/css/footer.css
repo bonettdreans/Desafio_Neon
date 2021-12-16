@@ -2,11 +2,14 @@
     --color-white: #F2F2F2;
     --color-blue-dark: #1D2F40;
 }
-  
+
+html, body {
+    height: 100%;
+}
 
 .container__footer{
     line-height: 3rem;
-    height: 8rem;
+    height: 10%;
     background-color: var(--color-blue-dark);
     display: flex;
     justify-content: center;
