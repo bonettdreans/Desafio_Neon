@@ -19,9 +19,11 @@ body {
     display: none;
 }
 
-#btnControl:checked + label > img {
-    width: 70px;
-    height: 74px;
+#btnControl:checked + label > .eyeSlash {
+    /* width: 70px;
+    height: 74px; */
+    background-image: url(../assets/icons/arrow-left-white.svg);
+    height: 25px;
 }
 
 .container__balance {

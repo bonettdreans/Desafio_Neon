@@ -61,7 +61,8 @@ body{
     position: relative;
     height: 25px;
     cursor: pointer;
-    left: -20%;
+    left: -50rem;
+    top: 1rem;
 }
 
 h3 {
