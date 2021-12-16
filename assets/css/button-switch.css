@@ -2,14 +2,13 @@
 
 
 /* Características do botão Switch */
-.container-button {
+.flex-container-button {
     display: flex;
     justify-content: center;
-    margin: 0px 75em 0 0;
+    margin-top: 5rem;
 }
 
 .despesa {
-    margin-right: 4em;
     font-size: 2em;
 }
 .receita {
@@ -18,11 +17,11 @@
 
 .switch {
     display: inline-block;
-    position: absolute;
+    position: relative;
     width: 58px;
     vertical-align: top;
-    margin-left: 100px;
-    top: 23%;
+    height: 25px;
+    margin: 0 10px;
 }
 
 .btn1 {
@@ -33,14 +32,6 @@
     border: 2px solid #f02f2f;
     transition: all 0.2s ease-in-out;
     border-radius: 15px;
-}
-
-.switch > label {
-    margin: 40px 0 0 0;
-}
-
-.switch {
-    margin: 0 17%;
 }
 
 .switch > label::before {
