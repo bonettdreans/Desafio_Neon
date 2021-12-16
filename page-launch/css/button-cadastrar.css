@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
-
+/* Características do botão Cadastrar */
 :root {
-  --color-black: #0D0D0D;
-  --color-orange-dark: #F2CDAC;
-  --color-orange: rgba(242, 205, 172, 0.5);
+    --color-black: #0D0D0D;
+    --color-orange-dark: #F2CDAC;
+    --color-orange: rgba(242, 205, 172, 0.5);
 }
 
 .containerButton {
@@ -26,10 +25,11 @@
     font-size: 1.4rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
-    padding: 0.9rem 4rem;
+    padding: 1.5rem 10rem;
     text-transform: uppercase;
     transition: transform 80ms ease-in;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 2rem auto;
 }
 
 .button:hover {
@@ -44,4 +44,3 @@
 .button:focus {
     outline: none;
 }
-  

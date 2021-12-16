@@ -1,4 +1,7 @@
 
+
+
+/* Características do botão Switch */
 .container-button {
     display: flex;
     justify-content: center;
@@ -86,3 +89,6 @@
     float: left;
     margin: 40px 15px 0 15px;
 }
+
+
+
