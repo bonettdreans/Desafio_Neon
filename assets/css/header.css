@@ -43,7 +43,7 @@ header nav ul {
 
 header nav ul li {
     list-style: none;
-    }
+}
 
 header nav ul li a {
     text-decoration: none;
@@ -55,8 +55,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: var(--color-grey);
     color: var(--color-blue-dark);
+    background: var(--color-grey);
 }
   
 header nav ul li img {
