@@ -17,7 +17,7 @@
 .button {
     color: white;
     background: var(--color-blue-dark);
-    border-radius: 2rem;
+    border-radius: 3rem;
     border: none;
     align-content: center;
     align-items: center;
