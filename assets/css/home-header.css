@@ -4,13 +4,8 @@
 }
 
 :root {
-    --color-black: #0D0D0D;
     --color-blue: #DCEAF2;
-    --color-white: #F2F2F2;
     --color-blue-dark: #1D2F40;
-    --color-grey: #C4C4C4;
-    --color-orange-dark: #F2CDAC;
-    --color-orange: rgba(242, 205, 172, 0.5);;
 }
 
 html, body {
@@ -33,7 +28,7 @@ header {
 .headerBackground {
     width: 100%;
     height: 44rem;
-    background: #1D2F40;
+    background: var(--color-blue-dark);
     border-radius: 250px;
     position: relative;
     margin-top: -250px;
@@ -48,6 +43,3 @@ header {
     justify-content: center;
     margin-top: -165px;
 }
-
-
-

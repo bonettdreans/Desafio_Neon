@@ -12,16 +12,11 @@ html, body {
     height: 100%;
 }
 
-/*=============== 
-MAIN
-==================*/
 main {
     margin-bottom: 80px;
     height: 21%;
 }
-  /*=============== 
-  CARDS
-  ==================*/
+
 .cards {
     width: 90%;
     max-width: 1290px;
@@ -81,4 +76,11 @@ main {
   
 .title {
     margin-bottom: 20px;
+}
+
+@media (max-width: 770px) {
+    .card {
+        height: 140px;
+        width: 130px;
+    }
 }

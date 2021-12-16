@@ -5,12 +5,7 @@
 
 :root {
     --color-black: #0D0D0D;
-    --color-blue: #DCEAF2;
-    --color-white: #F2F2F2;
-    --color-blue-dark: #1D2F40;
-    --color-grey: #C4C4C4;
     --color-orange-dark: #F2CDAC;
-    --color-orange: rgba(242, 205, 172, 0.5);;
 }
 
 html, body {
@@ -63,4 +58,52 @@ html, body {
 #settingsIcon {
     height: 1.7rem;
     left: 8%;
+}
+
+@media (max-width: 1440px) {
+    .containerProfile {
+        margin-top: -5%;
+    }
+}
+
+@media (max-width: 1180px) {
+    .containerProfile {
+        margin-top: -8%;
+    }
+}
+
+@media (max-width: 950px) {
+    .containerProfile {
+        margin-top: -10%;
+    }
+}
+
+@media (max-width: 820px) {
+    .containerProfile {
+        margin-top: -11%;
+    }
+
+    #profileIcon {
+        margin-left: 2%;    
+    }
+
+    .profile h4 {
+        margin-left: 2%;
+    }
+
+    #notificationIcon {
+        margin-right: 3%;
+    }
+}
+
+@media (max-width: 740px) {
+    .containerProfile {
+        margin-top: -13%;
+    }
+}
+
+@media (max-width: 660px) {
+    .containerProfile {
+        margin-top: -14.6%;
+    }
 }
