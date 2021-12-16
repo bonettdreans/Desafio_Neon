@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
-    <link rel="stylesheet" href="./css/button-style.css">
+    <link rel="stylesheet" href="../assets/css/button-switch.css">
+    <link rel="stylesheet" href="../assets/css/button-cadastrar.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="shortcut icon" href="../assets/icons/favicon.svg" type="image/x-icon">
 
@@ -98,7 +99,8 @@
                     <div class="divValue">
                         <label for="txtValue">Valor</label>
                         <div class="input-control text size4">
-                            <input required type="number" step="0.010" id="txtValue" placeholder="R$">
+                            <input type="number"  step="0.010" min="0.01" max="9999999999" id="txtValue" placeholder="R$">
+                            <p class="error" id="errorValue"></p>
                         </div>
                         <span class="error"></span>
                     </div>
@@ -107,6 +109,7 @@
                         <label for="txtDate">Data</label>
                         <div class="input-control text size4">
                             <input required type="date" id="txtDate">
+                            <p class="error" id="errorDate"></p>
                         </div>
                         <span class="error active"></span>
                     </div>
@@ -115,12 +118,13 @@
                         <label for="txtDeposit">Descrição</label>
                         <div class="input-control text size4">
                             <input required type="text" maxlength="50" id="txtDeposit" placeholder="Ex: Netflix">
+                            <p class="error" id="errorDeposit"></p>
                         </div>
                         <span class="error active"></span>
                     </div>
 
                     <div class="drop-list">
-                        <select autofocus>
+                        <select autofocus id="selected">
                             <option value="pix">PIX</option>
                             <option value="ticket">Boleto</option>
                             <option value="transfer">Transferência</option>
@@ -128,14 +132,14 @@
                             <option value="money">Dinheiro</option>
                         </select>
                     </div>
-                    <div class="divButton">
-                        <button type="submit" class="btn-register" return onclick="postForm()">Cadastrar</button>
+                    <div class="containerButton">
+                        <button type="submit" class="button">Cadastrar</button>
                     </div>
                 </form>
             </div>
 
             <div class="div-img-finance">
-                <img src="./img/Finance app-pana.png" alt="" width="400px" height="auto">
+                <img src="../assets/icons/Finance app-pana.png" alt="" width="400px" height="auto">
             </div>
         </div>
     </section>
@@ -149,7 +153,7 @@
 
     <script src="./js/script.js"></script>
     <script src="../assets/js/header.js"></script>
-
+    <script src="./js/validation-launch.js"></script>
 
 </body>
 

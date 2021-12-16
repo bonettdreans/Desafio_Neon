@@ -17,7 +17,7 @@ body {
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   /* overflow: hidden; */
-  background-image: url(../img/design-10.png);
+  background-image: url(../../assets/icons/design-10.png);
   background-size: cover;
 }
 
