@@ -21,13 +21,13 @@ body {
   background-size: cover;
 }
 
-.headerBackground {
+.bodyBackground {
     width: 100%;
     height: 44rem;
-    background: #1D2F40;
-    border-radius: 250px;
+    background: rgba(112, 183, 253, 0.329);
+    border-radius: 60% 50% 0 0;
     position: relative;
-    margin-top: -250px;
+    margin-top: 250px;
 }
 
 /* Section Optimization */
