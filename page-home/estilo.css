@@ -15,19 +15,14 @@ body {
     padding-bottom: 0%;
 }
 
-/* .navi__bar {
-    height: 5rem;
-    background-color: #1D2F40;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #F2CDAC;
-    margin: 0;
-    font-size: 37px;
+#btnControl {
+    display: none;
 }
- */
 
-
+#btnControl:checked + label > img {
+    width: 70px;
+    height: 74px;
+}
 
 .container__balance {
     height: 30%;
