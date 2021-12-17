@@ -76,3 +76,37 @@ h2 {
   font-size: 4rem;
   font-weight: 400;
 }
+
+@media (max-width: 425px) {
+    .titleSaldo h3 {
+        width: 1rem;
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .containerBalance {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .balance h2 {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .titleSaldo h3 {
+        width: 10rem;
+        font-size: 1.5rem;
+        margin-top: revert;
+    }
+
+    .balance h2 {
+        width: 10rem;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}
