@@ -6,7 +6,7 @@
 html,body {
 	position: relative;
 	min-height: 100vh;
-	background: url(../assets/img/FundoOpcao2.png);
+	background-color: #0A1931;
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,7 +17,16 @@ html,body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.container-fluid{
+	float: right;
+}
+img{
+	height: 60px;
+	
+}
+.logo{
+	margin: 0px 0 0 289px;
+}
 .form-structor {
         background-color: #222;
         border-radius: 15px;
@@ -282,3 +291,80 @@ border-bottom: 1px solid rgb(226, 4, 4) !important
 	font-size: 10px;
 	padding-top: 13px;
 }
+@media (max-width:1535px) {
+	.form-structor {
+		margin: 0px 0px 0px 102px ;
+	}
+   }
+@media (max-width:1440px) {
+	.form-structor {
+		margin: 0px 0px 0px 100px ;
+	}
+   }
+@media (max-width:768px) {
+	.form-structor {
+		margin: 0px 0px 0px 92px ;
+	}
+   }
+@media (max-width:425px) {
+ .form-structor {
+	 margin: 0px 0px 0px 0px ;
+ }
+}
+@media (max-width:375px) {
+	.form-structor {
+		margin: -2px 0px 0px 0px ;
+	}
+   }
+@media (max-width:320px) {
+	.form-structor {
+		margin: 30px 0px 0px 55px ;
+	}
+   }
+
+   @media (max-width:2685px) {
+	.logo {
+		margin: 0px 0px 0px -455px ;
+	}
+   }
+
+   @media (max-width:2560px) {
+	.logo {
+		margin: 0px 0px 0px -455px ;
+	}
+   }
+   @media (max-width:1535px) {
+	.logo {
+		margin: 0px 0px 0px -203px ;
+	}
+   }
+@media (max-width:1440px) {
+	.logo {
+		margin: 0px 0px 0px -213px ;
+	}
+   }
+   @media (max-width:1024px) {
+	.logo {
+		margin: 0px 0px 0px 144px ;
+	}
+   }
+@media (max-width:768px) {
+	.logo {
+		margin: 0px 0px 0px 138px ;
+	}
+   }
+@media (max-width:425px) {
+	.logo {
+	 margin: 0px 0px 0px 45px ;
+ }
+}
+@media (max-width:375px) {
+	.logo {
+	 margin: 0px 0px 0px 52px ;
+ }
+}
+@media (max-width:320px) {
+	.logo {
+		margin: 0 0px 0 96px;
+	}
+   }  
