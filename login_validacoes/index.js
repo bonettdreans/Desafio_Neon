@@ -1,42 +1,20 @@
 console.clear();
 
-const loginBtn = document.getElementById('login');
-const signupBtn = document.getElementById('signup');
-
-loginBtn.addEventListener('click', (e) => {
-	let parent = e.target.parentNode.parentNode;
-	Array.from(e.target.parentNode.parentNode.classList).find((element) => {
-		if(element !== "slide-up") {
-			parent.classList.add('slide-up')
-		}else{
-			signupBtn.parentNode.classList.add('slide-up')
-			parent.classList.remove('slide-up')
-		}
-	});
-});
-
-signupBtn.addEventListener('click', (e) => {
-	let parent = e.target.parentNode;
-	Array.from(e.target.parentNode.classList).find((element) => {
-		if(element !== "slide-up") {
-			parent.classList.add('slide-up')
-		}else{
-			loginBtn.parentNode.parentNode.classList.add('slide-up')
-			parent.classList.remove('slide-up')
-		}
-	});
-});
-
 const password = document.getElementById("password");
 const email = document.getElementById("email");
 const form = document.getElementById("form_login")
 const warningsEmailLogin = document.getElementById("warningsEmailLogin");
 const warningsPasswordLogin = document.getElementById("warningsPasswordLogin");
 
-form.addEventListener("submit", e => { e.preventDefault()
+form.addEventListener("submit", (event) => {
+  validation(event)
+})
+
+async function validation(event){
+//form.addEventListener("submit", e => { e.preventDefault()
 
 const expresion = /\w+@\w+\.+[a-z]/;
-const msgErro = [];
+
   if (password.value === null || password.value === "") {
     password.classList.add("warningsInput")
     warningsPasswordLogin.innerHTML = `<p/>⚠️ Senha não pode ser vazia`;
@@ -67,8 +45,11 @@ const msgErro = [];
     warningsEmailLogin.innerHTML = ""
     email.classList.remove("warningsInput")
   }
-  //document.getElementById("form_login").reset()
-})  
+ await envioLogin(event)
+  document.getElementById("form_login").reset()
+//})
+}  
+
 const nameCadastro = document.getElementById("nameCadastro")
 const passwordCadastro = document.getElementById("passwordCadastro");
 const repPasswordCadastro = document.getElementById("repPasswordCadastro")
@@ -78,8 +59,9 @@ const warningsNameCadastro = document.getElementById("warningsNameCadastro");
 const warningsEmailCadastro = document.getElementById("warningsEmailCadastro");
 const warningsPasswordCadastro = document.getElementById("warningsPasswordCadastro");
 
-formCadastro.addEventListener("submit", e => {
-  e.preventDefault()
+function validarCadastro(){
+//formCadastro.addEventListener("submit", e => {e.preventDefault()
+  
 const expresion = /\w+@\w+\.+[a-z]/;
   const msgErro = [];
   if (nameCadastro.value === null || nameCadastro.value === "") {
@@ -144,7 +126,57 @@ const expresion = /\w+@\w+\.+[a-z]/;
   //document.getElementById("formCadastro").reset()
   //document.getElementById('formCadastro').addEventListener('submit',formCadastro)
   return false;
-})
+//})
+}
 
-    
+async function  envioLogin(event) {
+  event.preventDefault();
 
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+await fetch('https://app-asuma.herokuapp.com/api/login', 
+  {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      },
+      body: JSON.stringify({email, password })
+    }).then(response => response.json())
+      .then(data => {
+      console.log(data);
+        window.localStorage.setItem('token', data.token);
+        window.localStorage.setItem('client', JSON.stringify(data))
+        if(data){
+          window.location.href = "http://127.0.0.1:5501/page-home/index.html"
+        } else {
+          window.location.href = "http://127.0.0.1:5501/login_validacoes/index.html"
+          }
+    });
+}
+function cadastroUser(event){
+event.preventDefault();
+
+const name = document.getElementById("nameCadastro").value;
+const email = document.getElementById("emailCadastro").value;
+const password = document.getElementById("passwordCadastro").value;
+    console.log(name, email, password);
+
+    fetch('https://app-asuma.herokuapp.com/api/register', 
+  {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      },
+      body: JSON.stringify({name, email, password })
+    }).then(response => response.json())
+      .then(data => {
+      console.log(data);
+        window.localStorage.setItem('token', data.token);
+        window.localStorage.setItem('client', JSON.stringify(data))
+      });
+}

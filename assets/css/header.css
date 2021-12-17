@@ -32,8 +32,8 @@ header .container {
 
 header img {
     width: 150px;
-    margin-left: 1rem;
-    padding: 1rem 0;
+    margin-left: 20px;
+    padding: 15px 0;
 }
 
 header nav ul {
@@ -43,7 +43,7 @@ header nav ul {
 
 header nav ul li {
     list-style: none;
-}
+    }
 
 header nav ul li a {
     text-decoration: none;
@@ -55,8 +55,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: var(--color-blue-dark);
     background: var(--color-grey);
+    color: var(--color-blue-dark);
 }
   
 header nav ul li img {
@@ -70,7 +70,7 @@ header nav ul li img {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 540px) {
     nav {
         display: none;
     }
