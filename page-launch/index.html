@@ -27,10 +27,6 @@
 
 <body>
 
-        
-
-
-    <!-- Header -->
     <header>
         <div class="container">
             <a href="../index.html">
@@ -66,7 +62,6 @@
         </div>
     </header>
 
-    <!-- Site body divided into container for better optimization and responsiveness -->
     <main>
         <div class="flex-container-balance">
             <div class="balance">
@@ -83,17 +78,14 @@
             <a>Despesa</a>
         </div>
         <div class="switch">
-
             <input type="checkbox" class="checkgroup" id="btn1" />
             <label for="btn1" class="btn1"></label>
-
         </div>
         <div class="receita">
             <a>Receita</a>
         </div>
     </div>
 
-    <!-- Creating a section to place the form and image -->
     <section>
         <div class="flex-container-form">
             <div class="div-form">
@@ -102,7 +94,8 @@
                     <div class="divValue">
                         <label for="txtValue">Valor</label>
                         <div class="input-control text size4">
-                            <input type="number" required step="0.010" min="0.01" max="9999999999" id="txtValue" placeholder="R$">
+                            <input type="number" required step="0.010" min="0.01" max="9999999999" id="txtValue"
+                                placeholder="R$">
                             <p class="error" id="errorValue"></p>
                         </div>
                         <span class="error"></span>
@@ -147,16 +140,13 @@
         </div>
     </section>
 
-    <!-- footer -->
     <footer class="container__footer">
         <p>A finance control app by Asuma Corp <br>
             © 2021. Todos os direiros reservados.</p>
     </footer>
 
-
     <script src="./js/script.js"></script>
     <script src="../assets/js/header.js"></script>
-    <script src="./js/validation-launch.js"></script>
 
 </body>
 
