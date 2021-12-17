@@ -1,0 +1,52 @@
+.flex-container-saldo-eye {
+    display: flex
+}
+.bma {
+    display: block;
+    position: relative;
+    height: 25px;
+    cursor: pointer;
+}
+.btn-eye > .bma {
+    width: 39px;
+    height: 29px;
+    display: flex;
+}
+.btn-eye > .bma::before {
+    content: '';
+    display: flex;
+    position: relative;
+    top: 0;
+    right: 3px;
+    width: 33px;
+}
+.btn-eye > .bma::after {
+    content: '';
+    display: flex;
+    width: 35px;
+    height: 25px;
+}
+.btn-eye > .bma:checked + .bma::after {
+    margin: 1px;
+    width: 19px;
+    height: 19px;
+    background-color: #fff;
+}
+.saldoValor {
+    display: block;
+    border: none;
+    background: none;
+    font-size: 2rem;
+}
+.bma > .aberto {
+    width: 20px;
+}
+.mostra {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height:  inherit;
+    opacity: 0;
+    border: none;
+}
