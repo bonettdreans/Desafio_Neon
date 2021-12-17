@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const authConfig = require('../../config/authConfig');
-const { Client } = require('../database/db'); 
-const { Launch } = require('../database/db'); 
+const { Client } = require('../database/db');
+const { Launch } = require('../database/db');
 
 
 
@@ -10,8 +10,8 @@ module.exports = (req, res, next) => {
     console.log(req.headers);
 
     // Comprobar que existe el token
-    if(!req.headers.authorization) {
-        res.status(401).json({msg: "Unauthorized access"});
+    if (!req.headers.authorization) {
+        res.status(401).json({ msg: "Unauthorized access" });
 
     } else {
 
@@ -21,7 +21,7 @@ module.exports = (req, res, next) => {
         // Comprobar la validez de este token
         jwt.verify(token, authConfig.secret, (err, decoded) => {
 
-            if(err) {
+            if (err) {
                 res.status(500).json({ msg: "There was a problem decoding the token", err });
             } else {
                 req.user = decoded;

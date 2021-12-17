@@ -6,4 +6,4 @@ const AuthController = require("../app/controllers/AuthClient");
 routerAuth.post("/api/register", AuthController.singUp);
 routerAuth.post("/api/login", AuthController.singIn);
 
-module.exports = routerAuth
+module.exports = routerAuth;

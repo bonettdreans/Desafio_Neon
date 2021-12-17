@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const app = express();
 require('dotenv').config();
 //const cors = require('cors')
-const { connection } = require ('./database/db');
+const { connection } = require('./database/db');
 
 const PORT = process.env.PORT || 7400
 
@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.urlencoded({ extended: false }));
 
-app.use(require ('../routes/routerAuth'));
+app.use(require('../routes/routerAuth'));
 app.use(require('../routes/routerClient'));
 app.use(require('../routes/routesLaunch'));
 
@@ -23,7 +23,7 @@ app.use(require('../routes/routesLaunch'));
 app.listen(PORT, function () {
     console.log(`successfully initialized http://localhost:${PORT}`);
 
-    connection.sync({force: false}).then (() => {
+    connection.sync({ force: false }).then(() => {
         console.log("Connection Full");
-        });
+    });
 });

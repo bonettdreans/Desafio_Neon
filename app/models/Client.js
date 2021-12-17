@@ -4,18 +4,18 @@ const {
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class client extends Model {
-    
+
     static associate(models) {
-      client.hasMany(models.Launch, {as:"valor", foreignKey:"client_id"});
+      client.hasMany(models.Launch, { as: "valor", foreignKey: "client_id" });
     }
   };
   client.init({
     client_id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
-      autoIncrement: true 
+      autoIncrement: true
     },
-    name: { 
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
@@ -28,9 +28,9 @@ module.exports = (sequelize, DataTypes) => {
         }
       }
     },
-    email:{ 
+    email: {
       type: DataTypes.STRING,
-      allowNull:false,
+      allowNull: false,
       validate: {
         isEmail: {
           msg: "O email tem que ser valido"
@@ -39,7 +39,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     password: {
       type: DataTypes.STRING,
-      allowNull:false,
+      allowNull: false,
       validade: {
         len: [6, 255],
         msg: "A senha tem que ter como minimo 6 caracteres"

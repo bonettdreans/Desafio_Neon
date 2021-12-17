@@ -4,16 +4,16 @@ const {
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class launch extends Model {
-   
-    static associate(models)  {
-      launch.belongsTo(models.Client, {as:"balance", foreignKey:"client_id"})
-  }
-};
+
+    static associate(models) {
+      launch.belongsTo(models.Client, { as: "balance", foreignKey: "client_id" });
+    }
+  };
   launch.init({
     launch_id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
-      autoIncrement: true 
+      autoIncrement: true
     },
     amount: DataTypes.FLOAT,
     date: DataTypes.STRING,
