@@ -323,7 +323,7 @@ span {
 	margin: auto;
 	color: rgb(148, 24, 24);
 	font-size: 10px;
-	padding-top: 13px;
+	padding-top: -1px;
 }
 @media (max-width:1535px) {
 	.form-structor {
@@ -362,11 +362,6 @@ span {
 	}
    }
 
-   @media (max-width:2560px) {
-	.logo {
-		margin: 0px 0px 0px -455px ;
-	}
-   }
    @media (max-width:1535px) {
 	.logo {
 		margin: 0px 0px 0px -203px ;
