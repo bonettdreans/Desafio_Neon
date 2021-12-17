@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 
 :root {
   --color-black: #0D0D0D;
@@ -26,13 +26,13 @@ html {
 
 html, 
 body {
-  /* emphasizes legibility over rendering speed and geometric precision */
+  emphasizes legibility over rendering speed and geometric precision
   text-rendering: optimizelegibility;
-  /* smooth the font on the level of the pixel */
+  smooth the font on the level of the pixel
   -webkit-font-smoothing: antialiased;
   height: 100vh;
-}
-
+} */
+/* 
 body{
   font-size: 1.6rem;
   width: 100%;
@@ -80,15 +80,15 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-/*   background: var(--color-grey); */
+  background: var(--color-grey);
   color: var(--color-grey);
   height: 2.4rem;
   
-}
+} */
 
 
 /************responsiveness************/
-@media (max-width: 550px) {
+/* @media (max-width: 550px) {
   .html {
     font-size: 50%;
   }
@@ -115,9 +115,9 @@ header nav ul li a:hover {
       height: 30px;
       margin-right: 20px;
   }
-
+ */
   /* fullscreen */
-  .menu-section.on {
+  /* .menu-section.on {
       position: absolute;
       top:0;
       left:0;
@@ -178,3 +178,4 @@ header nav ul li a:hover {
     padding-right: 5rem;
   }
 }
+ */
