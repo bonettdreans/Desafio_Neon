@@ -1,15 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
-
-:root {
-    --color-black: #0D0D0D;
-    --color-blue: #DCEAF2;
-    --color-white: #F2F2F2;
-    --color-blue-dark: #1D2F40;
-    --color-grey: #C4C4C4;
-    --color-orange-dark: #F2CDAC;
-    --color-orange: rgba(242, 205, 172, 0.5);;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,131 +13,26 @@ body {
     font-family: "Oswald";
     text-rendering: optimizelegibility;
     -webkit-font-smoothing: antialiased;
-    /* background-color: ;
-    background: url(../img/); */
+    background: url(../../assets/icons/design-10.png);
     background-repeat: no-repeat;
     background-size: 150% 150%;
-    background-color: var(--color-white);
 }
-.flex-container-saldo-eye {
-    display: flex
-}
-.bma {
-    display: block;
-    position: relative;
-    height: 25px;
-    cursor: pointer;
-}
-.btn-eye > .bma {
-    width: 39px;
-    height: 29px;
-    display: flex;
-}
-.btn-eye > .bma::before {
-    content: '';
-    display: flex;
-    position: relative;
-    top: 0;
-    right: 3px;
-    width: 33px;
-}
-.btn-eye > .bma::after {
-    content: '';
-    display: flex;
-    width: 35px;
-    height: 25px;
-}
-.btn-eye > .bma:checked + .bma::after {
-    margin: 1px;
-    width: 19px;
-    height: 19px;
-    background-color: #fff;
-}
-.saldoValor {
-    display: block;
-    border: none;
-    background: none;
-    font-size: 2rem;
-}
-.bma > .aberto {
-    width: 20px;
-}
-.mostra {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: inherit;
-    height:  inherit;
-    opacity: 0;
-    border: none;
-}
-<<<<<<< HEAD:front-end/launch-page/css/style.css
-.flex-container-saldo-eye {
-    display: flex
-}
-.bma {
-    display: block;
-    position: relative;
-    height: 25px;
-    cursor: pointer;
-}
-.btn-eye > .bma {
-    width: 39px;
-    height: 29px;
-    display: flex;
-}
-.btn-eye > .bma::before {
-    content: '';
-    display: flex;
-    position: relative;
-    top: 0;
-    right: 3px;
-    width: 33px;
-}
-.btn-eye > .bma::after {
-    content: '';
-    display: flex;
-    width: 35px;
-    height: 25px;
-}
-.btn-eye > .bma:checked + .bma::after {
-    margin: 1px;
-    width: 19px;
-    height: 19px;
-    background-color: #fff;
-}
-.saldoValor {
-    display: block;
-    border: none;
-    background: none;
-    font-size: 2rem;
-}
-.bma > .aberto {
-    width: 20px;
-}
-.mostra {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: inherit;
-    height:  inherit;
-    opacity: 0;
-    border: none;
-}
-=======
->>>>>>> main:front-end/assets/css/form.css
-.bodyBackground {
+
+/* .bodyBackground {
     width: 100%;
     height: 44rem;
-    background: var(--color-blue);
-    border-radius: 50% 50% 0 0;
-    margin-top: -48%;
-}
+    background: rgba(112, 183, 253, 0.329);
+    border-radius: 60% 50% 0 0;
+    position: relative;
+    margin-top: 250px;
+} */
 
 .flex-container-form {
     display: flex;
     justify-content: space-around;
-    padding: 7px -1px 0px 34px;
+    width: 100%;
+    height: 100vh;
+    padding: 7px 20px 0px 20px;
     margin-top: 5rem;
 }
 .flex-container-balance {
