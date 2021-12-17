@@ -64,8 +64,18 @@
             <div class="balance">
                 <h2>Saldo disponível <i class="fas fa-eye"></i></h2>
             </div>
-            <div class="balanceValue">
-                <h2>R$ 1000,00</h2>
+            <div class="flex-container-saldo-eye">
+                <div class="btn-eye">
+                    <input class="mostra"  id="bma" type="checkbox" value="" onclick="mostrarOcultar()">
+                    <label for="bma" class="bma">
+                        <img id="olhoaberto" class="aberto" src="../front-end/assets/icons/eye.svg" alt="">   
+                    </label>
+                </div>
+                    <div id="eye" class="hidden">
+                        <div class="balanceValue">
+                            <input class="saldoValor" type="text" id="saldo" value="R$">
+                        </div>    
+                    </div>
             </div>
         </div>
     </main>
