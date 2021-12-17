@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+* {
+    font-family: 'Oswald';
+}
+
+:root {
+    --color-black: #0D0D0D;
+    --color-orange-dark: #F2CDAC;
+}
+
+html, body {
+    height: 100%;
+}
+
+.containerProfile {
+    height: 15%;
+} 
+
+.profile {
+    position: relative;
+    width: 81%;
+    height: 8rem;
+    background: var(--color-orange-dark);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    position: relative;
+    width: 100%;
+}
+
+#profileIcon {
+    height: 6rem;
+    left: -7%;
+}
+
+.containerProfile h4 {
+    position: relative;
+    width: 100%;
+    font-family: 'Oswald';
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: var(--color-black);
+    margin: auto;
+    left: -15%;
+}
+
+#notificationIcon {
+    height: 1.7rem;
+    left: 30%;
+}
+
+#settingsIcon {
+    height: 1.7rem;
+    left: 8%;
+}
+
+@media (max-width: 1440px) {
+    .containerProfile {
+        margin-top: -5%;
+    }
+}
+
+@media (max-width: 1180px) {
+    .containerProfile {
+        margin-top: -8%;
+    }
+}
+
+@media (max-width: 950px) {
+    .containerProfile {
+        margin-top: -10%;
+    }
+}
+
+@media (max-width: 820px) {
+    .containerProfile {
+        margin-top: -11%;
+    }
+
+    #profileIcon {
+        margin-left: 2%;    
+    }
+
+    .profile h4 {
+        margin-left: 2%;
+    }
+
+    #notificationIcon {
+        margin-right: 3%;
+    }
+}
+
+@media (max-width: 740px) {
+    .containerProfile {
+        margin-top: -13%;
+    }
+}
+
+@media (max-width: 660px) {
+    .containerProfile {
+        margin-top: -14.6%;
+    }
+}

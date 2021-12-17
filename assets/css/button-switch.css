@@ -1,0 +1,94 @@
+
+
+
+/* Características do botão Switch */
+.container-button {
+    display: flex;
+    justify-content: center;
+    margin: 0px 75em 0 0;
+}
+
+.despesa {
+    margin-right: 4em;
+    font-size: 2em;
+}
+.receita {
+    font-size: 2em;
+}
+
+.switch {
+    display: inline-block;
+    position: absolute;
+    width: 58px;
+    vertical-align: top;
+    margin-left: 100px;
+    top: 23%;
+}
+
+.btn1 {
+    display: flex;
+    position: relative;
+    height: 25px;
+    background-color: #f02f2f;
+    border: 2px solid #f02f2f;
+    transition: all 0.2s ease-in-out;
+    border-radius: 15px;
+}
+
+.switch > label {
+    margin: 40px 0 0 0;
+}
+
+.switch {
+    margin: 0 17%;
+}
+
+.switch > label::before {
+    content: '';
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 3px;
+    width: 33px;
+}
+.switch > label::after {
+    content: '';
+    display: flex;
+    width: 17px;
+    height: 17px;
+    margin: 2px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.switch > input {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width: inherit;
+    height:  inherit;
+    opacity: 0;
+}
+.switch > input:checked + label {
+    padding-left: 33px;
+    background-color: #0F9959;
+    border-color: #0F9959;
+    color: #fff;
+    
+}
+.switch > input:checked + label::after {
+    margin: 1px;
+    width: 19px;
+    height: 19px;
+    background-color: #fff;
+    
+}
+
+.switch > a {
+    font-family: 'Oswald';
+    font-size: 1.5em;
+    float: left;
+    margin: 40px 15px 0 15px;
+}
+
+
+

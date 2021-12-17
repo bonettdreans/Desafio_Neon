@@ -1,0 +1,388 @@
+/* Resetting browser settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+/* Every 1rem will be considered 10px */
+html {    
+    font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Oswald";
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  /* overflow: hidden; */
+  background-image: url(../../assets/icons/design-10.png);
+  background-size: cover;
+}
+
+.bodyBackground {
+    width: 100%;
+    height: 44rem;
+    background: rgba(112, 183, 253, 0.329);
+    border-radius: 60% 50% 0 0;
+    position: relative;
+    margin-top: 250px;
+}
+
+/* Section Optimization */
+.flex-container-form {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: auto 0;
+    height: 100vh; 
+}
+
+.flex-container-balance {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.balance {
+    margin: 4em 0 5em 20em;
+    
+}
+.balanceValue {
+    margin: 4em 0px 5em 50em;
+}
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.value {
+    margin: 2em;  
+}
+
+h3 {
+    font-size: 3em;
+}
+
+.form {
+    padding: 10px 10px 10px 10px;
+    font-size: 2em;
+    margin: 2em 0 0 0;
+}
+
+#txtValue {
+    margin-right: 1em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 0em;
+    background: none;
+}
+
+#txtDate {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 0px 10px 0px 5px;
+    margin-left: 0em;
+    background: none;
+}
+
+#txtDeposit {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 0;
+    background: none;
+}
+
+.text-input {
+    border-bottom: 2px solid rgb(118, 118, 118);
+    width: 420px;
+    font-size: initial;
+}
+
+input.middle:focus { 
+    outline-width: 0; 
+}
+
+.avatar {
+    background: none;
+    border: none;
+}
+.flex-container-form {
+    display: flex;
+    padding: 7px 20px 0px 20px;
+    margin: 10px 20px 0px 20px;   
+}
+
+/* Form configuration and respective divs */
+.div-form {
+    margin-left: 20em;
+}
+
+.div-img-finance {
+    margin-right: 20em;
+}
+
+.divValue {
+    float: left;
+    margin-right: 1em;
+}
+
+.divDate {
+    float: left;
+    margin: 0 0 0 0;
+}
+
+.divDeposit {
+    margin: 70px 0 0 0;
+}
+
+.divDeposit label {
+    margin: 15px 0px 0px 0px;
+}
+
+.divDeposit .input-control {
+    width: 335px;
+}
+
+
+/* Register button configuration */
+.divButton {
+    margin: 4em 0 0 0;
+}
+
+.drop-list {
+    margin: 3em 0 0 0;
+}
+
+.btn-register {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    
+    width: 80%;
+    padding: 0.5em 5em 0.5em 5em;
+    border-radius: 1em;
+    background: rgba(243, 147, 64, 0.74);
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2.5px 0 #000000;
+    font-family: 'Oswald';
+}
+
+.btn-register :hover{
+    background: #0d151d;
+    box-shadow: 0 5px 0 #000000;
+}
+
+.btn-register :active{
+    position: relative;
+    top: 10px;
+    box-shadow: none;
+}
+
+.drop-list {
+    position: relative;
+    font-family: "Oswald";
+}
+
+.drop-list select {
+    background: rgba(112, 183, 253, 0.781);
+    font-size: 1em;
+    border: none;
+}
+
+.form-control {
+    font-size: 2rem;
+    background-color: transparent;
+}
+
+.flex-container-btn {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Responsiveness using media query */
+@media (max-width: 1024px) {
+    .div-form {
+        margin-left: auto;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .balance {
+        margin: 4em 0 5em 4em;
+    }
+}
+@media (max-width: 1024px) {
+    .balanceValue {
+        margin: 4em 0px 5em 30em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .div-img-finance {
+        margin-right: auto;
+        height: 50em;
+    }
+}
+
+@media (min-width: 1025px) {
+    .balanceValue {
+        margin: 4em 0px 5em 30em;
+    }
+}
+
+@media (min-width: 946px) {
+    .divDate {
+        float: left;
+        margin: 0 0 0 0;
+    }
+}
+
+@media (max-width: 945px) {
+    .divDeposit {
+        margin: 5em 0 0 0;
+    }
+    .divDate {
+        margin: auto;
+    }
+}
+
+@media(max-width: 913px) {
+    .divDate {
+        margin: 1em 0 0 0;
+    }
+}
+
+@media (max-width: 845px) {
+    .divDeposit {
+        margin: 8em 0 0 0;
+    }
+}
+
+@media (max-width: 820px) {
+    .balanceValue {
+        margin: 4em 0px 5em 20em;
+    }
+} 
+
+@media (max-width: 708px) {
+    .flex-container-form {
+      flex-direction: column;
+    }
+    .div-form {
+        margin: auto;
+    }
+    .divDate {
+        margin: 0 0 0 0;
+    }
+    .divDeposit{
+        margin: 0 0 0 0;
+    }
+}
+
+@media (max-width: 653px) {
+    .balanceValue {
+        margin: 4em 0px 5em 10em;
+    }
+    .checkbox-btn {
+        margin: -20px 0 0px 0px;
+    }
+} 
+
+@media (max-width: 555px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media (max-width: 543px) {
+    .flex-container-balance {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 490px) {
+    .div-img-finance > img {
+        width: 390px;
+    }
+}
+
+@media (max-width: 445px) {
+    .divDeposit {
+        margin: 8em 0 0 0;
+    }
+    .divDate {
+        margin: 0 0 0 0;
+    }
+}
+
+@media (max-width: 445px) {
+    .flex-container-balance {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 445px) {
+    .flex-container-form {
+        margin: 0em 1em 1em 1em;
+    }
+}
+
+@media (max-width: 445px) {    
+    .balanceValue {
+        margin: 4em 0px 5em 5em;
+    }
+}
+
+@media (max-width: 425px) {
+    .div-img-finance img {
+        width: 300px;
+        height: auto;
+    }
+    .divDeposit {
+        margin: 7.8em 0 0 0;
+    }
+    .divDate {
+        margin: 0.8em 0 0 0;
+    }
+}
+
+@media (max-width: 413px) {
+    .divDeposit {
+        margin: 114px 0 5px 0;
+    }
+    .divDate {
+        margin: 10px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 388px) {
+    .flex-container-balance {
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 376px) {
+    .flex-container-form {
+        margin: 1em 1em 1em 1em;
+    }
+}
+
+@media (max-width: 330px) {
+    .div-img-finance img {
+    width: 280px;
+    height: auto;
+    }
+}

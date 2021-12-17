@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+:root {
+    --color-black: #0D0D0D;
+    --color-blue: #DCEAF2;
+    --color-white: #F2F2F2;
+    --color-blue-dark: #1D2F40;
+    --color-grey: #C4C4C4;
+    --color-orange-dark: #F2CDAC;
+    --color-orange: rgba(242, 205, 172, 0.5);;
+}
+
+* {
+    box-sizing: border-box;
+    margin-bottom: 0;
+    padding: 0;
+    outline: 0;
+
+    font-family: 'Oswald', sans-serif;
+    font: normal;
+    }
+
+
+html {
+    font-size: 62.5%;
+}
+
+html, 
+body {
+    /* emphasizes legibility over rendering speed and geometric precision */
+    text-rendering: optimizelegibility;
+    /* smooth the font on the level of the pixel */
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+}
+
+body{
+    font-size: 1.6rem;
+    width: 100%;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-bottom: 0%;
+}
+
+.containerBalance{
+    height: 28%;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem;
+}
+
+.titleSaldo {
+    display: flex;
+    align-items: center;
+}
+
+.containerBalance img {
+    position: relative;
+    height: 25px;
+    cursor: pointer;
+    left: -50rem;
+    top: 1rem;
+}
+
+h3 {
+  color: var(--color-blue-dark);
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+h2 {
+  color: var(--color-blue-dark);
+  font-size: 4rem;
+  font-weight: 400;
+}

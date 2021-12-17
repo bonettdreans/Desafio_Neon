@@ -1,0 +1,86 @@
+:root {
+    --color-black: #0D0D0D;
+    --color-blue: #DCEAF2;
+    --color-white: #F2F2F2;
+    --color-blue-dark: #1D2F40;
+    --color-grey: #C4C4C4;
+    --color-orange-dark: #F2CDAC;
+    --color-orange: rgba(242, 205, 172, 0.5);;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    margin-bottom: 80px;
+    height: 21%;
+}
+
+.cards {
+    width: 90%;
+    max-width: 1290px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    text-decoration: none;
+}
+  
+.text--medium {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-weight: 400;
+    color: var(--color-blue-dark);
+}
+
+.card {
+    height: 180px;
+    width: 150px;
+    border-radius: 5px;
+
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--color-blue);
+
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+  
+.card:hover {
+    transform: translateY(-7px);
+}
+  
+.image {
+    width: 50%;
+    padding-top: 56.25%; /* 16:9 */
+
+    position: relative;
+}
+  
+.image img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.title {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 770px) {
+    .card {
+        height: 140px;
+        width: 130px;
+    }
+}
