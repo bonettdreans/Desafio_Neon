@@ -16,8 +16,8 @@
 }
   
 .button {
-    color: white;
-    background: var(--color-blue-dark);
+    color: var(--color-black);
+    background: var(--color-orange-dark);
     border-radius: 2rem;
     border: none;
     align-content: center;
@@ -35,13 +35,5 @@
 .button:hover {
     background: whitesmoke;
     color: var(--color-black);
+    background: var(--color-orange);
 }
-
-.button:active {
-    transform: scale(0.95);
-}
-
-.button:focus {
-    outline: none;
-}
-  
