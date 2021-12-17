@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+html {
+    font-size: 62.5%;
+}
+html,
+body {
+    height: 100%;
+    font-family: "Oswald";
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    background: url(../../assets/icons/design-10.png);
+    background-repeat: no-repeat;
+    background-size: 150% 150%;
+}
+.flex-container-saldo-eye {
+    display: flex
+}
+.bma {
+    display: block;
+    position: relative;
+    height: 25px;
+    cursor: pointer;
+}
+.btn-eye > .bma {
+    width: 39px;
+    height: 29px;
+    display: flex;
+}
+.btn-eye > .bma::before {
+    content: '';
+    display: flex;
+    position: relative;
+    top: 0;
+    right: 3px;
+    width: 33px;
+}
+.btn-eye > .bma::after {
+    content: '';
+    display: flex;
+    width: 35px;
+    height: 25px;
+}
+.btn-eye > .bma:checked + .bma::after {
+    margin: 1px;
+    width: 19px;
+    height: 19px;
+    background-color: #fff;
+}
+.saldoValor {
+    display: block;
+    border: none;
+    background: none;
+    font-size: 2rem;
+}
+.bma > .aberto {
+    width: 20px;
+}
+.mostra {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height:  inherit;
+    opacity: 0;
+    border: none;
+}
+.bodyBackground {
+    width: 100%;
+    height: 44rem;
+    background: rgba(112, 183, 253, 0.329);
+    border-radius: 60% 50% 0 0;
+    position: relative;
+    margin-top: 250px;
+}
+
+.flex-container-form {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    padding: 7px 20px 0px 20px;
+    margin-top: 5rem;
+}
+.flex-container-balance {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 5rem;
+    font-size: 0.8rem;
+}
+h2 {
+    font-size: 3em;
+}
+.balanceValue {
+    margin: 0 auto;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.value {
+    margin: 2em;
+}
+h3 {
+    font-size: 3em;
+}
+.form {
+    padding: 10px 10px 10px 10px;
+    font-size: 2rem;
+    margin: 2em 0 0 0;
+}
+#txtValue {
+    margin-right: 1em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 0em;
+    background: none;
+}
+#txtDate {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 0px 10px 0px 5px;
+    margin-left: 0em;
+    background: none;
+}
+#txtDeposit {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 0;
+    background: none;
+}
+.text-input {
+    border-bottom: 2px solid rgb(118, 118, 118);
+    width: 420px;
+    font-size: initial;
+}
+input.middle:focus {
+    outline-width: 0;
+}
+.avatar {
+    background: none;
+    border: none;
+}
+.divValue {
+    float: left;
+    margin-right: 1em;
+}
+.divDate {
+    float: left;
+    margin: 0 0 0 0;
+}
+.divDeposit {
+    margin: 70px 0 0 0;
+}
+.divDeposit label {
+    margin: 15px 0px 0px 0px;
+}
+.divDeposit .input-control {
+    width: 335px;
+}
+.divButton {
+    margin: 4em 0 0 0;
+}
+.drop-list {
+    margin: 3em 0 0 0;
+}
+
+.drop-list {
+    position: relative;
+    font-family: "Oswald";
+}
+.drop-list select {
+    background: rgba(112, 183, 253, 0.781);
+    font-size: 1em;
+    border: 2px solid var(--bs-blue);
+    border-radius: 5px;
+}
+@media (max-width: 751px) {
+    .flex-container-form {
+        justify-content: space-between;
+        height: 81vh;
+    }
+    .div-img-finance {
+        width: auto;
+    }
+    .div-img-finance img {
+        display: none;
+    }
+    .divDeposit {
+        margin: 10rem 0 0 0;
+    }
+}
+@media (max-width: 359px) {
+    .divDeposit {
+        margin: 14.5rem 0 0 0;
+    }
+}

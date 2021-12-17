@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="../front-end/assets/css/button-cadastrar.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../front-end/assets/icons/favicon.svg">
+
     <title>Lançamento</title>
 </head>
 <body>
@@ -79,71 +81,79 @@
     </main>
 
     <div class="flex-container-button">
-      <div class="despesa">
-        <a>Despesa</a>
-      </div>
-      <div class="switch">
-        <input type="checkbox" class="checkgroup" id="btn1" />
-        <label for="btn1" class="btn1"></label>
-      </div>
-      <div class="receita">
-        <a>Receita</a>
-      </div>
+        <div class="despesa">
+            <a>Despesa</a>
+        </div>
+        <div class="switch">
+            <input type="checkbox" class="checkgroup" id="btn1" />
+            <label for="btn1" class="btn1"></label>
+        </div>
+        <div class="receita">
+            <a>Receita</a>
+        </div>
     </div>
+
     <section>
-      <div class="flex-container-form">
-        <div class="div-form">
-          <form class="form" action="" method="post">
-          <div class="divValue">
-            <label for="txtValue">Valor</label>
-            <div class="input-control text size4">
-              <input type="number" required step="0.010" min="0.01" max="9999999999" id="txtValue"
-                  placeholder="R$">
-              <p class="error" id="errorValue"></p>
+        <div class="flex-container-form">
+            <div class="div-form">
+                <form class="form" action="" method="post">
+
+                    <div class="divValue">
+                        <label for="txtValue">Valor</label>
+                        <div class="input-control text size4">
+                            <input type="number" required step="0.010" min="0.01" max="9999999999" id="txtValue"
+                                placeholder="R$">
+                            <p class="error" id="errorValue"></p>
+                        </div>
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="divDate">
+                        <label for="txtDate">Data</label>
+                        <div class="input-control text size4">
+                            <input required type="date" id="txtDate">
+                            <p class="error" id="errorDate"></p>
+                        </div>
+                        <span class="error active"></span>
+                    </div>
+
+                    <div class="divDeposit">
+                        <label for="txtDeposit">Descrição</label>
+                        <div class="input-control text size4">
+                            <input required type="text" maxlength="50" id="txtDeposit" placeholder="Ex: Netflix">
+                            <p class="error" id="errorDeposit"></p>
+                        </div>
+                        <span class="error active"></span>
+                    </div>
+
+                    <div class="drop-list">
+                        <select autofocus id="selected">
+                            <option value="pix">PIX</option>
+                            <option value="ticket">Boleto</option>
+                            <option value="transfer">Transferência</option>
+                            <option value="card">Cartão</option>
+                            <option value="money">Dinheiro</option>
+                        </select>
+                    </div>
+                    <div class="containerButton">
+                        <button type="submit" class="button">Cadastrar</button>
+                    </div>
+                </form>
             </div>
-            <span class="error"></span>
-          </div>
-          <div class="divDate">
-            <label for="txtDate">Data</label>
-            <div class="input-control text size4">
-              <input required type="date" id="txtDate">
-              <p class="error" id="errorDate"></p>
+
+            <div class="div-img-finance">
+                <img src="../front-end/assets/icons/Finance app-pana.png" alt="" width="400px" height="auto">
             </div>
-            <span class="error active"></span>
-          </div>
-          <div class="divDeposit">
-            <label for="txtDeposit">Descrição</label>
-            <div class="input-control text size4">
-              <input required type="text" maxlength="50" id="txtDeposit" placeholder="Ex: Netflix">
-              <p class="error" id="errorDeposit"></p>
-            </div>
-            <span class="error active"></span>
-          </div>
-          <div class="drop-list">
-            <select autofocus id="selected">
-              <option value="pix">PIX</option>
-              <option value="ticket">Boleto</option>
-              <option value="transfer">Transferência</option>
-              <option value="card">Cartão</option>
-              <option value="money">Dinheiro</option>
-            </select>
-          </div>
-          <div class="containerButton">
-            <button type="submit" class="button">Cadastrar</button>
-          </div>
-          </form>
         </div>
-        <div class="div-img-finance">
-          <img src="../front-end/assets/icons/Finance app-pana.png" alt="" width="400px" height="auto">
-        </div>
-      </div>
     </section>
-    <div class="bodyBackground"></div>
-  </body>
-  <footer class="container__footer">
-    <p>A finance control app by Asuma Corp <br>
-        © 2021. Todos os direiros reservados.</p>
-  </footer>
-  <script src="./js/script.js"></script>
-  <script src="../front-end/assets/js/header.js"></script>
+
+    <footer class="container__footer">
+        <p>A finance control app by Asuma Corp <br>
+            © 2021. Todos os direiros reservados.</p>
+    </footer>
+
+    <script src="../front-end/launch-page/js/script.js"></script>
+    <script src="../front-end/assets/js/header.js"></script>
+
+</body>
 </html>
