@@ -16,8 +16,8 @@
 }
   
 .button {
-    color: var(--color-black);
-    background: var(--color-orange-dark);
+    color: white;
+    background: var(--color-blue-dark);
     border-radius: 2rem;
     border: none;
     align-content: center;
@@ -35,5 +35,4 @@
 .button:hover {
     background: whitesmoke;
     color: var(--color-black);
-    background: var(--color-orange);
 }
