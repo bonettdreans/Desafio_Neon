@@ -8,7 +8,7 @@ html,
 body {
 	position: relative;
 	min-height: 100vh;
-	background-color: #0A1931;
+	background-color: #1D2F40;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -250,7 +250,7 @@ span {
 }
 
 .submit-btn {
-	background-color: #0A1931;
+	background-color: #1D2F40;
 	color: rgba(256, 256, 256, 0.7);
 	border: 0;
 	border-radius: 15px;
