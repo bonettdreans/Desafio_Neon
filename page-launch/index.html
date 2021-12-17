@@ -14,56 +14,54 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-    <link rel="shortcut icon" href="./img/favicon_32x32.png" />
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="./css/button-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="../assets/icons/favicon.svg" type="image/x-icon">
 
 
     <title>Lançamento</title>
 </head>
 
-<body >
+<body>
 
-    <!-- Using Navbar for Header -->
+    <!-- Header -->
     <header>
         <div class="container">
-          <a href="../index.html">
-            <img
-            src="../assets/img/logo.svg"
-            alt="SeControle"
-            />
-          </a>
-          <div class="menu-section">
-            <div class="menu-toggle">
-              <div class="one"></div>
-              <div class="two"></div>
-              <div class="three"></div>
+            <a href="../index.html">
+                <img src="../assets/img/logo.svg" alt="SeControle" />
+            </a>
+            <div class="menu-section">
+                <div class="menu-toggle">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../page-home/index.html">Início</a>
+                        </li>
+                        <li>
+                            <a href="../page-launch/index.html">Novo Lançamento</a>
+                        </li>
+                        <li>
+                            <a href="../extract/extract.html">Extrato</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/bonettdreans/Desafio_Neon/blob/main/README.md"
+                                target="_blank">Contato</a>
+                        </li>
+                        <li>
+                            <img src="../assets/icons/colorful-person.svg" alt="">
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-              <ul>
-                <li>
-                  <a href="../page-home/index.html">Início</a>
-                </li>
-                <li>
-                  <a href="../page-launch/index.html">Lançamento</a>
-                </li>
-                <li>
-                  <a href="../extract/extract.html">Extrato</a>
-                </li>
-                <li>
-                  <a href="https://github.com/bonettdreans/Desafio_Neon/blob/main/README.md" 
-                  target="_blank">Contato</a>
-                </li>
-                <li>
-                    <img src="../assets/icons/colorful-person.svg" alt="">
-                </li>
-              </ul>
-            </nav>
-          </div>
         </div>
-      </header>
+    </header>
+
     <!-- Site body divided into container for better optimization and responsiveness -->
     <main>
         <div class="flex-container-balance">
@@ -76,16 +74,20 @@
         </div>
     </main>
 
+    <div class="container-button">
+        <div class="despesa">
+            <a>Despesa</a>
+        </div>
+        <div class="switch">
 
-    <span class="switch">
-        
-        <a>Receita</a>
-        <input type="radio" class="checkgroup" id="btn1"  />
-        <label for="btn1" class="btn1"></label>
-        <a>Despesa</a>
-        <input type="radio" class="checkgroup" id="btn2"  />
-        <label for="btn2" class="btn2"></label>
-    </span>
+            <input type="checkbox" class="checkgroup" id="btn1" />
+            <label for="btn1" class="btn1"></label>
+
+        </div>
+        <div class="receita">
+            <a>Receita</a>
+        </div>
+    </div>
 
     <!-- Creating a section to place the form and image -->
     <section>
@@ -143,6 +145,7 @@
         <p>A finance control app by Asuma Corp <br>
             © 2021. Todos os direiros reservados.</p>
     </footer>
+
 
     <script src="./js/script.js"></script>
     <script src="../assets/js/header.js"></script>
