@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
 	<link rel="stylesheet" href="./login_validacoes/style.css">
 	<link rel="stylesheet" media="(max-width: 800px)" href="./login_validacoes/style.css" />
 </head>
+
 <body class="Page Page--login .Util-not-loaded">
 	
 	<div class="container-fluid">
@@ -26,33 +28,45 @@
 					<input type="password" class="input" id="password" placeholder="Senha"/>
 					<P class="warnings" id="warningsPasswordLogin"></P>
 		</div>
-		<button class="submit-btn" type="submit" routerLink='/'>Entrar</button>
-		
+		<div class="form-structor">
+			<form action="/" method="GET" id="form_login">
+				<div class="signup">
+					<h2 class="form-title2" id="signup">Entrar</h2>
+					<div class="form-holder">
+
+						<input type="email" class="input" id="email" placeholder="Email" />
+						<P class="warnings" id="warningsEmailLogin"></P>
+						<input type="password" class="input" id="password" placeholder="Senha" />
+						<P class="warnings" id="warningsPasswordLogin"></P>
+					</div>
+					<button class="submit-btn" type="submit" routerLink='/'>Entrar</button>
+
+			</form>
+		</div>
+		<form action="/" method="GET" id="formCadastro">
+			<div class="login slide-up">
+				<div class="center">
+					<h2 class="form-title" id="login">Cadastre-se</h2>
+					<div class="form-holder">
+
+
+						<input type="text" class="input" id="nameCadastro" placeholder="Nome" />
+						<P class="warnings" id="warningsNameCadastro"></P>
+						<input type="email" class="input" id="emailCadastro" placeholder="Email" />
+						<P class="warnings" id="warningsEmailCadastro"></P>
+						<input type="password" class="input" id="repPasswordCadastro" placeholder="Senha" />
+						<P class="warnings" id="warningsPasswordCadastro"></P>
+						<input type="password" class="input" id="passwordCadastro" placeholder="Repetir Senha" />
+						<P class="warnings" id="passwordCadastro"></P>
+					</div>
+					<button class="submit-btn">Cadastre-se</button>
 		</form>
 	</div>
-	<form action="/" method="GET" id="formCadastro">
-		<div class="login slide-up">
-			<div class="center">				
-				<h2 class="form-title" id="login">Cadastre-se</h2>
-				<div class="form-holder">	
-					
-					
-		<input type="text" class="input" id="nameCadastro" placeholder="Nome"/>
-		<P class="warnings" id="warningsNameCadastro"></P>
-		<input type="email" class="input" id="emailCadastro" placeholder="Email"/>
-		<P class="warnings" id="warningsEmailCadastro"></P>
-		<input type="password" class="input" id="repPasswordCadastro" placeholder="Senha" />
-		<P class="warnings" id="warningsPasswordCadastro"></P>
-		<input type="password" class="input" id="passwordCadastro" placeholder="Repetir Senha" />
-		<P class="warnings" id="passwordCadastro"></P>
-			</div>
-				<button class="submit-btn" >Cadastre-se</button>	
-	</form>
-		</div>
 	</div>
 </div>
 
 
   <script src="./login_validacoes/index.js"></script>
 </body>
+
 </html>
