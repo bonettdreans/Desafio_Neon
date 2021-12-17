@@ -66,21 +66,21 @@ html, body {
     }
 }
 
-@media (max-width: 1180px) {
+/* @media (max-width: 1180px) {
     .containerProfile {
-        margin-top: -8%;
+        
     }
-}
+} */
 
-@media (max-width: 950px) {
+/* @media (max-width: 950px) {
     .containerProfile {
         margin-top: -10%;
     }
-}
+} */
 
 @media (max-width: 820px) {
     .containerProfile {
-        margin-top: -11%;
+        margin-top: -7%;
     }
 
     #profileIcon {
@@ -96,14 +96,36 @@ html, body {
     }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 768px) {
     .containerProfile {
-        margin-top: -13%;
+        margin-top: 15%;
     }
 }
 
 @media (max-width: 660px) {
-    .containerProfile {
-        margin-top: -14.6%;
+    .profile {
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .profile {
+        margin-top: 11.1rem;
+    }
+
+    .profile img {
+        margin-left: -16%;
+    }
+
+    #profileIcon {
+        left: 1%;
+    }
+
+    .profile h4 {
+        left: 0.1%;
+    }
+
+    #settingsIcon {
+        padding-left: 15%;
     }
 }
