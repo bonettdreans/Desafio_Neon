@@ -4,13 +4,10 @@ document.getElementById("txtValue").addEventListener("change", function(){
     this.value = parseFloat(this.value).toFixed(2);
 });
 
-
 const dataLS = JSON.parse(localStorage.getItem('client'));
 const token = localStorage.getItem('token')
 const client_id = dataLS.user.client_id
 
-console.log(client_id)
-console.log(token);
 
 async function lancamento() {
   const amount = document.getElementById("txtValue").value;
@@ -43,7 +40,7 @@ await fetch('https://app-asuma.herokuapp.com/api/launch/',
           }
     });
 }
-function verificarCheckBox() {
+function valorNegatiboCheckbox() {
     var check = document.getElementsByName("btn-check"); 
 
     for (var i=0;i<check.length;i++){ 
@@ -76,13 +73,11 @@ fetch(`https://app-asuma.herokuapp.com/api/client/${id}/launch/`, {
     }).then(response => response.json())
       .then(data => mostrarData(data))
       .catch((error) => console.log("Erro:" + error))
-        var mostrarData = (data) => {
+        let mostrarData = (data) => {
         
-        var balance = data.data.valor[0];
-        var totalamount = balance.reduce((sum, value) => (typeof value.amount == "number" ? sum + value.amount : sum), 0);
-          console.log(data.data)
-          console.log(data.data.valor[0])
-          console.log(totalamount);
+        let balance = data.data.valor[0];
+        let totalamount = balance.reduce((sum, value) => (typeof value.amount == "number" ? sum + value.amount : sum), 0);
+          
           document.getElementById("saldo").innerHTML = "R$  " + totalamount ;
 };
 
