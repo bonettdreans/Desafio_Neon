@@ -19,7 +19,6 @@
     font-family: 'Oswald', sans-serif;
 }
 
-
 html {
     font-size: 62.5%;
 }
@@ -101,14 +100,6 @@ tr:nth-child(odd) td {
     width: 30%;
 }
 
-.empty1 {
-    width: 15%;
-}
-
-.empty2 {
-    width: ;
-}
-
 .datesColumn{
     width: 60rem;
     padding-left: 5rem;
@@ -123,19 +114,18 @@ td.datesColumn {
 }
 
 .empty1 {
-    width: 40rem;
+    width: auto;
     font-size: 2rem;
     align-items: center;
     text-decoration: none;
 }
 
 .empty2 {
-    width: 30rem;
+    width: auto;
     font-size: 2rem;
     align-items: center;
     text-decoration: none;
 }
-
 
 /* translate */
 .columns.on .arrow.on {
