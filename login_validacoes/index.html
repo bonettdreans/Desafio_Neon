@@ -15,24 +15,22 @@
 	<div class="signup">
 		<h2 class="form-title2" id="signup">Login</h2>
 		<div class="form-holder">
-			
 			<input type="email" class="input" id="email" placeholder="Email"/>
 					<P class="warnings" id="warningsEmailLogin"></P>
 					<input type="password" class="input" id="password" placeholder="Senha"/>
 					<P class="warnings" id="warningsPasswordLogin"></P>
 		</div>
-		<script src="consumndoLoginAPI.js"></script>
-		<button class="submit-btn" type="submit" onclick="envioLogin(), validation()">Entrar</button>
+	
+		<button class="submit-btn" type="submit">Entrar</button>
 		
 		</form>
 	</div>
-	<form action="" method="POST" id="formCadastro">
+	<form action="" method="get" id="formCadastro">
 		<div class="login slide-up">
 			<div class="center">				
 				<h2 class="form-title" id="login">Cadastro</h2>
 				<div class="form-holder">	
-					
-					
+				
 			<input type="text" class="input" id="nameCadastro" placeholder="Nome" />
 			<P class="warnings" id="warningsNameCadastro"></P>
 			<input type="email" class="input" id="emailCadastro" placeholder="Email" />
@@ -41,11 +39,12 @@
 			<P class="warnings" id="warningsPasswordCadastro"></P>
 			<input type="password" class="input" id="repPasswordCadastro" placeholder="Repetir Senha" />
 				</div>
-				<button class="submit-btn" onclick="return validarCadastro(), cadastroUser()">Cadastro</button>	
+				<button class="submit-btn" type="submit">Cadastro</button>	
 	</form>
 		</div>
 	</div>
 </div>
-  <script src="index.js"></script>
+	<script src="style.js"></script>
+	<script src="index.js"></script>
 </body>
 </html>

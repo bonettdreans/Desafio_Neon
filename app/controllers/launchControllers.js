@@ -31,7 +31,7 @@ module.exports = {
           }
         },
   async createLaunch(req, res) {
-    const { amount, title_launch, type_launch } = req.body;
+    const { amount, date, title_launch, type_launch } = req.body;
     let validation = new guiaValidators();
     validation.hasMinLen(req.body.amount, 2, "valor não pode ser vacio");
     validation.hasMaxLen(req.body.amount, 12, "valor não pode ser maior 12 caracteres");
@@ -66,7 +66,7 @@ module.exports = {
     }
   },
   async updateLaunch(req, res) {
-    const { amount, title_launch, type_launch } = req.body;
+    const { amount, date, title_launch, type_launch } = req.body;
     let validation = new guiaValidators();
     validation.hasMinLen(req.body.amount, 2, "valor não pode ser vacio");
     validation.hasMaxLen(req.body.amount, 12, "valor não pode ser maior 12 caracteres");

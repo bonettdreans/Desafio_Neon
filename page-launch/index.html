@@ -93,7 +93,7 @@
     <section>
         <div class="flex-container-form">
             <div class="div-form">
-                <form class="form" action="" method="post">
+                <form class="form" action="#" method="get">
 
                     <div class="divValue">
                         <label for="txtValue">Valor</label>
@@ -120,7 +120,7 @@
                     </div>
 
                     <div class="drop-list">
-                        <select autofocus>
+                        <select id="txtSelect" autofocus>
                             <option value="pix">PIX</option>
                             <option value="ticket">Boleto</option>
                             <option value="transfer">Transferência</option>
@@ -129,11 +129,11 @@
                         </select>
                     </div>
                     <div class="divButton">
-                        <button type="submit" class="btn-register">Cadastrar</button>
+                        <button onclick="lancamento()" class="btn-register">Cadastrar</button>
                     </div>
                 </form>
             </div>
-
+                <script src="script.js"></script>
             <div class="div-img-finance">
                 <img src="./img/Finance app-pana.png" alt="" width="400px" height="auto">
             </div>
@@ -145,9 +145,6 @@
         <p>A finance control app by Asuma Corp <br>
             © 2021. Todos os direiros reservados.</p>
     </footer>
-
-    <script src="./js/script.js"></script>
-
 
 </body>
 
