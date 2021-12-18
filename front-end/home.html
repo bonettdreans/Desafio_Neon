@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../front-end/assets/css/home-header.css">
     <link rel="stylesheet" href="../front-end/assets/css/home-client-profile.css">
     <link rel="stylesheet" href="../front-end/assets/css/balance.css">
+    <link rel="stylesheet" href="../front-end/assets/css/eye.css">
     <link rel="shortcut icon" href="../front-end/assets/icons/favicon.svg" type="image/x-icon">
   </head>
   <!-- header background -->
@@ -36,9 +37,30 @@
       <div class="titleSaldo">
         <h3>Saldo disponível</h3>
       </div>
-      <div class="balance">
-        <h2>R$ 1000,00</h2>
-      </div>        
+      <div class="flex-container-saldo-eye">
+        <div class="btn-eye">
+          <input
+            class="mostra"
+            id="bma"
+            type="checkbox"
+            value=""
+            onclick="mostrarOcultar()"
+          />
+          <label for="bma" class="bma">
+            <img
+              id="olhoaberto"
+              class="aberto"
+              src="../front-end/assets/icons/eye.svg"
+              alt=""
+            />
+          </label>
+        </div>
+        <div id="eye" class="hidden">
+          <div class="balanceValue">
+            <input class="saldoValor" type="text" id="saldo" value="R$ " />
+          </div>
+        </div>
+      </div>
     </div>
     <!-- redirect button -->
     <main>
@@ -90,6 +112,7 @@
             © 2021. Todos os direiros reservados.</p>
     </footer>
     </script>
+    <script src="../front-end/assets/js/eye.js"></script>
     <script src="../front-end/assets/js/header.js"></script>
   </body>
 </html>
