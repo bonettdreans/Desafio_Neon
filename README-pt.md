@@ -58,6 +58,9 @@ e <a href='https://www.figma.com/file/3wh0x05etlZMCUfcJMRjwR/Desafio---TT-team-l
   <h4>API REST para aplicativo Gestão Financeira Pessoal.
     Desenvolvida em Node usando a base de dados MySQL com ODM Sequelize.</h4>
 </div>
+<h3 align="center">
+  <img title="#register" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/screenshots/Database_Structure_of_the_Application_Asuma_Corp..png" />
+</h3>
 <div>
   <h4>A API REST recebe os dados e precisa de endpoints desde um navegador ou cliente API REST (por exemplo Insomnia, postman ou Curl).</h4>
   <div align='center'>
