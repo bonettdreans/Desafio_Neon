@@ -19,6 +19,7 @@ html {
 
 header {
     background-color: var(--color-blue-dark);
+    height: 8%;
 }
   
 header .container {

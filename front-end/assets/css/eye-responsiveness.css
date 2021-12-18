@@ -1,0 +1,41 @@
+.flex-container-balance {
+    height: 8%;
+}
+
+@media (max-width: 448px) {
+    .flex-container-balance {
+        height: 10%;
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media (max-width: 412px) {
+    html {
+        font-size: 50%;
+    }
+
+    .flex-container-balance {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .titleSaldo {
+        margin: none;
+        display: flex;
+    }
+}
+
+@media (max-width: 320px) {
+    .flex-container-balance {
+        height: 15%;
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
