@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../front-end/assets/css/footer.css">
+    <link rel="stylesheet" href="../front-end/assets/css/cards.css">
+    <link rel="stylesheet" href="../front-end/assets/css/home-header.css">
+    <link rel="stylesheet" href="../front-end/assets/css/home-client-profile.css">
+    <link rel="stylesheet" href="../front-end/assets/css/balance.css">
+    <link rel="stylesheet" href="../front-end/assets/css/eye.css">
+    <link rel="shortcut icon" href="../front-end/assets/icons/favicon.svg" type="image/x-icon">
+  </head>
+  <!-- header background -->
+  <header>
+    <div class="headerBackground">
+    </div>
+    <!-- logo background -->
+    <div class="logo">
+      <img src="../front-end/assets/img/white-logo.svg">
+    </div>
+  </header>
+  <body>
+    <!-- profile bar -->
+    <div class="containerProfile">
+      <div class="profile">
+        <img id="profileIcon" src="../front-end/assets/icons/colorful-person.svg" alt="imagem do perfil">
+        <h4 id="name_perfil">Olá, Isabel</h4>
+        
+        <a href="http://127.0.0.1:5501/index.html">
+        <button class="btn__terminarSessao" onclick="ateLogo();">Até logo</button>
+        </a>
+        <img id="notificationIcon" src="../front-end/assets/icons/notification.svg">
+        <img id="settingsIcon" src="../front-end/assets/icons/settings.svg">
+      </div>
+    </div>
+    <!-- balance content -->
+    <div class="flex-container-balance">
+      <div class="titleSaldo">
+        <h3>Saldo disponível</h3>
+      </div>
+      <div class="flex-container-saldo-eye">
+        <div class="btn-eye">
+          <input
+            class="mostra"
+            id="bma"
+            type="checkbox"
+            value=""
+            onclick="mostrarOcultar()"
+          />
+          <label for="bma" class="bma">
+            <img
+              id="olhoaberto"
+              class="aberto"
+              src="../front-end/assets/icons/eye.svg"
+              alt=""
+            />
+          </label>
+        </div>
+        <div id="eye" class="hidden">
+          <div class="balanceValue">
+            <h3 id ="saldo">Saldo Disponível</h3>
+            <input class="saldoValor" type="text" id ="saldo" value="R$ " />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- redirect button -->
+    <main>
+      <section class="cards">
+        <!-- new launch card -->
+        <a class="link" href="../front-end/launch.html">
+          <div class="card">
+            <div class="image">
+              <img src="../front-end/assets/icons/pay-icon.svg" alt=""> 
+            </div>
+            <div class="content">
+              <p class="title text--medium">Novo Lançamento</p>
+            </div>
+          </div>
+        </a>  
+        <!-- extract card -->
+        <a class="link" href="../front-end/extract.html">
+          <div class="card">
+            <div class="image">
+              <img src="../front-end/assets/icons/extract-icon.svg" alt=""> 
+            </div>
+            <div class="content">
+              <p class="title text--medium">Extrato</p>
+            </div>
+          </div>
+        </a>
+        <!-- pix card -->
+        <div class="card">
+          <div class="image">
+            <img src="../front-end/assets/icons/pix-icon.svg" alt=""> 
+          </div>
+          <div class="content">
+            <p class="title text--medium">Pix</p>
+          </div>
+        </div>
+        <!-- investment card -->
+        <div class="card">
+          <div class="image">
+            <img src="../front-end/assets/icons/investiment-icon.svg" alt="">
+          </div>
+          <div class="content">
+            <p class="title text--medium">Investimento</p>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="container__footer">
+        <p>A finance control app by Asuma Corp <br>
+            © 2021. Todos os direiros reservados.</p>
+    </footer>
+    </script>
+    <script src="../front-end/assets/js/eye.js"></script>
+    <script src="../front-end/assets/js/header.js"></script>
+    <script src="../front-end/assets/js/home.js"></script>
+  </body>
+</html>

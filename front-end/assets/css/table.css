@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+:root {
+    --color-black: #0D0D0D;
+    --color-blue: #DCEAF2;
+    --color-white: #F2F2F2;
+    --color-blue-dark: #1D2F40;
+    --color-grey: #C4C4C4;
+    --color-orange-dark: #F2CDAC;
+    --color-orange: rgba(242, 205, 172, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+    margin-bottom: 0;
+    padding: 0;
+    outline: 0;
+
+    font-family: 'Oswald', sans-serif;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+html, 
+body {
+    /* emphasizes legibility over rendering speed and geometric precision */
+    text-rendering: optimizelegibility;
+    /* smooth the font on the level of the pixel */
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+}
+
+body {
+    font-size: 1.6rem;
+    width: 100%;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-bottom: 0%;
+}
+
+/************table styles************/
+.containerTable {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sections {
+    background: var(--color-white);
+    border-radius:  0.3rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    animation: float 5s infinite;
+}
+
+th {
+    color: #0A1931;
+    background: var(--color-orange);
+    font-size: 1.4rem;
+    font-weight: 50;
+    padding: 1rem;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+}
+
+tr {
+    color: var(--color-blue-dark);
+    font-size: 1.4rem;
+    font-weight: normal;
+    text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+td {
+    background: #FFFFFF;
+    padding: 1rem;
+    font-weight:300;
+    font-size: 1.8rem;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #C1C3D1;
+}
+
+tbody tr:hover td {
+    background-color: var(--color-blue);
+}
+
+tr:nth-child(odd) td {
+    background:var(--color-white);
+}
+
+.dates {
+    width: 40%;
+    padding-left: 3rem;
+    font-size: 2rem;
+}
+
+.value {
+    width: 30%;
+}
+
+.empty1 {
+    width: 15%;
+}
+
+.empty2 {
+    width: ;
+}
+
+.datesColumn{
+    width: 60rem;
+    padding-left: 5rem;
+}
+
+.descriptionColumn {
+    width: 40rem;
+}
+
+td.datesColumn {
+    text-align: center; 
+}
+
+.empty1 {
+    width: 40rem;
+    font-size: 2rem;
+    align-items: center;
+    text-decoration: none;
+}
+
+.empty2 {
+    width: 30rem;
+    font-size: 2rem;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+/* translate */
+.columns.on .arrow.on {
+    position: absolute;
+    transform: rotate(90deg) translate(7px, 7px);
+}
+
+.columns.on {
+    display: block;
+}
+
+/************responsiveness************/
+@media (max-width: 550px) {
+    .html {
+      font-size: 50%;
+    }
+}
+
+@media (max-width: 425px) {
+    .dates {
+        font-size: 1.6rem;
+    }
+
+    .dates img {
+        height: 1.8rem;
+    }
+}
+  
+@media (max-width: 375px) {
+    .dates {
+      font-size: 1.4rem;
+    }
+  
+    .dates img {
+      height: 1.6rem;
+    }
+
+    
+}
+  
+@media (max-width: 350px) {
+    .datesColumn {
+      font-size: 1.8rem;
+    }
+  
+    .valueColumn {
+      padding-right: 6rem;
+      font-size: 1.6rem;
+      height: 0.6rem;
+    }
+  
+    .edit, 
+    .delete {
+      display: block;
+      padding: auto;
+      justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 320px) {
+    .edit img,
+    .delete img {
+        display: block;
+        padding: auto;
+        justify-content: space-evenly;
+        width: 2rem;
+    }
+
+    .columns {
+        width: 100%;
+    }
+}
