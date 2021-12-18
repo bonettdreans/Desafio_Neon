@@ -11,7 +11,6 @@ form.addEventListener("submit", (event) => {
 })
 
 async function validation(event){
-//form.addEventListener("submit", e => { e.preventDefault()
 
 const expresion = /\w+@\w+\.+[a-z]/;
 
@@ -47,7 +46,7 @@ const expresion = /\w+@\w+\.+[a-z]/;
   }
  await envioLogin(event)
   document.getElementById("form_login").reset()
-//})
+
 }  
 
 const nameCadastro = document.getElementById("nameCadastro")
@@ -67,7 +66,6 @@ formCadastro.addEventListener("submit", (event) => {
 
 
 async function validarCadastro(event){
-//formCadastro.addEventListener("submit", e => {e.preventDefault()
   
 const expresion = /\w+@\w+\.+[a-z]/;
   const msgErro = [];
@@ -131,7 +129,7 @@ const expresion = /\w+@\w+\.+[a-z]/;
   }
   await cadastroUser(event)
   document.getElementById("formCadastro").reset()
-//})
+
 }
 
 async function  envioLogin(event) {
