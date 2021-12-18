@@ -15,8 +15,6 @@
   <a href='https://github.com/bonettdreans/Desafio_Neon/blob/main/license'><img src='https://img.shields.io/badge/license-MIT-green'></img></a>
 </div>
 
-<h4 align='center'> 🚧 Em construção... 🚧 </h4>
-
 
 <p align='center'>
   <a href='#roadMap'>💫 Road Map</a> • 
@@ -62,14 +60,13 @@ e <a href='https://www.figma.com/file/3wh0x05etlZMCUfcJMRjwR/Desafio---TT-team-l
   <img title="#register" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/screenshots/Database_Structure_of_the_Application_Asuma_Corp..png" />
 </h3>
 <div>
-  <h4>A API REST recebe os dados e precisa de endpoints desde um navegador ou cliente API REST (por exemplo Insomnia, postman ou Curl).</h4>
   <div align='center'>
     <h3>Instalação Back End (servidor)</h3><br>
  </div>
   
   ```bash
 # Clone este repositório
-$ git clone <https://github.com/bonettdreans/Desafio_Neon>
+$ git clone https://github.com/bonettdreans/Desafio_Neon
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd Desafio_Neon
@@ -106,7 +103,8 @@ $ npm start
   <li><a href='https://www.npmjs.com/package/sequelize-cli'>Sequelize-cli</a></li>
   <li><a href='https://html.com/'>HTML and CSS</a></li>
   <li><a href='https://www.javascript.com/'>JavaScript</a></li>
-  <li><a href=''></a></li>
+  <li><a href='https://jwt.io/'></a>JWT</li>
+  <li><a href='https://bcrypt-generator.com/'>Bcrypt</a></li>
 </ul>
 
 <h2 title='creators'>🛠 Criadores</h2>
