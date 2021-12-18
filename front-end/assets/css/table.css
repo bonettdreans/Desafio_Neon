@@ -43,6 +43,13 @@ body {
 }
 
 /************table styles************/
+.containerTable {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .sections {
     background: var(--color-white);
     border-radius:  0.3rem;
@@ -84,14 +91,22 @@ tr:nth-child(odd) td {
     background:var(--color-white);
 }
 
-.dates{
-    width: 100rem;
+.dates {
+    width: 40%;
     padding-left: 3rem;
     font-size: 2rem;
 }
 
 .value {
-    width: 40rem;
+    width: 30%;
+}
+
+.empty1 {
+    width: 15%;
+}
+
+.empty2 {
+    width: ;
 }
 
 .datesColumn{
@@ -107,12 +122,20 @@ td.datesColumn {
     text-align: center; 
 }
 
-.arrow {
-    width: 20rem;
+.empty1 {
+    width: 40rem;
     font-size: 2rem;
     align-items: center;
     text-decoration: none;
 }
+
+.empty2 {
+    width: 30rem;
+    font-size: 2rem;
+    align-items: center;
+    text-decoration: none;
+}
+
 
 /* translate */
 .columns.on .arrow.on {
@@ -169,5 +192,19 @@ td.datesColumn {
       display: block;
       padding: auto;
       justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 320px) {
+    .edit img,
+    .delete img {
+        display: block;
+        padding: auto;
+        justify-content: space-evenly;
+        width: 2rem;
+    }
+
+    .columns {
+        width: 100%;
     }
 }
