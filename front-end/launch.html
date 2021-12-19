@@ -110,8 +110,8 @@
           </div>
           <div id="eye" class="hidden">
             <div class="balanceValue">
-              <h3 id ="saldo">Saldo Disponível</h3>
-              <input class="saldoValor" type="text" id="saldo" value="R$ " />
+              <h3 id ="saldo"><a href="#saldoEye"></a> R$ 0,00</h3>
+              <input data-saldo="saldo" class="saldoValor" type="text" id="saldoEye" value="" disabled />
             </div>
           </div>
         </div>
@@ -120,14 +120,14 @@
 
     <div class="flex-container-button">
       <div class="despesa">
-        <a>Despesa</a>
+        <a>Receita</a>
       </div>
       <div class="switch">
         <input type="checkbox" class="checkgroup" name="btn-check" id="btn1" onclick="valorNegatiboCheckbox()"/>
         <label for="btn1" class="btn1"></label>
       </div>
       <div class="receita">
-        <a>Receita</a>
+        <a>Despesa</a>
       </div>
     </div>
 

@@ -46,6 +46,7 @@ valorNegativo.addEventListener('input', check);
 valorNegativo.addEventListener('blur', check);
 
         }  else {
+          
            
         }
     }
@@ -70,7 +71,7 @@ fetch(`https://app-asuma.herokuapp.com/api/client/${id}/launch/`, {
         let balance = data.data.valor[0];
         let totalamount = balance.reduce((sum, value) => (typeof value.amount == "number" ? sum + value.amount : sum), 0);
           
-          document.getElementById("saldo").innerHTML = "R$  " + totalamount ;
+        document.getElementById("saldo").innerHTML = "R$  " + totalamount ;
 };
 
 function ateLogo(event) {
