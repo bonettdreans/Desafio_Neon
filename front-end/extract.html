@@ -1,252 +1,170 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../front-end/assets/css/reset.css">
-    <link rel="stylesheet" href="../front-end/assets/css/header.css">
-    <link rel="stylesheet" href="../front-end/assets/css/table.css">
-    <link rel="stylesheet" href="../front-end/assets/css/footer.css">
-    <link rel="stylesheet" href="../front-end/assets/css/balance.css">
-    <link rel="stylesheet" href="../front-end/assets/css/button.css">
-    <link rel="stylesheet" href="../front-end/assets/css/eye.css">
-    <link rel="stylesheet" href="../front-end/assets/css/eye-responsiveness.css">
-    <link rel="shortcut icon" href="../front-end/assets/icons/favicon.svg" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Extrato</title>    
-  </head>
-  <header>
-    <div class="container">
-      <a href="../front-end/home.html">
-        <img
-        src="../front-end/assets/img/logo.svg"
-        alt="SeControle"
-        />
-      </a>
-      <div class="menu-section">
-        <div class="menu-toggle">
-          <div class="one"></div>
-          <div class="two"></div>
-          <div class="three"></div>
-        </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="../front-end/home.html">Início</a>
-            </li>
-            <li>
-              <a href="../front-end/launch.html">Novo Lançamento</a>
-            </li>
-            <li>
-              <a href="../front-end/extract.html">Extrato</a>
-            </li>
-            <li>
-              <a href="https://github.com/bonettdreans/Desafio_Neon/blob/main/README.md" 
-              target="_blank">Contato</a>
-            </li>
-            <li>
-              <a href="../index.html">Até logo</a>
-            </li>
-            <li>
-                <img src="../front-end/assets/icons/colorful-person.svg" alt="">
-            </li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../front-end/assets/css/reset.css">
+  <link rel="stylesheet" href="../front-end/assets/css/header.css">
+  <link rel="stylesheet" href="../front-end/assets/css/table.css">
+  <link rel="stylesheet" href="../front-end/assets/css/footer.css">
+  <link rel="stylesheet" href="../front-end/assets/css/balance.css">
+  <link rel="stylesheet" href="../front-end/assets/css/button.css">
+  <link rel="stylesheet" href="../front-end/assets/css/eye.css">
+  <link rel="stylesheet" href="../front-end/assets/css/eye-responsiveness.css">
+  <link rel="shortcut icon" href="../front-end/assets/icons/favicon.svg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Extrato</title>
+</head>
+<header>
+  <div class="container">
+    <a href="../front-end/home.html">
+      <img src="../front-end/assets/img/logo.svg" alt="SeControle" />
+    </a>
+    <div class="menu-section">
+      <div class="menu-toggle">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
       </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="../front-end/home.html">Início</a>
+          </li>
+          <li>
+            <a href="../front-end/launch.html">Novo Lançamento</a>
+          </li>
+          <li>
+            <a href="../front-end/extract.html">Extrato</a>
+          </li>
+          <li>
+            <a href="https://github.com/bonettdreans/Desafio_Neon/blob/main/README.md" target="_blank">Contato</a>
+          </li>
+          <li>
+            <a href="../index.html">Até logo</a>
+          </li>
+          <li>
+            <img src="../front-end/assets/icons/colorful-person.svg" alt="" onclick="perfil()">
+          </li>
+        </ul>
+      </nav>
     </div>
-  </header>
-  <body>
-    <!-- balance -->
-    <div class="flex-container-balance">
-      <div class="titleSaldo">
-        <h3>Saldo disponível</h3>
+  </div>
+</header>
+
+<body>
+  <!-- balance -->
+  <div class="flex-container-balance">
+    <div class="titleSaldo">
+      <h3>Saldo disponível</h3>
+    </div>
+    <div class="flex-container-saldo-eye">
+      <div class="btn-eye">
+        <input class="mostra" id="bma" type="checkbox" value="" onclick="mostrarOcultar()" />
+        <label for="bma" class="bma">
+          <img id="olhoaberto" class="aberto" src="../front-end/assets/icons/eye.svg" alt="" />
+        </label>
       </div>
-      <div class="flex-container-saldo-eye">
-        <div class="btn-eye">
-          <input
-            class="mostra"
-            id="bma"
-            type="checkbox"
-            value=""
-            onclick="mostrarOcultar()"
-          />
-          <label for="bma" class="bma">
-            <img
-              id="olhoaberto"
-              class="aberto"
-              src="../front-end/assets/icons/eye.svg"
-              alt=""
-            />
-          </label>
-        </div>
-        <div id="eye" class="hidden">
-          <div class="balanceValue">
-            <input class="saldoValor" type="text" id="saldo" value="R$ " />
-          </div>
+      <div id="eye" class="hidden">
+        <div class="balanceValue">
+          <input class="saldoValor" type="text" id="saldo" value="R$ 1300,10" />
         </div>
       </div>
     </div>
-    <!-- table -->
-    <div class="containerTable">
-        <!-- balance table -->
-        <table class="sections">
-          <!-- first section -->
-          <thead>
-            <tr>
-                <th class="dates">
-                    Histórico
-                </th>
-                <th class="description"></th>
-                <th class="value"></th>
-                <th class="empty1"></th>
-                <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="columns">
-              <td class="datesColumn"></td>
-              <td class="descriptionColumn"></td>
-              <td class="valueColumn"></td>
-              <td class="edit">
-                <a href="">
-                    <img 
-                        src="../front-end/assets/icons/pencil.svg" 
-                        class="imgEdit"
-                        alt=""></a><a href="">
-                </a>
-              </td>
-              <td class="delete">
-                <a href="">
-                    <img 
-                        src="../front-end/assets/icons/trash.svg" 
-                        class="imgDelete"
-                        alt="">
-                </a> 
-              </td>
-            </tr>
-            <tr class="columns">
-                <td class="datesColumn"></td>
-                <td class="descriptionColumn"></td>
-                <td class="valueColumn"></td>
-                <td class="edit">
-                  <a href="">
-                      <img 
-                          src="../front-end/assets/icons/pencil.svg" 
-                          class="imgEdit"
-                          alt=""></a><a href="">
-                  </a>
-                </td>
-                <td class="delete">
-                  <a href="">
-                      <img 
-                          src="../front-end/assets/icons/trash.svg" 
-                          class="imgDelete"
-                          alt="">
-                  </a> 
-                </td>
-            </tr>
-            <tr class="columns">
-              <td class="datesColumn"></td>
-              <td class="descriptionColumn"></td>
-              <td class="valueColumn"></td>
-              <td class="edit">
-                <a href="">
-                    <img 
-                        src="../front-end/assets/icons/pencil.svg" 
-                        class="imgEdit"
-                        alt=""></a><a href="">
-                </a>
-              </td>
-              <td class="delete">
-                <a href="">
-                    <img 
-                        src="../front-end/assets/icons/trash.svg" 
-                        class="imgDelete"
-                        alt="">
-                </a> 
-              </td>
-            </tr>
-            <tr class="columns">
-                <td class="datesColumn"></td>
-                <td class="descriptionColumn"></td>
-                <td class="valueColumn"></td>
-                <td class="edit">
-                  <a href="">
-                      <img 
-                          src="../front-end/assets/icons/pencil.svg" 
-                          class="imgEdit"
-                          alt=""></a><a href="">
-                  </a>
-                </td>
-                <td class="delete">
-                  <a href="">
-                      <img 
-                          src="../front-end/assets/icons/trash.svg" 
-                          class="imgDelete"
-                          alt="">
-                  </a> 
-                </td>
-            </tr>
-            <tr class="columns">
-                <td class="datesColumn"></td>
-                <td class="descriptionColumn"></td>
-                <td class="valueColumn"></td>
-                <td class="edit">
-                  <a href="">
-                      <img 
-                          src="../front-end/assets/icons/pencil.svg" 
-                          class="imgEdit"
-                          alt=""></a><a href="">
-                  </a>
-                </td>
-                <td class="delete">
-                  <a href="">
-                      <img 
-                          src="../front-end/assets/icons/trash.svg" 
-                          class="imgDelete"
-                          alt="">
-                  </a> 
-                </td>
-            </tr>
-            <tr class="columns">
-              <td class="datesColumn"></td>
-              <td class="descriptionColumn"></td>
-              <td class="valueColumn"></td>
-              <td class="edit">
-                <a href="">
-                    <img 
-                        src="../front-end/assets/icons/pencil.svg" 
-                        class="imgEdit"
-                        alt=""></a><a href="">
-                </a>
-              </td>
-              <td class="delete">
-                <a href="">
-                    <img 
-                        src="../front-end/assets/icons/trash.svg" 
-                        class="imgDelete"
-                        alt="">
-                </a> 
-              </td>
-            </tr>
-          </tbody>
-        </table>       
-    </div>
-    <!-- new launch button -->
-    <div class="containerButton">
-      <a href="../front-end/launch.html">
-        <button class="button">
-          Novo Lançamento
-        </button>
-      </a>
-    </div>
-    <!-- footer -->
-    <footer class="container__footer">
-        <p>A finance control app by Asuma Corp <br>
-            © 2021. Todos os direiros reservados.</p>
-    </footer>
+  </div>
+  <!-- table -->
+  <div class="containerTable">
+    <!-- balance table -->
+    <table class="sections">
+      <!-- first section -->
+      <thead>
+        <tr class="cabecalho">
+          <th class="historico">
+            Histórico
+          </th>
+          <th class="filter-data">
+            Filtro data
+          </th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="dados">
+        <tr class="columnsneg">
+          <td id="data" class="datesColumn">13/12/2021</td>
+          <td id="tipo" class="tipo">Boleto</td>
+          <td id="descricao" class="descriptionColumn">Conta de Luz</td>
+          <td id="valor" class="valueColumn">R$ -150,00</td>
+          <td class="edit">
+            <a href="">
+              <img id="btnedit" src="../front-end/assets/icons/pencil.svg" class="imgEdit" alt=""
+                onclick="edit()"></a><a href="">
+            </a>
+          </td>
+          <td class="delete">
+            <a href="">
+              <img id="btndel" src="../front-end/assets/icons/trash.svg" class="imgDelete" alt="" onclick="delet()">
+            </a>
+          </td>
+        </tr>
+        <tr class="columnspos">
+          <td class="datesColumn">14/12/2021</td>
+          <td class="tipo">Boleto</td>
+          <td class="descriptionColumn">Salario</td>
+          <td class="valueColumn">R$ 1500,00</td>
+          <td class="edit">
+            <a href="">
+              <img id="btnedit" src="../front-end/assets/icons/pencil.svg" class="imgEdit" alt=""
+                onclick="edit()"></a><a href="">
+            </a>
+          </td>
+          <td class="delete">
+            <a href="">
+              <img id="btndel" src="../front-end/assets/icons/trash.svg" class="imgDelete" alt="" onclick="delet()">
+            </a>
+          </td>
+        </tr>
+        <tr class="columnsneg">
+          <td class="datesColumn">10/12/2021</td>
+          <td class="tipo">Boleto</td>
+          <td class="descriptionColumn">Netflix</td>
+          <td class="valueColumn">R$ -49,90</td>
+          <td class="edit">
+            <a href="">
+              <img id="btnedit" src="../front-end/assets/icons/pencil.svg" class="imgEdit" alt=""
+                onclick="edit()"></a><a href="">
+            </a>
+          </td>
+          <td class="delete">
+            <a href="">
+              <img id="btndel" src="../front-end/assets/icons/trash.svg" class="imgDelete" alt="" onclick="delet()">
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- new launch button -->
+  <div class="containerButton">
+    <a href="../front-end/launch.html">
+      <button class="button">
+        Novo Lançamento
+      </button>
+    </a>
+  </div>
+  <!-- footer -->
+  <footer class="container__footer">
+    <p>A finance control app by Asuma Corp <br>
+      © 2021. Todos os direiros reservados.</p>
     <script src="../front-end/assets/js/header.js"></script>
     <script src="../front-end/assets/js/extract-page.js"></script>
     <script src="../front-end/assets/js/eye.js"></script>
-  </body>
+    <script src="../front-end/assets/js/table.js"></script>
+    <script src="../front-end/assets/js/extract.js"></script>
+</body>
+
 </html>
