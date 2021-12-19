@@ -104,7 +104,7 @@ $ npm start
   <li><a href='https://html.com/'>HTML and CSS</a></li>
   <li><a href='https://www.javascript.com/'>JavaScript</a></li>
   <li><a href='https://jwt.io/'></a>JWT</li>
-  <li><a href='https://bcrypt-generator.com/'>Bcrypt</a></li>
+  <li><a href='https://www.npmjs.com/package/bcrypt'>Bcrypt</a></li>
 </ul>
 
 ## 🛠 Creators

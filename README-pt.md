@@ -4,16 +4,12 @@
   <img src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/img/logo.svg"/>
 </div>
 
-
-
 <p align='center'>É um aplicativo com o objetivo de acompanhar sua vida financeira de um jeito simples. </p>
 
 
-
-###
-<div align='center'>
+<div align='center'><br>
   <a href='https://github.com/bonettdreans/Desafio_Neon/blob/main/license'><img src='https://img.shields.io/badge/license-MIT-green'></img></a>
-</div>
+</div><br>
 
 
 <p align='center'>
@@ -104,7 +100,7 @@ $ npm start
   <li><a href='https://html.com/'>HTML and CSS</a></li>
   <li><a href='https://www.javascript.com/'>JavaScript</a></li>
   <li><a href='https://jwt.io/'></a>JWT</li>
-  <li><a href='https://bcrypt-generator.com/'>Bcrypt</a></li>
+  <li><a href='https://www.npmjs.com/package/bcrypt'>Bcrypt</a></li>
 </ul>
 
 <h2 title='creators'>🛠 Criadores</h2>
