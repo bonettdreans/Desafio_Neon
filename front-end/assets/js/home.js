@@ -2,6 +2,8 @@ const dataLS = JSON.parse(localStorage.getItem('client'));
 const token = localStorage.getItem('token')
 const id = dataLS.user.client_id
 console.log("Perfect")
+console.log(token)
+console.log(id)
 fetch(`https://app-asuma.herokuapp.com/api/client/${id}/launch/`, {
       method: 'GET',
       mode: 'cors',
