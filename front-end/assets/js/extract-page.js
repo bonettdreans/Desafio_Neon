@@ -2,6 +2,7 @@ const dataLS = JSON.parse(localStorage.getItem('client'));
 const token = localStorage.getItem('token')
 const id = dataLS.user.client_id
 console.log("Perfect")
+
 fetch(`https://app-asuma.herokuapp.com/api/client/${id}/launch/`, {
       method: 'GET',
       mode: 'cors',
@@ -26,5 +27,6 @@ fetch(`https://app-asuma.herokuapp.com/api/client/${id}/launch/`, {
   //document.getElementById("nomePerfil").innerHTML = nomeUsuario;
   var balance = data.data.valor[0];
   var totalamount = balance.reduce((sum, value) => (typeof value.amount == "number" ? sum + value.amount : sum), 0);
-  document.getElementById("saldo").innerHTML = "R$  " + totalamount ;
+          document.getElementById("saldo").innerHTML = "R$  " + totalamount;
+          console.log(totalamount)
 };

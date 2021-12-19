@@ -1,20 +1,15 @@
-
-
-
 /* Características do botão Switch */
 .flex-container-button {
     display: flex;
     justify-content: center;
     margin-top: 5rem;
 }
-
 .despesa {
     font-size: 2em;
 }
 .receita {
     font-size: 2em;
 }
-
 .switch {
     display: inline-block;
     position: relative;
@@ -23,17 +18,15 @@
     height: 25px;
     margin: 0 10px;
 }
-
 .btn1 {
     display: flex;
     position: relative;
     height: 25px;
-    background-color: #0F9959;
-    border: 2px solid #0F9959;
+    background-color: #0bbd19;
+    border: 2px solid #0bbd19;
     transition: all 0.2s ease-in-out;
     border-radius: 15px;
 }
-
 .switch > label::before {
     content: '';
     display: flex;
@@ -61,8 +54,8 @@
 }
 .switch > input:checked + label {
     padding-left: 33px;
-    background-color: #f02f2f;
-    border-color: #f02f2f;
+    background-color: #c51919;
+    border-color: #c51919;
     color: #fff;
     
 }
@@ -73,7 +66,6 @@
     background-color: #fff;
     
 }
-
 .switch > a {
     font-family: 'Oswald';
     font-size: 1.5em;

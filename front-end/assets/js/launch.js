@@ -3,12 +3,6 @@ document.getElementById("txtValue").addEventListener("change", function () {
     this.value = parseFloat(this.value).toFixed(2);
 });
 
-
-
-
-
-
-
 /* Função para efeito de ocultar saldo */
 function mostrarOcultar() {
     let saldoh3 = document.getElementById("saldo");
@@ -29,17 +23,6 @@ function mostrarOcultar() {
         olho.src = '../front-end/assets/icons/eye.svg'; 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* Função para limitar lançamentos até 3 meses antes */
 function decimas(n){
