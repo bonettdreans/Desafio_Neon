@@ -32,16 +32,19 @@ img {
 .logo {
 	margin: 0px 0 0 289px;
 }
+
 .container-fluid{
 	float: right;
 }
+
 img{
 	height: 60px;
-	
 }
+
 .logo{
 	margin: 0px 0 0 289px;
 }
+
 .form-structor {
 	background-color: #222;
 	border-radius: 15px;
@@ -326,20 +329,20 @@ span {
 	padding-top: -1px;
 }
 
-   @media  (max-width:2685px) {
+@media  (max-width:2685px) {
 	.logo {
 		margin: 0px 0px 0px -455px ;
 	}
-   }
+}
 
-   @media  (max-width:1535px){
+@media  (max-width:1535px){
 	.logo {
 		margin: 0px 0px 0px -203px ;
 	}
 	.form-structor {
 		margin: 0px 0px 0px 102px ;
 	}
-   }
+}
 
 @media (max-width:768px) {
 	.logo {
@@ -348,7 +351,7 @@ span {
 	.form-structor {
 		margin: 0px 0px 0px 92px ;
 	}
-   }
+}
 
 @media (max-width:320px) {
 	.logo {
@@ -357,4 +360,4 @@ span {
 	.form-structor {
 		margin: 30px 0px 0px 55px ;
 	}
-   }   
+}   
