@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       autoIncrement: true 
     },
-    amount: DataTypes.FLOAT,
+    amount: DataTypes.INTEGER,
     date: DataTypes.STRING,
     title_launch: DataTypes.STRING,
     type_launch: DataTypes.STRING

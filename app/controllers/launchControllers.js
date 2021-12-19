@@ -8,7 +8,7 @@ module.exports = {
       const clientLaunch = await Client.findByPk(req.params.id, {
           include: {
           association: "valor",
-          attributes: ['launch_id',  'amount', 'date', 'title_launch']
+          attributes: ['launch_id',  'amount', 'date', 'title_launch', 'type_launch']
               }
       });
       if (clientLaunch) {
