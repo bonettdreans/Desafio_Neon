@@ -1,9 +1,6 @@
 const dataLS = JSON.parse(localStorage.getItem('client'));
 const token = localStorage.getItem('token')
 const client_id = dataLS.user.client_id
-console.log("Perfect")
-console.log(token)
-console.log(client_id)
 async function lancamento() {
 
   const amount = document.getElementById("txtValue").value;
@@ -70,7 +67,6 @@ fetch(`https://app-asuma.herokuapp.com/api/client/${id}/launch/`, {
       .then(data => mostrarData(data))
       .catch((error) => console.log("Erro:" + error))
         let mostrarData = (data) => {
-        console.log("requisicion get" + data)
         let balance = data.data.valor[0];
         let totalamount = balance.reduce((sum, value) => (typeof value.amount == "number" ? sum + value.amount : sum), 0);
           
