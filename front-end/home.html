@@ -29,7 +29,7 @@
         <img id="profileIcon" src="../front-end/assets/icons/colorful-person.svg" alt="imagem do perfil">
         <h4 id="name_perfil">Olá, Isabel</h4>
         
-        <a href="http://127.0.0.1:5501/index.html">
+        <a href="http://127.0.0.1:5500/index.html">
         <button class="btn__terminarSessao" onclick="ateLogo();">Até logo</button>
         </a>
         <img id="notificationIcon" src="../front-end/assets/icons/notification.svg">
@@ -59,11 +59,16 @@
             />
           </label>
         </div>
-        <div id="eye" class="hidden">
+        <div id ="saldo" id="eye" class="hidden">
+         
           <div class="balanceValue">
             <h3 id ="saldo">Saldo Disponível</h3>
-            <input class="saldoValor" type="text" id ="saldo" value="R$ " />
+            <label for="" id ="saldo">
+            <input class="saldoValor" type="text" onclick="mostrarOcultar()" id ="saldo" value="R$ 1000" disabled/>
+            </label>
           </div>
+
+           
         </div>
       </div>
     </div>

@@ -3,22 +3,22 @@
 //     this.value = parseFloat(this.value).toFixed(2);
 // });
 /* Função para efeito de ocultar saldo */
-function mostrarOcultar() {
-    let saldo = document.getElementById("saldo");
-    let btn = document.getElementById('bma');
-    let olho = document.getElementById('olhoaberto');
-    if (saldo.type == "text") {
-        console.log(saldo.type);
-        console.log(btn.id);
-        saldo.type = "password";
-        olho.src = '../front-end/assets/icons/eye-slash.svg';
-    } else if (saldo.type == "password") {
-        console.log(saldo.type);
-        console.log(btn.id);
-        saldo.type = "text";
-        olho.src = '../front-end/assets/icons/eye.svg'; 
-    }
-}
+// function mostrarOcultar() {
+//     let saldo = document.getElementById("saldo");
+//     let btn = document.getElementById('bma');
+//     let olho = document.getElementById('olhoaberto');
+//     if (saldo.type == "text") {
+//         console.log(saldo.type);
+//         console.log(btn.id);
+//         saldo.type = "password";
+//         olho.src = '../front-end/assets/icons/eye-slash.svg';
+//     } else if (saldo.type == "password") {
+//         console.log(saldo.type);
+//         console.log(btn.id);
+//         saldo.type = "text";
+//         olho.src = '../front-end/assets/icons/eye.svg'; 
+//     }
+// }
 /* Função para limitar lançamentos até 3 meses antes */
 function decimas(n){
     return n > 9 ? "" + n: "0" + n;
