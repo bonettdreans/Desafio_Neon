@@ -155,7 +155,7 @@ await fetch('https://app-asuma.herokuapp.com/api/login',
         if(data){
           window.location.href = "http://127.0.0.1:5500/front-end/home.html"
         } else {
-          window.location.href = "http://127.0.0.1:5501/login_validacoes/index.html"
+          window.location.href = "http://127.0.0.1:5500/index.html"
         }
     });
 }

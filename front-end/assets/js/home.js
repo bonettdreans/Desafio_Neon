@@ -15,9 +15,9 @@ fetch(`https://app-asuma.herokuapp.com/api/client/${id}/launch/`, {
       .catch((error) => console.log("Erro:" + error))
         const mostrarData = (data) => {
         
-        // let nomeUsuario = ''
-        //     nomeUsuario += `${data.data.name}`
-        //     document.getElementById("name_perfil").innerHTML = "Olá, " + nomeUsuario;
+        let nomeUsuario = ''
+            nomeUsuario += `${data.data.name}`
+            document.getElementById("name_perfil").innerHTML = "Olá, " + nomeUsuario;
 
         let balance = data.data.valor[0];
         let totalamount = balance.reduce((sum, value) => (typeof value.amount == "number" ? sum + value.amount : sum), 0);
