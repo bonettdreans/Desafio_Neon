@@ -66,6 +66,15 @@ header nav ul li img {
     height: 6rem;
 }
 
+#profile {
+    border: none;
+    background-color: transparent;
+}
+
+#profileMsg {
+    display: none;
+}
+
 /************responsiveness*************/
 @media (max-width: 995px) {
     html {
