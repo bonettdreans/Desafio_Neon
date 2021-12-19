@@ -1,8 +1,8 @@
 const express = require("express");
 
-const launchControllers = require("../app/controllers/launchControllers")
+const launchControllers = require("../app/controllers/launchControllers");
 
-const auth = require ('../app/middlewares/auth')
+const auth = require ('../app/middlewares/auth');
 
 const routesLaunch = express.Router();
 

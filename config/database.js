@@ -7,7 +7,7 @@ module.exports = {
   host: process.env.DB_HOST ||"localhost",
   dialect:process.env.DB_DIALECT ||"mysql",
   define: {
-    timestamps: false, //Apaga arquivos Crea
+    timestamps: false, 
 
     underscored: true
   }
