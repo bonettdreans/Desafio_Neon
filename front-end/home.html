@@ -27,13 +27,10 @@
     <div class="containerProfile">
       <div class="profile">
         <img id="profileIcon" src="../front-end/assets/icons/colorful-person.svg" alt="imagem do perfil">
-        <h4 id="name_perfil">Olá, Isabel</h4>
-        
-        <a href="http://127.0.0.1:5501/index.html">
-        <button class="btn__terminarSessao" onclick="ateLogo();">Até logo</button>
+        <h4 id="name_perfil"></h4>
+        <a href="http://127.0.0.1:5500/index.html">
+        <img onclick="ateLogo();" id="logout" src="../front-end/assets/icons/box-arrow-right.svg">
         </a>
-        <img id="notificationIcon" src="../front-end/assets/icons/notification.svg">
-        <img id="settingsIcon" src="../front-end/assets/icons/settings.svg">
       </div>
     </div>
     <!-- balance content -->
@@ -41,28 +38,9 @@
       <div class="titleSaldo">
         <h3>Saldo disponível</h3>
       </div>
-      <div class="flex-container-saldo-eye">
-        <div class="btn-eye">
-          <input
-            class="mostra"
-            id="bma"
-            type="checkbox"
-            value=""
-            onclick="mostrarOcultar()"
-          />
-          <label for="bma" class="bma">
-            <img
-              id="olhoaberto"
-              class="aberto"
-              src="../front-end/assets/icons/eye.svg"
-              alt=""
-            />
-          </label>
-        </div>
         <div id="eye" class="hidden">
           <div class="balanceValue">
             <h3 id ="saldo">Saldo Disponível</h3>
-            <input class="saldoValor" type="text" id ="saldo" value="R$ " />
           </div>
         </div>
       </div>
