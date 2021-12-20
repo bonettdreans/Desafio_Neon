@@ -1,0 +1,21 @@
+@media (max-width: 1000px) {
+    .logo-resiliaflix {
+      display: none;
+    }
+  
+    .developers {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .owner {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+    .upper-title {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
