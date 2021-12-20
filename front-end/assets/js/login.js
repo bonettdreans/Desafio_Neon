@@ -138,7 +138,7 @@ async function  envioLogin(event) {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
-await fetch('https://app-asuma.herokuapp.com/api/login', 
+await fetch('https://app-secontrole.herokuapp.com/api/login', 
   {
     method: 'POST',
     headers: {
@@ -153,9 +153,9 @@ await fetch('https://app-asuma.herokuapp.com/api/login',
         window.localStorage.setItem('token', data.token);
         window.localStorage.setItem('client', JSON.stringify(data))
         if(data){
-          window.location.href = "http://127.0.0.1:5500/front-end/home.html"
+          window.location.href = "/front-end/home.html"
         } else {
-          window.location.href = "http://127.0.0.1:5500/index.html"
+          window.location.href = "/index.html"
         }
     });
 }
@@ -167,7 +167,7 @@ const email = document.getElementById("emailCadastro").value;
 const password = document.getElementById("passwordCadastro").value;
     console.log(name, email, password);
 
- await fetch('https://app-asuma.herokuapp.com/api/register', 
+ await fetch('https://app-secontrole.herokuapp.com/api/register', 
   {
     method: 'POST',
     headers: {

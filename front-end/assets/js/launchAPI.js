@@ -12,7 +12,7 @@ async function lancamento() {
   // console.log(amount, date, title_launch, type_launch, client_id)
   // console.log(JSON.stringify({amount, date, title_launch , type_launch, client_id}))
 
-  await fetch('https://app-asuma.herokuapp.com/api/launch/', 
+  await fetch('https://app-secontrole.herokuapp.com/api/launch/', 
   {
     method: 'POST',
     mode: "cors",
@@ -27,9 +27,9 @@ async function lancamento() {
       .then(data => {
        
         if(data){
-          window.location.href = "#"
+          window.location.href = "/front-end/launch.html"
         } else {
-          window.location.href = "#"
+          window.location.href = "/front-end/launch.html"
           }
     });
 }
@@ -56,7 +56,7 @@ const dataLSS = JSON.parse(localStorage.getItem('client'));
 const tokens = localStorage.getItem('token')
 const id = dataLSS.user.client_id
 
-fetch(`https://app-asuma.herokuapp.com/api/client/${id}/launch/`, {
+fetch(`https://app-secontrole.herokuapp.com/api/client/${id}/launch/`, {
       method: 'GET',
       mode: 'cors',
       cache: 'default',

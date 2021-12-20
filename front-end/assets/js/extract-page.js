@@ -3,7 +3,7 @@ const token = localStorage.getItem('token')
 const id = dataLS.user.client_id
 console.log("Perfect")
 
-fetch(`https://app-asuma.herokuapp.com/api/client/${id}/launch/`, {
+fetch(`https://app-secontrole.herokuapp.com/api/client/${id}/launch/`, {
       method: 'GET',
       mode: 'cors',
       cache: 'default',
