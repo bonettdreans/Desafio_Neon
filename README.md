@@ -19,6 +19,7 @@
 <p align='center'>
   <a href='#Roda-Map'>💫 Road Map</a> • 
   <a href='#Aplication-Demo'>💻 Aplication Demo</a> • 
+  <a href='#Highlighted-Code'>✨ Highlighted Code</a> • 
   <a href='#How-to-Use'>🌚 How to Use</a> • 
   <a href='#Tech-Satck'>⚡️ Tech Stack</a> • 
   <a href='#Creators'>🛠 Creators</a> 
@@ -52,6 +53,7 @@ and <a href='https://www.figma.com/file/3wh0x05etlZMCUfcJMRjwR/Desafio---TT-team
 
 
 ## ✨ Highlighted Code
+
 <h4 align="center">Creating middlewares</h4>
 <h1 align="center">
   <img title="#register" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/screenshots/middlewares.png" />
