@@ -35,10 +35,10 @@ and <a href='https://www.figma.com/file/3wh0x05etlZMCUfcJMRjwR/Desafio---TT-team
 ## 💻 Aplication Demo
 
 <h1 align="center">
-  <img title="#register" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/screenshots/cadastrar.png" />
+  <img title="#register" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/screenshots/register.png" />
 </h1>
 <h1 align="center">
-  <img title="#register" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/screenshots/entrar.png" />
+  <img title="#register" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/screenshots/login.png" />
 </h1>
 <h1 align="center">
   <img title="#register" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/screenshots/home.png" />
@@ -113,14 +113,14 @@ $ npm start
 <div style="display: inline_block" align="center">
  <table>
     <tr>
-      <td align="center"><a href="https://github.com/lacerdaisab"><img style="border-radius: 50%;" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/img/isabel.png" width="100px;" alt="Isa"/><br /><sub><b>Isabel Lacerda</b></sub></a><br /><a href="https://www.linkedin.com/in/lacerdaisab/" title="Linkedin">🚀</a>
-      <td align="center"><a href="https://github.com/guzmandp"><img style="border-radius: 50%;" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/img/darwin.png" width="100px;" alt="Darwin"/><br /><sub><b>Darwin Guzman</b></sub></a><br /><a href="https://www.linkedin.com/in/darwin-guzm%C3%A1n-betancourt-985b4496/" title="Linkedin">🚀</a>
-      <td align="center"><a href="https://github.com/MarcosCucoro"><img style="border-radius: 50%;" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/img/marcos.png" width="100px;" alt="Marcos"/><br /><sub><b>Marcos Cucoro</b></sub></a><br /><a href="https://www.linkedin.com/in/marcos-cucoro-15b23a95/" title="Linkedin">🚀</a>
+      <td align="center"><a href="https://github.com/lacerdaisab" target="_blank"><img style="border-radius: 50%;" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/img/isabel.png" width="100px;" alt="Isa"/><br /><sub><b>Isabel Lacerda</b></sub></a><br /><a href="https://www.linkedin.com/in/lacerdaisab/" title="Linkedin" target="_blank">🚀</a>
+      <td align="center"><a href="https://github.com/guzmandp" target="_blank"><img style="border-radius: 50%;" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/img/darwin.png" width="100px;" alt="Darwin"/><br /><sub><b>Darwin Guzman</b></sub></a><br /><a href="https://www.linkedin.com/in/darwin-guzm%C3%A1n-betancourt-985b4496/" title="Linkedin" target="_blank">🚀</a>
+      <td align="center"><a href="https://github.com/MarcosCucoro" target="_blank"><img style="border-radius: 50%;" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/img/marcos.png" width="100px;" alt="Marcos"/><br /><sub><b>Marcos Cucoro</b></sub></a><br /><a href="https://www.linkedin.com/in/marcos-cucoro-15b23a95/" title="Linkedin" target="_blank">🚀</a>
     </tr>
     <tr>
-      <td align="center"><a href="https://github.com/bonettdreans"><img style="border-radius: 50%;" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/img/hector.png" width="100px;" alt="Hector"/><br /><sub><b>Hector Bonett</b></sub></a><br /><a href="https://www.linkedin.com/in/h%C3%A9ctor-bonett-b61459223/" title="Linkedin">🚀</a>
-      <td align="center"><a href="https://github.com/juel1986"><img style="border-radius: 50%;" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/img/juel.png" width="100px;" alt="Juel"/><br /><sub><b>Juel da Silva</b></sub></a><br /><a href="https://www.linkedin.com/in/juel-da-silva-60b7b1117/" title="Linkedin">🚀</a>
-      <td align="center"><a href="https://github.com/Tavarina"><img style="border-radius: 50%;" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/img/fabiana.png" width="100px;" alt="Fabiana"/><br /><sub><b>Fabiana Oliveira</b></sub></a><br /><a href="https://www.linkedin.com/in/fabianaoli/" title="Linkedin">🚀</a>
+      <td align="center"><a href="https://github.com/bonettdreans" target="_blank"><img style="border-radius: 50%;" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/img/hector.png" width="100px;" alt="Hector"/><br /><sub><b>Hector Bonett</b></sub></a><br /><a href="https://www.linkedin.com/in/h%C3%A9ctor-bonett-b61459223/" title="Linkedin" target="_blank">🚀</a>
+      <td align="center"><a href="https://github.com/juel1986" target="_blank"><img style="border-radius: 50%;" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/img/juel.png" width="100px;" alt="Juel"/><br /><sub><b>Juel da Silva</b></sub></a><br /><a href="https://www.linkedin.com/in/juel-da-silva-60b7b1117/" title="Linkedin" target="_blank">🚀</a>
+      <td align="center"><a href="https://github.com/Tavarina" target="_blank"><img style="border-radius: 50%;" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/img/fabiana.png" width="100px;" alt="Fabiana"/><br /><sub><b>Fabiana Oliveira</b></sub></a><br /><a href="https://www.linkedin.com/in/fabianaoli/" title="Linkedin" target="_blank">🚀</a>
     </tr>
   </table>
 </div>
