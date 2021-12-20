@@ -4,6 +4,7 @@
     justify-content: center;
     margin-top: 5rem;
 }
+
 .despesa {
     font-size: 2em;
 }
@@ -11,6 +12,7 @@
 .receita {
     font-size: 2em;
 }
+
 .switch {
     display: inline-block;
     position: relative;
@@ -19,6 +21,7 @@
     height: 25px;
     margin: 0 10px;
 }
+
 .btn1 {
     display: flex;
     position: relative;
@@ -28,6 +31,7 @@
     transition: all 0.2s ease-in-out;
     border-radius: 15px;
 }
+
 .switch > label::before {
     content: '';
     display: flex;
@@ -71,6 +75,7 @@
     background-color: #fff;
     
 }
+
 .switch > a {
     font-family: 'Oswald';
     font-size: 1.5em;

@@ -153,9 +153,9 @@ await fetch('https://app-secontrole.herokuapp.com/api/login',
         window.localStorage.setItem('token', data.token);
         window.localStorage.setItem('client', JSON.stringify(data))
         if(data){
-          window.location.href = "/front-end/home.html"
+          window.location.href = "http://127.0.0.1:5501/front-end/home.html"
         } else {
-          window.location.href = "/index.html"
+          window.location.href = "http://127.0.0.1:5501/index.html"
         }
     });
 }
