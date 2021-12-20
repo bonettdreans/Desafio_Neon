@@ -1,32 +1,39 @@
-const dataLS = JSON.parse(localStorage.getItem('client'));
-const token = localStorage.getItem('token')
-const id = dataLS.user.client_id
-console.log("Perfect")
-fetch(`http://localhost:8000/api/client/${id}/launch/`, {
-      method: 'GET',
-      mode: 'cors',
-      cache: 'default',
-      headers: {
-        'Content-Type': 'application/json',
-        'authorization': `Bearer ${token}`,
-      },
-    }).then(response => response.json())
-      .then(data => mostrarData(data))
-      .catch((error) => console.log("Erro:" + error))
-        const mostrarData = (data) => {
-        console.log(data)
-        let nomeUsuario = ''
-            nomeUsuario += `${data.data.name}`
-            document.getElementById("name_perfil").innerHTML = "Olá, " + nomeUsuario;
-
-        let balance = data.data.valor[0];
-        let totalamount = balance.reduce((sum, value) => (typeof value.amount == "number" ? sum + value.amount : sum), 0);
-          
-          document.getElementById("saldo").innerHTML = "R$  " + totalamount ;
-};
-
-function ateLogo(event) {
-  window.localStorage.clear('token');
-  window.localStorage.clear('client');
-  console.log("limpo o Local Store")
+/* Função para deixar valor com 2 casas decimais */
+document.getElementById("txtValue").addEventListener("change", function () {
+    this.value = parseFloat(this.value).toFixed(2);
+});
+/* Função para efeito de ocultar saldo */
+function mostrarOcultar() {
+    let saldo = document.getElementById("saldo");
+    let btn = document.getElementById('bma');
+    let olho = document.getElementById('olhoaberto');
+    if (saldo.type == "text") {
+        console.log(saldo.type);
+        console.log(btn.id);
+        saldo.type = "password";
+        olho.src = '../front-end/assets/icons/eye-slash.svg';
+    } else if (saldo.type == "password") {
+        console.log(saldo.type);
+        console.log(btn.id);
+        saldo.type = "text";
+        olho.src = '../front-end/assets/icons/eye.svg'; 
+    }
 }
+/* Função para limitar lançamentos até 3 meses antes */
+function decimas(n){
+    return n > 9 ? "" + n: "0" + n;
+}
+function getDate(m) {
+    let data = new Date();
+    let diffAno = 0;
+    let mesAnterior = data.getMonth() - (m === undefined ? 1 : m - 1);
+    if (mesAnterior < 1) {
+        mesAnterior = mesAnterior + 12;
+        diffAno = -1;
+    }
+    mesAnterior = decimas(mesAnterior);
+    let diaAnterior = decimas(data.getDate());
+    return (data.getFullYear() + diffAno) + '-' + mesAnterior + '-' + diaAnterior;
+}
+document.querySelector('input[name=data]').setAttribute("min", getDate(3));
+document.querySelector('input[name=data]').valueAsDate  = new Date();
