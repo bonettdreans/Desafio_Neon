@@ -40,6 +40,7 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="shortcut icon" href="../front-end/assets/icons/favicon.svg" type="image/x-icon">
+
     <title>Lançamento</title>
   </head>
   <body>
@@ -73,16 +74,23 @@
                 >
               </li>
               <li>
-                <img
-                  src="../front-end/assets/icons/colorful-person.svg"
-                  alt=""
-                />
+                <a href="../index.html" onclick="ateLogo();" >Até logo</a>
               </li>
+              <button id="profile" onclick="profileMessage()">
+                <li>
+                  <img
+                    src="../front-end/assets/icons/colorful-person.svg"
+                    alt=""
+                  />
+                </li>
+                <div id="profileMsg">Aguarde a próxima versão!</div>
+              </button>
             </ul>
           </nav>
         </div>
       </div>
     </header>
+
     <main>
       <div class="flex-container-balance">
         <div class="balance">
@@ -108,29 +116,28 @@
           </div>
           <div id="eye" class="hidden">
             <div class="balanceValue">
-              <h3 id ="saldo">Saldo Disponível</h3>
-              <input class="saldoValor" type="text" id="saldo" value="R$ " />
+               <h3 id ="saldo">Saldo Disponível</h3>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <div class="flex-container-button">
+ <div class="flex-container-button">
       <div class="despesa">
-      <a>Receita</a>
+      <a>Despesa</a>
       </div>
       <div class="switch">
         <input type="checkbox" class="checkgroup" name="btn-check" id="btn1" onclick="valorNegatiboCheckbox()"/>
         <label for="btn1" class="btn1"></label>
       </div>
       <div class="receita">
-      <a>Despesa</a>
+      <a>Receita</a>
       </div>
     </div>
     <section>
       <div class="flex-container-form">
         <div class="div-form">
-          <form class="form" action="#" method="get">
+          <form class="form" method="get">
             <div class="divValue">
               <label for="txtValue">Valor</label>
               <div class="input-control text size4">
@@ -138,7 +145,7 @@
                   type="number"
                   required
                   step="0.010"
-                  min="-9999999999"
+                  min="-999999999"
                   max="9999999999"
                   id="txtValue"
                   placeholder="R$"
@@ -147,6 +154,7 @@
               </div>
               <span class="error"></span>
             </div>
+
             <div class="divDate">
               <label for="txtDate">Data</label>
               <div class="input-control text size4">
@@ -155,6 +163,7 @@
               </div>
               <span class="error active"></span>
             </div>
+
             <div class="divDeposit">
               <label for="txtDeposit">Descrição</label>
               <div class="input-control text size4">
@@ -169,6 +178,7 @@
               </div>
               <span class="error active"></span>
             </div>
+
             <div class="drop-list">
               <select autofocus id="selected">
                 <option value="pix">PIX</option>
@@ -179,10 +189,11 @@
               </select>
             </div>
             <div class="containerButton">
-              <button onclick="lancamento()" class="btn-register">Cadastrar</button>
+              <button onclick="lancamento()" class="button">Cadastrar</button>
             </div>
           </form>
         </div>
+
         <div class="div-img-finance">
           <img
             src="../front-end/assets/icons/Finance app-pana.png"
@@ -193,6 +204,7 @@
         </div>
       </div>
     </section>
+
     <footer class="container__footer">
       <p>
         A finance control app by Asuma Corp <br />
@@ -201,6 +213,7 @@
     </footer>
     <script src="../front-end/assets/js/launchAPI.js"></script>
     <!-- <script src="../front-end/assets/js/launch.js"></script> -->
-    <!-- <script src="../front-end/assets/js/header.js"></script> -->
+    <script src="../front-end/assets/js/header.js"></script>
+    <script src="../front-end/assets/js/profile-alert.js"></script>
   </body>
 </html>

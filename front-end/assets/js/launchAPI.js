@@ -12,16 +12,17 @@ async function lancamento() {
   const type_launch = document.getElementById("selected").value;
   const token = localStorage.getItem('token')
 
-  console.log(amount, date, title_launch, type_launch, client_id)
-  console.log(JSON.stringify({amount, date, title_launch , type_launch, client_id}))
-await fetch('https://app-asuma.herokuapp.com/api/launch/', 
+  // console.log(amount, date, title_launch, type_launch, client_id)
+  // console.log(JSON.stringify({amount, date, title_launch , type_launch, client_id}))
+
+  await fetch('https://app-asuma.herokuapp.com/api/launch/', 
   {
     method: 'POST',
     mode: "cors",
     headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin': '*'
         'authorization': `Bearer ${token}`
       },
       body: JSON.stringify({ amount, date, title_launch , type_launch, client_id })

@@ -2,8 +2,6 @@ const dataLS = JSON.parse(localStorage.getItem('client'));
 const token = localStorage.getItem('token')
 const id = dataLS.user.client_id
 console.log("Perfect")
-console.log(token)
-console.log(id)
 fetch(`https://app-asuma.herokuapp.com/api/client/${id}/launch/`, {
       method: 'GET',
       mode: 'cors',
@@ -16,7 +14,7 @@ fetch(`https://app-asuma.herokuapp.com/api/client/${id}/launch/`, {
       .then(data => mostrarData(data))
       .catch((error) => console.log("Erro:" + error))
         const mostrarData = (data) => {
-        
+        console.log(data)
         let nomeUsuario = ''
             nomeUsuario += `${data.data.name}`
             document.getElementById("name_perfil").innerHTML = "Olá, " + nomeUsuario;

@@ -45,101 +45,86 @@
               target="_blank">Contato</a>
             </li>
             <li>
-              <a  onclick="ateLogo();" href="http://127.0.0.1:5501/index.html">Até logo</a>
+              <a href="../index.html" onclick="ateLogo();">Até logo</a>
             </li>
-            <li>
-                <img src="../front-end/assets/icons/colorful-person.svg" alt="">
-            </li>
+            <button id="profile" onclick="profileMessage()">
+              <li>
+                <img
+                  src="../front-end/assets/icons/colorful-person.svg"
+                  alt=""
+                />
+              </li>
+              <div id="profileMsg">Aguarde a próxima versão!</div>
+            </button>
           </ul>
         </nav>
       </div>
     </div>
-  </header>
-  <body>
-    <!-- balance -->
-    <div class="flex-container-balance">
-      <div class="titleSaldo">
-        <h3>Saldo disponível</h3>
+  </div>
+</header>
+
+<body>
+  <!-- balance -->
+  <div class="flex-container-balance">
+    <div class="titleSaldo">
+      <h3>Saldo disponível</h3>
+    </div>
+    <div class="flex-container-saldo-eye">
+      <div class="btn-eye">
+        <input class="mostra" id="bma" type="checkbox" value="" onclick="mostrarOcultar()" />
+        <label for="bma" class="bma">
+          <img id="olhoaberto" class="aberto" src="../front-end/assets/icons/eye.svg" alt="" />
+        </label>
       </div>
-      <div class="flex-container-saldo-eye">
-        <div class="btn-eye">
-          <input
-            class="mostra"
-            id="bma"
-            type="checkbox"
-            value=""
-            onclick="mostrarOcultar()"
-          />
-          <label for="bma" class="bma">
-            <img
-              id="olhoaberto"
-              class="aberto"
-              src="../front-end/assets/icons/eye.svg"
-              alt=""
-            />
-          </label>
-        </div>
-        <div id="eye" class="hidden">
-          <div class="balanceValue">
-            <h2 id="saldo">R$ 0000,00</h3>
-            <input class="saldoValor" type="text" id="saldo" value="R$ " />
-          </div>
+      <div id="eye" class="hidden">
+        <div class="balanceValue">
+          <h3 id="saldo">R$ 0000,00</h3>
         </div>
       </div>
     </div>
-    <!-- table -->
-    <div class="containerTable">
-        <!-- balance table -->
-        <table class="sections">
-          <!-- first section -->
-          <thead>
-            <tr>
-               <th class="dates">Descrição</th>
-               <th class="dates">Custo</th>
-               <th class="dates">Data</th>
-               <th class="empty1">Ações</th>
-            </tr>
-          </thead>
-          <tbody id="data" class="table-hover">
-                              <tr class="columns">
-                <td class="datesColumn">Gás</td>
-                <td class="descriptionColumn">Pix</td>
-                <td class="valueColumn">R$ 100.00</td>
-                <!-- <td class="edit">
-                  <a href="">
-                      <img 
-                          src="../assets/icons/pencil.svg" 
-                          class="imgEdit"
-                          alt=""></a><a href="">
-                  </a>
-                </td>
-                <td class="delete">
-                  <a href="">
-                      <img 
-                          src="../assets/icons/trash.svg" 
-                          class="imgDelete"
-                          alt="">
-                  </a> 
-                </td> -->
-            </tr>         
-          </tbody>
-        </table>       
-    </div>
-    <!-- new launch button -->
-    <div class="containerButton">
-      <a href="../front-end/launch.html">
-        <button class="button">
-          Novo Lançamento
-        </button>
-      </a>
-    </div>
-    <!-- footer -->
-    <footer class="container__footer">
-        <p>A finance control app by Asuma Corp <br>
-            © 2021. Todos os direiros reservados.</p>
-    </footer>
+  </div>
+  <!-- table -->
+  <div class="containerTable">
+    <!-- balance table -->
+    <table class="sections">
+      <!-- first section -->
+      <thead>
+        <tr class="cabecalho">
+          <th class="historico">Data</th>
+          <th class="historico">Tipo</th>
+          <th class="historico">Descrição</th>
+          <th class="historico">Valor</th>
+        </tr>
+      </thead>
+      <tbody id="data" class="dados">
+        <tr class="columnsneg">
+          <td id="data" class="datesColumn">13/12/2021</td>
+          <td id="tipo" class="tipo">Boleto</td>
+          <td id="descricao" class="descriptionColumn">Conta de Luz</td>
+          <td id="valor" class="valueColumn">R$ -150,00</td>
+       
+      </tbody>
+    </table>
+  </div>
+  <!-- new launch button -->
+  <div class="containerButton">
+    <a href="../front-end/launch.html">
+      <button class="button">
+        Novo Lançamento
+      </button>
+    </a>
+  </div>
+  <!-- footer -->
+  <footer class="container__footer">
+    <p>A finance control app by Asuma Corp <br>
+      © 2021. Todos os direiros reservados.</p>
+
     <script src="../front-end/assets/js/header.js"></script>
     <script src="../front-end/assets/js/extract-page.js"></script>
+    <script src="../front-end/assets/js/profile-alert.js"></script>
     <script src="../front-end/assets/js/eye.js"></script>
-  </body>
+    <!-- <script src="../front-end/assets/js/table.js"></script> -->
+    <script src="../front-end/assets/js/extract.js"></script>
+</body>
+
 </html>

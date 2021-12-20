@@ -13,8 +13,7 @@ html, body {
 }
 
 main {
-    margin-bottom: 80px;
-    height: 21%;
+    height: 47%;
 }
 
 .cards {
@@ -24,10 +23,21 @@ main {
 
     display: flex;
     justify-content: space-between;
+    padding-top: 7%;
 }
 
 .link {
     text-decoration: none;
+}
+
+#pixCard, 
+#investmentCard {
+    border: none;
+}
+
+#pixMsg,
+#investmentMsg {
+    display: none;
 }
   
 .text--medium {
@@ -83,13 +93,6 @@ main {
         margin-top: 3.2%;
     }
 }
-
-/* @media (max-width: 1185px) {
-    .cards {
-        margin-top: 6%;
-        margin-bottom: 10%;
-    }
-} */
 
 @media (max-width: 820px) {
     .cards {
