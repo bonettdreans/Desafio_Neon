@@ -58,23 +58,23 @@
           <nav>
             <ul>
               <li>
-                <a href="../front-end/home.html" target="_self">Início</a>
+                <a href="../front-end/home.html">Início</a>
               </li>
               <li>
-                <a href="../front-end/launch.html" target="_self">Novo Lançamento</a>
+                <a href="../front-end/launch.html">Novo Lançamento</a>
               </li>
               <li>
-                <a href="../front-end/extract.html" target="_self">Extrato</a>
+                <a href="../front-end/extract.html">Extrato</a>
               </li>
               <li>
                 <a
-                  href="../front-end/contact.html"
-                  target="_self"
+                  href="https://github.com/bonettdreans/Desafio_Neon/blob/main/README.md"
+                  target="_blank"
                   >Contato</a
                 >
               </li>
               <li>
-                <a href="../index.html" target="_self">Até logo</a>
+                <a href="../index.html" onclick="ateLogo();" >Até logo</a>
               </li>
               <button id="profile" onclick="profileMessage()">
                 <li>
@@ -97,49 +97,30 @@
           <h2>Saldo disponível</h2>
         </div>
         <div class="flex-container-saldo-eye">
-          <div class="btn-eye">
-            <input
-              class="mostra"
-              id="bma"
-              type="checkbox"
-              value=""
-              onclick="mostrarOcultar()"
-            />
-            <label for="bma" class="bma">
-              <img
-                id="olhoaberto"
-                class="aberto"
-                src="../front-end/assets/icons/eye.svg"
-                alt=""
-              />
-            </label>
-          </div>
           <div id="eye" class="hidden">
             <div class="balanceValue">
-              <input class="saldoValor" type="text" id="saldo" value="R$ 1300,10" />
+               <h3 id ="saldo"></h3>
             </div>
           </div>
         </div>
       </div>
     </main>
-
-    <div class="flex-container-button">
+ <div class="flex-container-button">
       <div class="despesa">
-        <a>Despesa</a>
+      <a>Receita</a>
       </div>
       <div class="switch">
-        <input type="checkbox" class="checkgroup" id="btn1" />
+        <input type="checkbox" class="checkgroup" name="btn-check" id="btn1" onclick="valorNegatiboCheckbox()"/>
         <label for="btn1" class="btn1"></label>
       </div>
       <div class="receita">
-        <a>Receita</a>
+      <a>Despesa</a>
       </div>
     </div>
-
     <section>
       <div class="flex-container-form">
         <div class="div-form">
-          <form class="form" action="" method="post">
+          <form class="form" action="#" method="get">
             <div class="divValue">
               <label for="txtValue">Valor</label>
               <div class="input-control text size4">
@@ -147,7 +128,7 @@
                   type="number"
                   required
                   step="0.010"
-                  min="0.01"
+                  min="-999999999"
                   max="9999999999"
                   id="txtValue"
                   placeholder="R$"
@@ -191,7 +172,7 @@
               </select>
             </div>
             <div class="containerButton">
-              <button type="submit" class="button">Cadastrar</button>
+              <button onclick="lancamento()" class="button">Cadastrar</button>
             </div>
           </form>
         </div>
@@ -213,8 +194,8 @@
         © 2021. Todos os direiros reservados.
       </p>
     </footer>
-
-    <script src="../front-end/assets/js/launch.js"></script>
+    <script src="../front-end/assets/js/launchAPI.js"></script>
+    <!-- <script src="../front-end/assets/js/launch.js"></script> -->
     <script src="../front-end/assets/js/header.js"></script>
     <script src="../front-end/assets/js/profile-alert.js"></script>
   </body>
