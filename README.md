@@ -94,17 +94,17 @@ $ npm start
 
 ## ⚡️ Tech Stack
 <ul>
-  <li><a href='https://nodejs.org/'>Node.js</a></li>
-  <li><a href='https://sequelize.org/master/'>Sequelize</a></li>
-  <li><a href='https://expressjs.com/pt-br/'>Expressbr</a></li>
-  <li><a href='https://www.npmjs.com/package/dotenv'>Dotenv</a></li>
-  <li><a href='https://www.npmjs.com/package/mysql2'>MySQL</a></li>
-  <li><a href='https://www.npmjs.com/package/nodemon'>Nodemon</a></li>
-  <li><a href='https://www.npmjs.com/package/sequelize-cli'>Sequelize-cli</a></li>
-  <li><a href='https://html.com/'>HTML and CSS</a></li>
-  <li><a href='https://www.javascript.com/'>JavaScript</a></li>
-  <li><a href='https://jwt.io/'></a>JWT</li>
-  <li><a href='https://www.npmjs.com/package/bcrypt'>Bcrypt</a></li>
+  <li><a href='https://nodejs.org/' target="_blank">Node.js</a></li>
+  <li><a href='https://sequelize.org/master/' target="_blank">Sequelize</a></li>
+  <li><a href='https://expressjs.com/pt-br/' target="_blank">Expressbr</a></li>
+  <li><a href='https://www.npmjs.com/package/dotenv' target="_blank">Dotenv</a></li>
+  <li><a href='https://www.npmjs.com/package/mysql2' target="_blank">MySQL</a></li>
+  <li><a href='https://www.npmjs.com/package/nodemon' target="_blank">Nodemon</a></li>
+  <li><a href='https://www.npmjs.com/package/sequelize-cli' target="_blank">Sequelize-cli</a></li>
+  <li><a href='https://html.com/' target="_blank">HTML and CSS</a></li>
+  <li><a href='https://www.javascript.com/' target="_blank">JavaScript</a></li>
+  <li><a href='https://jwt.io/' target="_blank"></a>JWT</li>
+  <li><a href='https://www.npmjs.com/package/bcrypt' target="_blank">Bcrypt</a></li>
 </ul>
 
 ## 🛠 Creators
