@@ -47,7 +47,37 @@ const expresion = /\w+@\w+\.+[a-z]/;
  await envioLogin(event)
   document.getElementById("form_login").reset()
 
+}  
+
+async function  envioLogin(event) {
+  event.preventDefault();
+
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+await fetch('https://app-secontrole.herokuapp.com/api/login', 
+  {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      },
+      body: JSON.stringify({email, password })
+    }).then(response => response.json())
+      .then(data => {
+      console.log(data);
+        window.localStorage.setItem('token', data.token);
+        window.localStorage.setItem('client', JSON.stringify(data))
+        if(data){
+          window.location.href = "http://127.0.0.1:5501/front-end/home.html"
+        } else {
+          window.location.href = "http://127.0.0.1:5501/login_validacoes/index.html"
+        }
+    });
 }
+
+
 const nameCadastro = document.getElementById("nameCadastro")
 const passwordCadastro = document.getElementById("passwordCadastro");
 const repPasswordCadastro = document.getElementById("repPasswordCadastro")
@@ -131,33 +161,6 @@ const expresion = /\w+@\w+\.+[a-z]/;
 
 }
 
-async function  envioLogin(event) {
-  event.preventDefault();
-
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
-
-await fetch('http://localhost:8000/api/login', 
-  {
-    method: 'POST',
-    headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
-      },
-      body: JSON.stringify({email, password })
-    }).then(response => response.json())
-      .then(data => {
-      console.log(data);
-        window.localStorage.setItem('token', data.token);
-        window.localStorage.setItem('client', JSON.stringify(data))
-        if(data){
-          window.location.href = "http://127.0.0.1:5501/front-end/home.html"
-        } else {
-          window.location.href = "http://127.0.0.1:5501/index.html"
-        }
-    });
-}
 async function cadastroUser(event){
 event.preventDefault();
 
@@ -166,7 +169,7 @@ const email = document.getElementById("emailCadastro").value;
 const password = document.getElementById("passwordCadastro").value;
     console.log(name, email, password);
 
- await fetch('http://localhost:8000/api/register', 
+ await fetch('https://app-secontrole.herokuapp.com/api/register', 
   {
     method: 'POST',
     headers: {
