@@ -25,7 +25,7 @@ html, body {
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     border-radius: 10px;
     margin: auto;
-    margin-top: 15rem;
+    margin-top: 10rem;
     display: flex;
     align-items: center;
 }
@@ -37,8 +37,9 @@ html, body {
 
 #profileIcon {
     height: 6rem;
-    left: -7%;
-}
+    left: 0;
+    width: 200px;
+} 
 
 .containerProfile h4 {
     position: relative;
@@ -48,14 +49,15 @@ html, body {
     font-size: 1.4rem;
     color: var(--color-black);
     margin: auto;
-    left: -15%;
-}
+    left: 0;
+} 
 
 #logout {
     height: 3rem;
     color: var(--color-blue-dark);
-    left: 8%;
-}
+    left: 0;
+    width: 57px;
+} 
 
 @media (max-width: 1440px) {
     .containerProfile {
