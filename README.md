@@ -50,6 +50,21 @@ and <a href='https://www.figma.com/file/3wh0x05etlZMCUfcJMRjwR/Desafio---TT-team
   <img title="#register" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/screenshots/extract.png" />
 </h1>
 
+
+## ✨ Highlighted Code
+<h4 align="center">Creating middlewares</h4>
+<h1 align="center">
+  <img title="#register" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/screenshots/middlewares.png" />
+</h1>
+<h4 align="center">Middlewares use in the route app</h4>
+<h1 align="center">
+  <img title="#register" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/screenshots/middlewares-rout-app.png" />
+</h1>
+<h4 align="center">AuthClient</h4>
+<h1 align="center">
+  <img title="#register" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/screenshots/authclient.png" />
+</h1>
+
 ## 🌚 How to Use
 
 <div align='center'>
