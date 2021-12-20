@@ -27,8 +27,10 @@
     <div class="containerProfile">
       <div class="profile">
         <img id="profileIcon" src="../front-end/assets/icons/colorful-person.svg" alt="imagem do perfil">
-        <h4>Olá, Isabel</h4>
-        <img id="logout" src="../front-end/assets/icons/box-arrow-right.svg">
+        <h4 id="name_perfil">Usuario não encontrado, Cadastre-se por favor!!</h4>
+        <a href="/index.html">
+        <img onclick="ateLogo();" id="logout" src="../front-end/assets/icons/box-arrow-right.svg">
+        </a>
       </div>
     </div>
     <!-- balance content -->
@@ -37,26 +39,10 @@
         <h3>Saldo disponível</h3>
       </div>
       <div class="flex-container-saldo-eye">
-        <div class="btn-eye">
-          <input
-            class="mostra"
-            id="bma"
-            type="checkbox"
-            value=""
-            onclick="mostrarOcultar()"
-          />
-          <label for="bma" class="bma">
-            <img
-              id="olhoaberto"
-              class="aberto"
-              src="../front-end/assets/icons/eye.svg"
-              alt=""
-            />
-          </label>
-        </div>
+        
         <div id="eye" class="hidden">
           <div class="balanceValue">
-            <input class="saldoValor" type="text" id="saldo" value="R$ 1300,10 " />
+            <h3 id ="saldo"></h3>
           </div>
         </div>
       </div>
@@ -65,13 +51,13 @@
     <main>
       <section class="cards">
         <!-- new launch card -->
-        <a class="link" href="../front-end/launch.html" target="_self">
+        <a class="link" href="../front-end/launch.html">
           <div class="card">
             <div class="image">
               <img src="../front-end/assets/icons/pay-icon.svg" alt=""> 
             </div>
             <div class="content">
-              <p class="title text--medium" target="_self">Novo Lançamento</p>
+              <p class="title text--medium">Novo Lançamento</p>
             </div>
           </div>
         </a>  
@@ -119,6 +105,8 @@
     </footer>
     </script>
     <script src="../front-end/assets/js/eye.js"></script>
+    <script src="../front-end/assets/js/header.js"></script>
     <script src="../front-end/assets/js/home-alert.js"></script>
+    <script src="../front-end/assets/js/home.js"></script>
   </body>
 </html>

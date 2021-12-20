@@ -26,8 +26,8 @@
     display: flex;
     position: relative;
     height: 25px;
-    background-color: #f02f2f;
-    border: 2px solid #f02f2f;
+    background-color: #26831e;
+    border: 2px solid #26831e;
     transition: all 0.2s ease-in-out;
     border-radius: 15px;
 }
@@ -62,8 +62,8 @@
 
 .switch > input:checked + label {
     padding-left: 33px;
-    background-color: #0F9959;
-    border-color: #0F9959;
+    background-color: #85080f;
+    border-color: #85080f;
     color: #fff;
     
 }
