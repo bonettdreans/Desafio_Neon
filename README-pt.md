@@ -53,7 +53,7 @@ e <a href='https://www.figma.com/file/3wh0x05etlZMCUfcJMRjwR/Desafio---TT-team-l
 <h1 align="center">
   <img title="#register" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/screenshots/middlewares.png" />
 </h1>
-<h4 align="center">Uso middlewares no app route</h4>
+<h4 align="center">Uso middlewares na rota do app </h4>
 <h1 align="center">
   <img title="#register" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/screenshots/middlewares-rout-app.png" />
 </h1>
