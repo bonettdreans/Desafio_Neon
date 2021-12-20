@@ -11,8 +11,10 @@
 }
 
 .containerTable {
-    margin-top: 5rem;
-}
+ margin-top: 5rem;
+ height: 50%;
+} 
+
 
 .sections {
     width: 70%;
@@ -45,9 +47,10 @@
 }
 
 .columnsneg {
-    color: #f02f2f;
+    color: #534d4d;
+    font-size: 18px;
+    margin: 3px;
 }
 .columnspos {
     color: #0F9959;
 }
-
