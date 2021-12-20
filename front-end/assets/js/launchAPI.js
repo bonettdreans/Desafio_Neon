@@ -1,9 +1,6 @@
 const dataLS = JSON.parse(localStorage.getItem('client'));
 const token = localStorage.getItem('token')
 const client_id = dataLS.user.client_id
-console.log("Perfect")
-console.log(token)
-console.log(client_id)
 async function lancamento() {
 
   const amount = document.getElementById("txtValue").value;
@@ -22,7 +19,7 @@ async function lancamento() {
     headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
+        'Access-Control-Allow-Origin': '*',
         'authorization': `Bearer ${token}`
       },
       body: JSON.stringify({ amount, date, title_launch , type_launch, client_id })
@@ -50,6 +47,7 @@ valorNegativo.addEventListener('input', check);
 valorNegativo.addEventListener('blur', check);
 
         }  else {
+          
            
         }
     }
@@ -70,12 +68,10 @@ fetch(`https://app-asuma.herokuapp.com/api/client/${id}/launch/`, {
       .then(data => mostrarData(data))
       .catch((error) => console.log("Erro:" + error))
         let mostrarData = (data) => {
-        console.log("requisicion get" + data)
         let balance = data.data.valor[0];
         let totalamount = balance.reduce((sum, value) => (typeof value.amount == "number" ? sum + value.amount : sum), 0);
           
-          document.getElementById("saldo").innerHTML = "R$  " + totalamount;
-          console.log(balance)
+        document.getElementById("saldo").innerHTML = "R$  " + totalamount ;
 };
 
 function ateLogo(event) {
