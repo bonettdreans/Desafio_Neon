@@ -147,7 +147,10 @@ span {
 .input::-webkit-input-placeholder {
 	color: rgba(0, 0, 0, 0.4);
 }
-
+.submit-btn > a{
+	text-decoration: none;
+	color: white;
+}
 .submit-btn {
 	background-color: rgba(0, 0, 0, 0.4);
 	color: rgba(256, 256, 256, 0.7);

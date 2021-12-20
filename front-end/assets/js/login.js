@@ -96,36 +96,36 @@ const expresion = /\w+@\w+\.+[a-z]/;
     warningsPasswordCadastro.innerHTML = ""
     passwordCadastro.classList.remove("warningsInput")
   }
-  if (passwordCadastro.value.length < 6 || passwordCadastro.value.length > 18) {
-    passwordCadastro.classList.add("warningsInput")
-    warningsPasswordCadastro.innerHTML = `⚠️ Senha precisa ter no mínimo 6 e no máximo 10 carácteres`;
-  } else {
-    warningsPasswordCadastro.innerHTML = ""
-    passwordCadastro.classList.remove("warningsInput")
-  }
-  if (repPasswordCadastro.value === null || repPasswordCadastro.value === "") {
-    repPasswordCadastro.classList.add("warningsInput")
-    warningsPasswordCadastro.innerHTML = `⚠️Senha não pode ser vazia`;
+  // if (passwordCadastro.value.length < 6 || passwordCadastro.value.length > 18) {
+  //   passwordCadastro.classList.add("warningsInput")
+  //   warningsPasswordCadastro.innerHTML = `⚠️ Senha precisa ter no mínimo 6 e no máximo 10 carácteres`;
+  // } else {
+  //   warningsPasswordCadastro.innerHTML = ""
+  //   passwordCadastro.classList.remove("warningsInput")
+  // }
+  // if (repPasswordCadastro.value === null || repPasswordCadastro.value === "") {
+  //   repPasswordCadastro.classList.add("warningsInput")
+  //   warningsPasswordCadastro.innerHTML = `⚠️Senha não pode ser vazia`;
 
-  } else {
-    warningsPasswordCadastro.innerHTML = ""
-    repPasswordCadastro.classList.remove("warningsInput")
-  }
-  if (repPasswordCadastro.value.length < 6 || repPasswordCadastro.value.length > 20) {
-    repPasswordCadastro.classList.add("warningsInput")
-    warningsPasswordCadastro.innerHTML = `⚠️ Senha precisa ter no mínimo 6 e no máximo 10 carácteres`;
-  } else {
-    warningsPasswordCadastro.innerHTML = ""
-    repPasswordCadastro.classList.remove("warningsInput")
-  }
-   if (passwordCadastro.value != repPasswordCadastro.value) {
-    passwordCadastro.classList.add("warningsInput")
-    repPasswordCadastro.classList.add("warningsInput")
-    warningsPasswordCadastro.innerHTML = `⚠️ Senhas diferentes`;
-   } else {
-     warningsPasswordCadastro.innerHTML = ""
-     repPasswordCadastro.classList.remove("warningsInput")     
-  }
+  // } else {
+  //   warningsPasswordCadastro.innerHTML = ""
+  //   repPasswordCadastro.classList.remove("warningsInput")
+  // }
+  // if (repPasswordCadastro.value.length < 6 || repPasswordCadastro.value.length > 20) {
+  //   repPasswordCadastro.classList.add("warningsInput")
+  //   warningsPasswordCadastro.innerHTML = `⚠️ Senha precisa ter no mínimo 6 e no máximo 10 carácteres`;
+  // } else {
+  //   warningsPasswordCadastro.innerHTML = ""
+  //   repPasswordCadastro.classList.remove("warningsInput")
+  // }
+  //  if (passwordCadastro.value != repPasswordCadastro.value) {
+  //   passwordCadastro.classList.add("warningsInput")
+  //   repPasswordCadastro.classList.add("warningsInput")
+  //   warningsPasswordCadastro.innerHTML = `⚠️ Senhas diferentes`;
+  //  } else {
+  //    warningsPasswordCadastro.innerHTML = ""
+  //    repPasswordCadastro.classList.remove("warningsInput")     
+  // }
   if (emailCadastro.value === null || emailCadastro.value == "") {
     emailCadastro.classList.add("warningsInput")
     warningsEmailCadastro.innerHTML = `⚠️ Email não pode ser vazio`;
