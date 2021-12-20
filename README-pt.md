@@ -15,6 +15,7 @@
 <p align='center'>
   <a href='#roadMap'>💫 Road Map</a> • 
   <a href='#appDemo'>💻 Demonstração do Aplicativo</a> • 
+  <a href='#Highlighted-Code'>✨ Código em Destaque</a> • 
   <a href='#req'>🌚 Pré-requisitos</a> • 
   <a href='#techStack'>⚡️ Tecnologias Utilizadas</a> • 
   <a href='#creators'>🛠 Criadores</a> 
@@ -45,6 +46,22 @@ e <a href='https://www.figma.com/file/3wh0x05etlZMCUfcJMRjwR/Desafio---TT-team-l
 <h1 align="center">
   <img title="#register" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/screenshots/extract.png" />
 </h1>
+
+## ✨ Highlighted Code
+
+<h4 align="center">Criando middlewares</h4>
+<h1 align="center">
+  <img title="#register" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/screenshots/middlewares.png" />
+</h1>
+<h4 align="center">Uso middlewares no app route</h4>
+<h1 align="center">
+  <img title="#register" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/screenshots/middlewares-rout-app.png" />
+</h1>
+<h4 align="center">AuthClient</h4>
+<h1 align="center">
+  <img title="#register" src="https://github.com/bonettdreans/Desafio_Neon/blob/main/front-end/assets/screenshots/authclient.png" />
+</h1>
+
 
 <h2 title='req'>🌚 Pré-requisitos</h2>
 
